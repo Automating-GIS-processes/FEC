@@ -109,6 +109,7 @@ if "%1" == "gh-pages" (
     git add -A
     git commit -m "Generated gh-pages for `git log master -1 --pretty=short --abbrev-commit`"
     git push origin gh-pages
+    git stash
     git checkout master
     goto end
 )
