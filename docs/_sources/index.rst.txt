@@ -8,7 +8,7 @@ Welcome to FEC-2017's documentation!
 
 
 Course content
--------------------------------------------
+----------------
 
 **Monday: Introduction to Python programming**
 - Introductory lecture by Henrikki Tenkanen
@@ -39,7 +39,6 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
-
 
 
 Indices and tables
