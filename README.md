@@ -11,6 +11,8 @@ Materials are based on a python-course taught at the Department of Geosciences a
 
 ## Course topics
 
+## Lecture notes
 
+- When building site with `make gh-pages` it is necessary to have a folder called `data` with at least a single template file in the root of the repo. Typically you end up having there many files but it is important to have at least a single file there when starting to build your site. 
 
 
