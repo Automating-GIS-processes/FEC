@@ -57,11 +57,13 @@ Contents:
    :maxdepth: 2
    :caption: Day 1
 
+
+   Getting-started-with-python
    VCS
    CreateGitHubAccount
-   spyder
    python-basic-elements1
    writing-scripts
+   spyder
 
 .. toctree::
    :maxdepth: 2
