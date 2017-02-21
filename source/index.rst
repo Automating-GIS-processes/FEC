@@ -6,6 +6,10 @@
 Welcome to FEC-2017's documentation!
 ====================================
 
+6.-10.3.2017 in Kumpula Campus
+
+TESTING TESTING
+--------------
 
 Course content
 ----------------
