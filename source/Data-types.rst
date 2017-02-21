@@ -1,4 +1,4 @@
-Basic elements of Python (part I)
+Data types, lists and indices
 =================================
 
 Overview

@@ -30,7 +30,7 @@ Course content
     - Writing script files
     - Spyder IDE
 
-**Day 2: **
+**Day 2:**
    - string operations
    - iterating with for-loops
    - conditional statements
