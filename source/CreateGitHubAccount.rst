@@ -1,8 +1,5 @@
-GitHub
-======
-
-Create a GitHub.com account
----------------------------
+Create a GitHub-account
+=======================
 
 The process for creating a `GitHub.com <https://www.github.com>`__
 account is straightforward.
@@ -20,5 +17,5 @@ account is straightforward.
    account**.
 4. When prompted to select a plan, choose the free option.
 
-, please provide your GitHub-username to the course instructor
---------------------------------------------------------------
+** Please provide your GitHub-username to the course instructor once you are finished**
+

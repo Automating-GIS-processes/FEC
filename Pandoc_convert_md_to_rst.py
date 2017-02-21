@@ -15,7 +15,7 @@ import glob
 import os
 
 # Input directory for md-files
-indir = r"C:\HY-Data\VUOKKHEI\documents\CODES\automating-GIS-processes\FEC\origs"
+indir = r"C:\HY-Data\VUOKKHEI\documents\CODES\automating-GIS-processes\FEC\origs\new"
 
 # Output directory for rst-files
 outdir = r"C:\HY-Data\VUOKKHEI\documents\CODES\automating-GIS-processes\FEC\source"
