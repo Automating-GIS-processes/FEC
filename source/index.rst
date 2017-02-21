@@ -12,6 +12,7 @@ The course will be held on 6.-10.3.2017 at the Kumpula Campus, University of Hel
 Course materials are based on a python-course taught at the Department of Geosciences and Geography, University of Helsinki:
 
     `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_
+
     `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_
 
 
@@ -20,15 +21,16 @@ Course materials are based on a python-course taught at the Department of Geosci
 Course content
 ----------------
 
-**Monday: Introduction to Python programming**
-   - Introductory lecture by Henrikki Tenkanen
-   - Getting started:
-   - `Spyder IDE <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules/blob/master/Lesson/spyder.md>`_
-   - `GitHub-exercise <https://github.com/Python-for-geo-people/Exercise-1>`_
-   - Introduction to python-programming: [Python-for-Geopeople, lesson 1: A taste of python](https://github.com/Python-for-geo-people/Lesson-1-Course-Environment/blob/master/Lesson/A-taste-of-Python.md)
+**Day 1:**
+    - Introduction to the course
+    - Getting started with Python
+    - Version control
+    - Exercise 1: Create a GitHub Account
+    - Data types in Python
+    - Writing script files
+    - Spyder IDE
 
-**Tuesday: Basics of Python II**
-   - data types, lists
+**Day 2:**
    - string operations
    - iterating with for-loops
    - conditional statements
@@ -48,38 +50,37 @@ Course content
 Contents:
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Course information
+    :maxdepth: 2
+    :caption: Course information
 
-   AutoGIS-FEC2017-Intro
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Day 1
+    :maxdepth: 2
+    :caption: Day 1
 
-
-   Getting-started-with-python
-   VCS
-   CreateGitHubAccount
-   python-basic-elements1
-   writing-scripts
-   spyder
-
-.. toctree::
-   :maxdepth: 2
-   :caption: Day 2
+    AutoGIS-FEC2017-Intro
+    Getting-started-with-python
+    VCS
+    CreateGitHubAccount
+    Data-types
+    writing-scripts
+    spyder
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Day 3
+    :maxdepth: 2
+    :caption: Day 2
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Day 4
+    :maxdepth: 2
+    :caption: Day 3
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Day 5
+    :maxdepth: 2
+    :caption: Day 4
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Day 5
 
 
 

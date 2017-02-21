@@ -1,4 +1,4 @@
-Lesson 1: Getting started with Python
+Getting started with Python
 ===========================
 
 
@@ -205,5 +205,5 @@ group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
 Also, always remember to search for help online (just google it!) and read the documentation for the tools you are using:
-`Python documentation <https://docs.python.org/3.5/>`_
+`General documentation for Python <https://docs.python.org/3.5/>`_
 

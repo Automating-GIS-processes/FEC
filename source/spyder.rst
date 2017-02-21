@@ -1,4 +1,4 @@
-Using the Spyder Integrated Development Environment (IDE)
+Spyder
 =========================================================
 
 Sections
@@ -16,12 +16,10 @@ Sections
 Before we start
 ---------------
 
-If you haven't done so already, open **Spyder** by double clicking on
-the Spyder icon on the desktop of your computer instance or typing
-``spyder`` in a terminal window and pressing **Enter**. Also, for this
-demonstration we will be using the `Python script file
-``Spyder-demo-script.py`` <../src/Spyder-demo-script.py>`__ that is
-included in the git repository for this week's lesson.
+If you haven't done so already, open **Spyder** from All Programs > Anaconda3 > Spyder
+
+Also, for this demonstration we will be using the `Python script file
+``Spyder-demo-script.py`` <../src/Spyder-demo-script.py>`__ . Download the file from GitHub to your computer.
 
 What is an integrated development environment?
 ----------------------------------------------
@@ -45,7 +43,10 @@ IDEs <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__.
 An overview of the Spyder IDE
 -----------------------------
 
-|Spyder IDE|\  *The Spyder IDE window*
+.. figure:: /img/Spyder.png
+   :alt: Spyder
+
+   Spyder IDE
 
 For the rest of the lessons and exercises in this course we will be
 using the **Spyder** IDE. As mentioned above, this will allow us to more
@@ -55,7 +56,10 @@ code bugs. As you can see above, the Spyder IDE window is broken into
 several different panes, labeled in the figure below. We will briefly
 look at each in the following sections.
 
-|Spyder IDE panes|\  *Panes in the Spyder IDE window*
+.. figure:: /img/Spyder-annotated.png
+   :alt: Spyder components
+
+   Panes in the Spyder IDE window
 
 The editor pane
 ~~~~~~~~~~~~~~~
@@ -124,15 +128,7 @@ helpful if you're testing things in the IPython console before copying
 them to a script in the editor pane. You can view the history pane by
 going to **View** -> **Panes** -> **History log** in the menu bar.
 
-Some Spyder tips and tricks
----------------------------
 
-We have kept this section empty for now, but will add tips and tricks as
-the course progresses.
 
-**Next**: `Basic concepts of functions <functions.md>`__\  **Home**:
-`Lesson 4 main
-page <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules>`__\ 
 
-.. |Spyder IDE| image:: ../img/Spyder.png
-.. |Spyder IDE panes| image:: ../img/Spyder-annotated.png
+
