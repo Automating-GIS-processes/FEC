@@ -6,10 +6,14 @@
 Welcome to FEC-2017's documentation!
 ====================================
 
+This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
+Materials are based on a python-course taught at the Department of Geosciences and Geography, University of Helsinki:
+
+    `Python for geo-people<https://github.com/Python-for-geo-people/Course-information>`_
+    `Automating GIS-processes<https://automating-gis-processes.github.io/2016/>`_
+
 6.-10.3.2017 in Kumpula Campus
 
-TESTING TESTING
---------------
 
 Course content
 ----------------
