@@ -14,12 +14,8 @@ Getting started
 ---------------
 
 1. To start creating and editing our Python script file, we'll need to
-   open a text editor. In our case, we'll be using the **gedit** basic
-   editor, which can be launched by double clicking on the **Text
-   editor** icon on the desktop of your computer instance.
-2. The **gedit** window will appear shortly after double clicking, and
-   it should open a new (blank) document by default. You're now ready to
-   proceed.
+   open a text editor.
+
 
 The general concept of a ``.py`` script file
 --------------------------------------------
@@ -28,7 +24,7 @@ A Python script file is simply a list of commands that you might
 otherwise type into the IPython interpreter window. As such, we can
 quite easily create a basic script file and test things out.
 
-1. Start by copying and pasting the text below into your **gedit**
+1. Start by copying and pasting the text below into your text editor
    window.
 
    .. code:: python
@@ -57,6 +53,7 @@ quite easily create a basic script file and test things out.
 
    No surprises here. The script simply executes the commands exactly as
    you would have if you had typed them in to the IPython interpreter.
+
 4. Now let's make a small change to the script. Go back to **gedit** and
    edit the script so that it now reads
 
@@ -234,6 +231,7 @@ make sure your code is easy to understand.
    licensing is an important consideration when posting your software in
    online repositories such as GitHub. It is one way to protect your
    intellectual property from being used in ways you do not wish.
+
 4. **Start with a shebang**. This part gets a bit more complicated, but
    we can add one line above our first block comment to help make the
    script easier to run for users. Here, we add a line at the very top
@@ -275,16 +273,6 @@ make sure your code is easy to understand.
 Page summary
 ------------
 
-As we continue in the course we will be creating more advanced Python
-scripts that include more complex code logic and other features we've
-not yet learned. With these, we'll also learn a few tips for
-incorporating them in our scripts. However, an expectation in this
-course is that you stick to the general template described above when
+An expectation in this course is that you stick to the general template described above when
 writing your code, which means including appropriate use of inline
 comments, blank lines, block comments, and starting with a shebang.
-
-**Next**: `Working on the assignments <working-on-assignment.md>`__\ 
-**Home**: `Lesson 2 main
-page <https://github.com/Python-for-geo-people/Lesson-2-Data-types-Lists>`__\ 
-**Previous**: `Some basic elements of Python, part
-1 <python-basic-elements1.md>`__
