@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Automating GIS processes -course for FEC-GIS 2017!
+Welcome to Automating GIS processes/ FEC 2017!
 =============================================================
 
 This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
@@ -12,7 +12,8 @@ The course will be held on **6.-10.3.2017 at the Kumpula Campus**, University of
 This course has been custom-made for the Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies) - course organized by HY+ and the Department of Geosciences and Geography, University of Helsinki.
 Materials are based on two more extensive courses: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_  available online.
 
-Contents:
+Course contents:
+----------------
 
 .. toctree::
     :maxdepth: 2
