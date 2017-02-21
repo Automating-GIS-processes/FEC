@@ -54,13 +54,22 @@ operations you can perform using Python.
 3. The list of basic arithmetic operations that can be done by default
    in Python is in the table below.
 
-   \| Operation \| Symbol \| Example syntax \| Returned value \| \|
-   -------------- \| ------ \| ---------------\|----------------\| \|
-   Addition \| ``+`` \| ``2 + 2`` \| ``4`` \| \| Subtraction \| ``-`` \|
-   ``4 - 2`` \| ``2`` \| \| Multiplication \| ``*`` \| ``2 * 3`` \|
-   ``6`` \| \| Division \| ``/`` \| ``4 / 2`` \| ``2`` \| \|
-   Exponentiation \| ``**`` \| ``2**3`` \| ``8`` \| For anything more
-   advanced, we need to load a *library*.
+
++----------------+--------+---------------+----------------+
+| Operation      | Symbol | Example syntax| Returned value |
++================+========+===============+================+
+| Addition       | ``+``  | ``2 + 2``     |     ``4``      |
++----------------+--------+---------------+----------------+
+| Subtraction    | ``-``  | ``4 - 2``     |     ``2``      |
++----------------+--------+---------------+----------------+
+| Multiplication | ``*``  | ``2 * 3``     |     ``6``      |
++----------------+--------+---------------+----------------+
+| Division       | ``/``  | ``4 / 2``     |     ``2``      |
++----------------+--------+---------------+----------------+
+|Exponentiation  | ``**`` | ``2**3``      |     ``8``      |
++----------------+--------+---------------+----------------+
+
+For anything more advanced, we need to load a *library*.
 
 libraries
 ---------
@@ -152,14 +161,20 @@ libraries
 
 9. There are 4 basic *data types* in Python as shown in the table below.
 
-   \| Data type name \| Data type \| Example \| \| -------------- \|
-   -------------------- \| --------------- \| \| ``int`` \| Whole
-   integer values \| ``4`` \| \| ``float`` \| Decimal values \|
-   ``3.1415`` \| \| ``str`` \| Character strings \| ``'Hot'`` \| \|
-   ``bool`` \| True/false values \| ``True`` \| The data types are
-   displayed when using ``%whos``, but can also be found using the
-   ``type()`` function. As you will see, the data types are important
-   because some are not compatible with one another.
+
++----------------+----------------------+-----------+
+| Data type name | Data type            | Example   |
++================+======================+===========+
+| ``int``        | Whole integer values | ``4``     |
++----------------+----------------------+-----------+
+| ``float``      | Decimal values       |``3.1415`` |
++----------------+----------------------+-----------+
+| ``str``        | Character strings    | ``'Hot'`` |
++----------------+----------------------+-----------+
+| ``bool``       | True/false values    | ``True``  |
+
+The data types are displayed when using ``%whos``, but can also be found using the``type()`` function.
+As you will see, the data types are important because some are not compatible with one another.
 
    .. code:: python
 
