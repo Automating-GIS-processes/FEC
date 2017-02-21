@@ -43,6 +43,32 @@ Contents:
 
 .. toctree::
    :maxdepth: 2
+   :caption: Course information
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Day 1
+   CreateGitHubAccount
+   spyder
+   python-basic-elements1
+   writing-scripts
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Day 2
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Day 3
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Day 4
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Day 5
+
 
 
 Indices and tables
