@@ -1,0 +1,54 @@
+.. FEC-2017 documentation master file, created by
+   sphinx-quickstart on Mon Feb 20 15:58:24 2017.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Welcome to FEC-2017's documentation!
+====================================
+
+6.-10.3.2017 in Kumpula Campus
+
+TESTING TESTING
+--------------
+
+Course content
+----------------
+
+**Monday: Introduction to Python programming**
+   - Introductory lecture by Henrikki Tenkanen
+   - Getting started:
+   - `Spyder IDE <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules/blob/master/Lesson/spyder.md>`_
+   - `GitHub-exercise <https://github.com/Python-for-geo-people/Exercise-1>`_
+   - Introduction to python-programming: [Python-for-Geopeople, lesson 1: A taste of python](https://github.com/Python-for-geo-people/Lesson-1-Course-Environment/blob/master/Lesson/A-taste-of-Python.md)
+
+**Tuesday: Basics of Python II**
+   - data types, lists
+   - string operations
+   - iterating with for-loops
+   - conditional statements
+   - Exercise: For-loops and conditional statements
+   - functions
+
+**Wednesday: Modules, arcpy-module**
+   - Reading and writing files, Geopandas-example
+   - Python modules
+   - Getting started with the Arcpy-module
+
+**Thursday: Arcpy-exercise**
+
+**Friday: Arcpy-exercise continues**
+
+
+Contents:
+
+.. toctree::
+   :maxdepth: 2
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`
+
