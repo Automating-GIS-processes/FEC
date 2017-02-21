@@ -1,5 +1,5 @@
-Exercise 1: Creating a GitHub account
-=====================================
+GitHub
+======
 
 Create a GitHub.com account
 ---------------------------
@@ -18,17 +18,7 @@ account is straightforward.
 
 3. Enter a username, email address, and password. Click **Create an
    account**.
-4. When prompted to select a plan, choose the free option. We will
-   provide private repositories through the course GitHub organization
-   account.
+4. When prompted to select a plan, choose the free option.
 
-What to submit
---------------
-
-Your assignment is to send an email to your course instructor containing
-
-1. **Your GitHub.com username**
-2. **The output from the command you're asked to run in IPython**
-
-Based on `Exercise 1 from
-python-for-geopeople <https://github.com/Python-for-geo-people/Exercise-1>`__
+, please provide your GitHub-username to the course instructor
+--------------------------------------------------------------
