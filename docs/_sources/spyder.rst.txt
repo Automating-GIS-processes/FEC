@@ -1,17 +1,7 @@
 Spyder
-=========================================================
+==========
 
-Sections
---------
 
-1. `What is an IDE? <#what-is-an-integrated-development-environment>`__
-2. `An overview of the Spyder IDE <#an-overview-of-the-spyder-ide>`__
-
--  `The editor pane <#the-editor-pane>`__
--  `The explorer pane <#the-explorer-pane>`__
--  `The console pane <#the-console-pane>`__
-
-3. `Some Spyder tips and tricks <#some-spyder-tips-and-tricks>`__
 
 Before we start
 ---------------

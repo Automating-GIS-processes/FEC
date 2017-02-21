@@ -12,6 +12,7 @@ The course will be held on 6.-10.3.2017 at the Kumpula Campus, University of Hel
 Course materials are based on a python-course taught at the Department of Geosciences and Geography, University of Helsinki:
 
     `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_
+
     `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_
 
 

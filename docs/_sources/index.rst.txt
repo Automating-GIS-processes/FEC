@@ -16,37 +16,6 @@ Course materials are based on a python-course taught at the Department of Geosci
     `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_
 
 
-
-
-Course content
-----------------
-
-**Day 1:**
-    - Introduction to the course
-    - Getting started with Python
-    - Version control
-    - Exercise 1: Create a GitHub Account
-    - Data types in Python
-    - Writing script files
-    - Spyder IDE
-
-**Day 2:**
-   - string operations
-   - iterating with for-loops
-   - conditional statements
-   - Exercise: For-loops and conditional statements
-   - functions
-
-**Wednesday: Modules, arcpy-module**
-   - Reading and writing files, Geopandas-example
-   - Python modules
-   - Getting started with the Arcpy-module
-
-**Thursday: Arcpy-exercise**
-
-**Friday: Arcpy-exercise continues**
-
-
 Contents:
 
 .. toctree::
