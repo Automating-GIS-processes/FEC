@@ -20,7 +20,7 @@ String is a data type that is used for representing text. Within code, strings c
 Concatenation
 --------------
 
-Combining several pieces of text into one:
+Combining several pieces of text into one variable by adding them together:
 
     .. code:: python
 
@@ -31,6 +31,7 @@ Combining several pieces of text into one:
 By default, strings and numbers cannot be concatenated. Just try:
 
     .. code:: python
+
         #concatenate text and number
         number =3.5
         text_and_number = text1 + number  # will result in error
@@ -38,48 +39,53 @@ By default, strings and numbers cannot be concatenated. Just try:
 Numbers need to be converted into string data type using function `str()` prior to combining with strings.
 
     .. code:: python
+
         #concatenate text and number
         number =3.5
         text_and_number = text1 + str(number)  # should work!
 
 
-Other operations
-----------------
+Slicing and multiplication
+--------------------------
 
     .. code:: python
-        # You can slice strings
+
+        # Slice string (extract a substring) based on index
         sliced_text = combined_text[0:6]   # --> take 6 letters starting from position 0
 
-        # You can get the length of the string
+        # Get the length of the string
         len(combined_text)
         len(sliced_text)
 
-        # You can repeat using strings
+        # Multiply a string:
         repeated = sliced_text*4
 
 
-String escape characters
--------------------------
-- Escape characters are non-printable characters that can be represented with back slash notation
-- Most commonly used characters are: `\n` (new line) and `\t` (tabulator)
+Insert new line or tab within text
+----------------------------------
+Escape characters are non-printable characters that can be represented with back slash notation.
+Most commonly used characters are: `\n` (new line) and `\t` (tabulator):
 
 
 
-Formatting strings with `%`-operator
+`%`-operator
+--------------
 
 - `%s` –converts numbers into text
 - `%f` –rounds decimals into a desired length and converts the value into text
 
 
 
-Upper- and lower-case
----------------------
+Replacement, Upper-case and lower-case
+--------------------------------------
+You can replace words/letters with another one by using a built-in `replace` function.
 
 .. code:: python
-    # You can replace words/letters with another one by using a built-in 'replace' function
+
+    # Replace word within text
     replaced_word = combined_text.replace('Python', 'Coding')
 
-    # You can change letters to lower-case / upper-case
+    # Change letters to lower-case / upper-case
     upper = replaced_word.upper()
     lower = replaced_word.lower()
 

@@ -26,6 +26,7 @@ Course contents:
 
     AutoGIS-FEC2017-Intro
     Getting-started-with-python
+    CMD-terminal-intro
     VCS
     CreateGitHubAccount
     Data-types
@@ -36,7 +37,7 @@ Course contents:
     :maxdepth: 2
     :caption: Day 2
 
-    String-operations
+    string-operations
     conditional-statements
     for-loops
     for-loops-mini-exercise
