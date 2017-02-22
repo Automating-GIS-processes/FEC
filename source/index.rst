@@ -10,7 +10,7 @@ Welcome to Automating GIS processes/ FEC 2017!
 
 This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
 
-Materials have been custom-made for the **Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies)** - course organized by `**HY+ <http://hyplus.helsinki.fi/>**`_ and the **Department of Geosciences and Geography, University of Helsinki**.
+Materials have been custom-made for the **Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies)** - course organized by `HY+ <http://hyplus.helsinki.fi/>`_ and the **Department of Geosciences and Geography, University of Helsinki**.
 
 Materials are based two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_.
 
