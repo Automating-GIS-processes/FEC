@@ -24,30 +24,31 @@ Course contents:
     :maxdepth: 2
     :caption: Day 1
 
-    AutoGIS-FEC2017-Intro
-    Getting-started-with-python
-    CMD-terminal-intro
-    VCS
-    CreateGitHubAccount
-    Data-types
-    writing-scripts
-    spyder
+    Day1-Intro
+    Day1-Getting-started-with-python
+    Day1-CMD-terminal-intro
+    Day1-VCS
+    Day1-CreateGitHubAccount
+    Day1-Data-types
+    Day1-writing-scripts
+    Day1-spyder
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 2
 
-    string-operations
-    conditional-statements
-    for-loops
-    for-loops-mini-exercise
-
-    functions
+    Day2-string-operations
+    Day2-conditional-statements
+    Day2-for-loops
+    Day2-for-loops-mini-exercise
+    Day2-functions
+    Day2-modules
 
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 3
+
 
 .. toctree::
     :maxdepth: 2

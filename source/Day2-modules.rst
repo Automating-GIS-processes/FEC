@@ -1,14 +1,6 @@
 Loading and using Python modules
 ================================
 
-Sections
---------
-
-1. `What is a module? <#what-is-a-module>`__
-2. `How can modules be loaded? <#how-can-modules-be-loaded>`__
-3. `How can modules be used? <#how-can-modules-be-used>`__
-4. `What should I *not* do? <#what-should-i-not-do>`__
-
 What is a module?
 -----------------
 

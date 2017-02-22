@@ -1,0 +1,37 @@
+Lesson 6 Overview
+=================
+
+.. figure:: img/arcpy-logo.png
+
+    :width: 200 px
+
+
+This week we will take a quick tour on **how to use Python in ArcGIS** using `arcpy <http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm>`_ -module.
+Exceptionally we won't be using the computer instance for going through the lesson materials (it is a bit tricky to install on Linux, however, it **can** be done),
+instead we will be using the GIS-lab computers where `ArcGIS <http://desktop.arcgis.com/en/>`_ is installed. ArcGIS is not an open source or freely available
+software such as `Quantum GIS <http://www.qgis.org/en/site/>`_ or the Python tools that we have been using. However, it is widely used software in many places (companies, public sector etc.)
+which is the reason why we give this short introduction how you can automatize the ArcGIS workflows using Python scripting with arcpy -module.
+
+Learning objectives
+-------------------
+
+The aim for the rest of the week is to learn the basics how the ArcGIS tools can be run using arcpy functions, and how we can
+create a graphical user interface for your custom scripts using ArcGIS Toolbox (.tbx -file). In practice, we will incrementally create an ArcGIS Python tool that
+**converts the individual Damselfish species distribution Polygons into raster layers** (``.tif``) as an example of such tool.
+
+After completing the arcpy-lesson and exercises you should be able to:
+
+ - Create a simple user interface using ArcGIS ToolBox.
+
+ - Run ArcGIS-tools tools from Python using the ArcPy-module.
+
+ - Find and know how to read the ArcPy documentation online.
+
+.. figure:: img/damselfish-simple-map.PNG
+
+    Source data for this exercise: the Damselfish distribution shapefile
+
+
+
+
+
