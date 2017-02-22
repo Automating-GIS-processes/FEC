@@ -1,0 +1,304 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>String-operations [under construction!] &mdash; FEC-2017 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Conditional statements" href="conditional-statements.html"/>
+        <link rel="prev" title="Spyder" href="spyder.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FEC-2017
+          
+
+          
+            
+            <img src="_static/logo_hy_geo_135.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Day 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="AutoGIS-FEC2017-Intro.html">Introduction to the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting-started-with-python.html">Getting started with Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CMD-terminal-intro.html">Using the command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="VCS.html">Version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CreateGitHubAccount.html">Create a GitHub-account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Data-types.html">Data types, lists and indices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="writing-scripts.html">Writing your own Python scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="spyder.html">Spyder</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Day 2</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">String-operations [under construction!]</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#concatenation">Concatenation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#slicing-and-multiplication">Slicing and multiplication</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#insert-new-line-or-tab-within-text">Insert new line or tab within text</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operator"><cite>%</cite>-operator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replacement-upper-case-and-lower-case">Replacement, Upper-case and lower-case</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="conditional-statements.html">Conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for-loops.html">for-loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="for-loops-mini-exercise.html">Mini-exercise on for-loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="functions.html">Functions</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">FEC-2017</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>String-operations [under construction!]</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/string-operations.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="string-operations-under-construction">
+<h1>String-operations [under construction!]<a class="headerlink" href="#string-operations-under-construction" title="Permalink to this headline">¶</a></h1>
+<p>This section introduces you to most common (and often very useful) operations for text processing in Python. For a comprehensive list of string operations, please refer to <a class="reference external" href="https://docs.python.org/3.5/library/string.html">Python documentation</a>.
+You will find these string operations very useful in different context, for example when re-naming data files, or generating print-messages within your own scripts.</p>
+<p>String is a data type that is used for representing text. Within code, strings can be enclosed with single (&#8216;&#8217;) or double (&#8220;&#8221;) quotation marks:</p>
+<blockquote>
+<div></div></blockquote>
+<div class="section" id="concatenation">
+<h2>Concatenation<a class="headerlink" href="#concatenation" title="Permalink to this headline">¶</a></h2>
+<p>Combining several pieces of text into one variable by adding them together:</p>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># You can concatenate strings</span>
+<span class="n">combined_text</span> <span class="o">=</span> <span class="n">text1</span> <span class="o">+</span> <span class="n">text2</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>By default, strings and numbers cannot be concatenated. Just try:</p>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#concatenate text and number</span>
+<span class="n">number</span> <span class="o">=</span><span class="mf">3.5</span>
+<span class="n">text_and_number</span> <span class="o">=</span> <span class="n">text1</span> <span class="o">+</span> <span class="n">number</span>  <span class="c1"># will result in error</span>
+</pre></div>
+</div>
+</div></blockquote>
+<p>Numbers need to be converted into string data type using function <cite>str()</cite> prior to combining with strings.</p>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#concatenate text and number</span>
+<span class="n">number</span> <span class="o">=</span><span class="mf">3.5</span>
+<span class="n">text_and_number</span> <span class="o">=</span> <span class="n">text1</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>  <span class="c1"># should work!</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="slicing-and-multiplication">
+<h2>Slicing and multiplication<a class="headerlink" href="#slicing-and-multiplication" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Slice string (extract a substring) based on index</span>
+<span class="n">sliced_text</span> <span class="o">=</span> <span class="n">combined_text</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">6</span><span class="p">]</span>   <span class="c1"># --&gt; take 6 letters starting from position 0</span>
+
+<span class="c1"># Get the length of the string</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">combined_text</span><span class="p">)</span>
+<span class="nb">len</span><span class="p">(</span><span class="n">sliced_text</span><span class="p">)</span>
+
+<span class="c1"># Multiply a string:</span>
+<span class="n">repeated</span> <span class="o">=</span> <span class="n">sliced_text</span><span class="o">*</span><span class="mi">4</span>
+</pre></div>
+</div>
+</div></blockquote>
+</div>
+<div class="section" id="insert-new-line-or-tab-within-text">
+<h2>Insert new line or tab within text<a class="headerlink" href="#insert-new-line-or-tab-within-text" title="Permalink to this headline">¶</a></h2>
+<p>Escape characters are non-printable characters that can be represented with back slash notation.
+Most commonly used characters are: <cite>n</cite> (new line) and <cite>t</cite> (tabulator):</p>
+</div>
+<div class="section" id="operator">
+<h2><cite>%</cite>-operator<a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><cite>%s</cite> –converts numbers into text</li>
+<li><cite>%f</cite> –rounds decimals into a desired length and converts the value into text</li>
+</ul>
+</div>
+<div class="section" id="replacement-upper-case-and-lower-case">
+<h2>Replacement, Upper-case and lower-case<a class="headerlink" href="#replacement-upper-case-and-lower-case" title="Permalink to this headline">¶</a></h2>
+<p>You can replace words/letters with another one by using a built-in <cite>replace</cite> function.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Replace word within text</span>
+<span class="n">replaced_word</span> <span class="o">=</span> <span class="n">combined_text</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;Python&#39;</span><span class="p">,</span> <span class="s1">&#39;Coding&#39;</span><span class="p">)</span>
+
+<span class="c1"># Change letters to lower-case / upper-case</span>
+<span class="n">upper</span> <span class="o">=</span> <span class="n">replaced_word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+<span class="n">lower</span> <span class="o">=</span> <span class="n">replaced_word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="conditional-statements.html" class="btn btn-neutral float-right" title="Conditional statements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="spyder.html" class="btn btn-neutral" title="Spyder" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Vuokko.
+      Last updated on Feb 22, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -325,6 +325,7 @@ much easier to understand.
    The good news here is that our selected sample ID is only in the list
    once. Should we need to modify it for some reason, we also now know
    where it is in the list (index ``3``).
+
 2. There are two other common methods for lists that we need to see.
    First, there is the ``.sort()`` method, used to sort values in a
    list. As you can see from when we appended the additional two sample
@@ -344,6 +345,7 @@ much easier to understand.
    then assign the output of ``SampleIDs.sort()`` to ``SampleIDs`` you
    will sort the list, but then overwrite its contents with the returned
    value ``None``. This means you've deleted the list contents (!).
+
 3. The ``.reverse()`` method works the same way.
 
    .. code:: python
@@ -356,6 +358,7 @@ much easier to understand.
    method, but there is no screen output when this occurs. Again, if you
    were to assign that output to ``SampleIDs`` the list would get
    reversed, but the contents would then be assigned ``None``.
+
 4. We won't discuss any list *attributes* because as far as I know there
    aren't any, but we'll encounter some very useful *attributes* of
    other data types in the future.
