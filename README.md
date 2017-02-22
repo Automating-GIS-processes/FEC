@@ -15,9 +15,9 @@ Materials are based on a python-course taught at the Department of Geosciences a
 
 ## Building the GitHub-pages
 
-This course website has been constructed in a similar way as the full [automating GIS-processes pages](https://github.com/Automating-GIS-processes/2016)
-The pages are built using  [Sphinx](http://www.sphinx-doc.org/en/1.4.9/) with modified version of the [Read The Docs theme](http://docs.readthedocs.io/en/latest/theme.html).
-Thus you need to install the following pachages in order to modify the pages:
+This course website has been constructed in a similar way as the full [automating GIS-processes pages](https://github.com/Automating-GIS-processes/2016).
+The pages are built using [Sphinx](http://www.sphinx-doc.org/en/1.4.9/) with modified version of the [Read The Docs theme](http://docs.readthedocs.io/en/latest/theme.html).
+The following packages are needed in order to modify the pages (We recommend using [conda](http://conda.pydata.org/docs/using/pkgs.html#install-a-package) from [Anaconda Python distribution package](https://www.continuum.io/downloads)):
 
  - Sphinx
 
@@ -33,8 +33,10 @@ Thus you need to install the following pachages in order to modify the pages:
 
 ## .rst files
 
-Sphinx uses .rst -files ([reStucturedText](https://en.wikipedia.org/wiki/ReStructuredText)). and thus the source for the pages need to be written into .rst-files.
-Markdown-dokuments `.md` can be converted to `.rst` -format using [Pandoc_convert_md_to_rst.py](Pandoc_convert_md_to_rst) (converts all .md files from the source directory to .rst files).
+Sphinx uses .rst -files ([reStucturedText](https://en.wikipedia.org/wiki/ReStructuredText)), and thus the source for the pages need to be written into .rst-files.
+Markdown-dokuments `.md` can be converted to `.rst` -format using [Pandoc_convert_md_to_rst.py](/Pandoc_convert_md_to_rst) (converts all .md files from the source directory to .rst files).
+
+`.rst` -files for these course pages are found under the [source](/source) -folder, and `.html` pages in the [docs](/docs) -folder (these are automatically generated using the make.bat command, see below).
 
 ## building the pages
 
