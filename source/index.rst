@@ -6,7 +6,9 @@
 Welcome to Automating GIS processes/ FEC 2017!
 =============================================================
 
+
 **6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
+
 
 This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
 
