@@ -49,6 +49,11 @@ Course contents:
     :maxdepth: 2
     :caption: Day 3
 
+    Day3-arcpy-overview
+    Day3-arcpy
+    Day3-arcpy-script
+    Day3-run-the-tool
+    Day3-toolbox
 
 .. toctree::
     :maxdepth: 2
