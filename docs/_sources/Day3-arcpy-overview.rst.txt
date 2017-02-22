@@ -1,4 +1,4 @@
-Lesson 6 Overview
+Automating ArcGIS-processes
 =================
 
 .. figure:: img/arcpy-logo.png

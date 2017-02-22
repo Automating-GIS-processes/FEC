@@ -6,11 +6,12 @@
 Welcome to Automating GIS processes/ FEC 2017!
 =============================================================
 
-This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
-The course will be held on **6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
+**6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
 
-This course has been custom-made for the Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies) - course organized by HY+ and the Department of Geosciences and Geography, University of Helsinki.
-Materials are based on two more extensive courses: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_  available online.
+This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
+
+Materials have been custom-made for the **Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies)** - course organized by **`HY+<http://hyplus.helsinki.fi/>`_** and the **Department of Geosciences and Geography, University of Helsinki**.
+Materials are based two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_.
 
 Course contents:
 ----------------
@@ -51,9 +52,10 @@ Course contents:
 
     Day3-arcpy-overview
     Day3-arcpy
+    Day3-toolbox
     Day3-arcpy-script
     Day3-run-the-tool
-    Day3-toolbox
+
 
 .. toctree::
     :maxdepth: 2

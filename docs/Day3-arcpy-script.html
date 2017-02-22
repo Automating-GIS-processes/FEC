@@ -35,7 +35,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
         <link rel="next" title="Running the Python script from ArcGIS" href="Day3-run-the-tool.html"/>
-        <link rel="prev" title="Python in ArcGIS" href="Day3-arcpy.html"/> 
+        <link rel="prev" title="ArcGIS Toolbox" href="Day3-toolbox.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -109,8 +109,9 @@
 </ul>
 <p class="caption"><span class="caption-text">Day 3</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Lesson 6 Overview</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">Python in ArcGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Writing arcpy scripts</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#importing-arcpy">Importing arcpy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
@@ -124,7 +125,6 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 </ul>
 
             
@@ -173,17 +173,17 @@
 <h1>Writing arcpy scripts<a class="headerlink" href="#writing-arcpy-scripts" title="Permalink to this headline">¶</a></h1>
 <p>At this point we have created a nice interface for our Python tool in ArcGIS:</p>
 <div class="figure">
-<a class="reference internal image-reference" href="img/arcgis-my-script.png"><img alt="img/arcgis-my-script.png" src="img/arcgis-my-script.png" /></a>
+<a class="reference internal image-reference" href="_images/arcgis-my-script.png"><img alt="_images/arcgis-my-script.png" src="_images/arcgis-my-script.png" style="width: 732.0px; height: 358.40000000000003px;" /></a>
 </div>
 <p>Now we need to write the functionalities for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
 Let&#8217;s see how this can be done.</p>
 <p>First, we need start the ArcGIS IDLE (if it is not open already) from <strong>All Programs</strong> &#8211;&gt; <strong>ArcGIS</strong>:</p>
 <div class="figure">
-<img alt="img/arcgis-idle-location.PNG" src="img/arcgis-idle-location.PNG" />
+<img alt="_images/arcgis-idle-location.png" src="_images/arcgis-idle-location.png" />
 </div>
 <p>Create a new script called <code class="docutils literal"><span class="pre">PolyToRaster.py</span></code> in IDLE (<strong>File</strong> &#8211;&gt; <strong>New File</strong>) and save it to your computer:</p>
 <div class="figure">
-<a class="reference internal image-reference" href="img/arcgis-idle-new.png"><img alt="img/arcgis-idle-new.png" src="img/arcgis-idle-new.png" /></a>
+<a class="reference internal image-reference" href="_images/arcgis-idle-new.png"><img alt="_images/arcgis-idle-new.png" src="_images/arcgis-idle-new.png" style="width: 430.0px; height: 222.0px;" /></a>
 </div>
 <p>Let&#8217;s start writing the functionalities of our tool to the script that we just created.</p>
 <div class="section" id="importing-arcpy">
@@ -452,7 +452,7 @@ any kind of messages to the user who uses the Python tool that we have created a
         <a href="Day3-run-the-tool.html" class="btn btn-neutral float-right" title="Running the Python script from ArcGIS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Day3-arcpy.html" class="btn btn-neutral" title="Python in ArcGIS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day3-toolbox.html" class="btn btn-neutral" title="ArcGIS Toolbox" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

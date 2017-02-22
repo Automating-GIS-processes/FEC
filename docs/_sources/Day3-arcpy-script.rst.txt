@@ -11,7 +11,7 @@ Let's see how this can be done.
 
 First, we need start the ArcGIS IDLE (if it is not open already) from **All Programs** --> **ArcGIS**:
 
-.. figure:: img/arcgis-idle-location.PNG
+.. figure:: img/arcgis-idle-location.png
 
 Create a new script called ``PolyToRaster.py`` in IDLE (**File** --> **New File**) and save it to your computer:
 
