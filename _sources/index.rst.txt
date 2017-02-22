@@ -6,11 +6,12 @@
 Welcome to Automating GIS processes/ FEC 2017!
 =============================================================
 
-This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
-The course will be held on **6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
+**6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
 
-This course has been custom-made for the Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies) - course organized by HY+ and the Department of Geosciences and Geography, University of Helsinki.
-Materials are based on two more extensive courses: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_  available online.
+This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
+
+Materials have been custom-made for the **Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies)** - course organized by **`HY+<http://hyplus.helsinki.fi/>`_** and the **Department of Geosciences and Geography, University of Helsinki**.
+Materials are based two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_.
 
 Course contents:
 ----------------
@@ -24,30 +25,37 @@ Course contents:
     :maxdepth: 2
     :caption: Day 1
 
-    AutoGIS-FEC2017-Intro
-    Getting-started-with-python
-    CMD-terminal-intro
-    VCS
-    CreateGitHubAccount
-    Data-types
-    writing-scripts
-    spyder
+    Day1-Intro
+    Day1-Getting-started-with-python
+    Day1-CMD-terminal-intro
+    Day1-VCS
+    Day1-CreateGitHubAccount
+    Day1-Data-types
+    Day1-writing-scripts
+    Day1-spyder
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 2
 
-    string-operations
-    conditional-statements
-    for-loops
-    for-loops-mini-exercise
-
-    functions
+    Day2-string-operations
+    Day2-conditional-statements
+    Day2-for-loops
+    Day2-for-loops-mini-exercise
+    Day2-functions
+    Day2-modules
 
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 3
+
+    Day3-arcpy-overview
+    Day3-arcpy
+    Day3-toolbox
+    Day3-arcpy-script
+    Day3-run-the-tool
+
 
 .. toctree::
     :maxdepth: 2

@@ -1,24 +1,6 @@
 Functions
 =========
 
-Sources
--------
-
-This lesson is partly based on the `Software Carpentry
-group's <http://software-carpentry.org/>`__ lessons on `Programming with
-Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
-
-**Contents**:
-
-1. `What is a function? <#1>`__
-2. `Anatomy of a function <#2>`__
-3. `Calling functions <#3>`__
-4. `"Pro" tips (optional extra material) <#4>`__
-
-   1. `Saving functions in a Python script <#4.1>`__
-   2. `Calling functions from a script <#4.2>`__
-   3. `Temperature calculator <#4.3>`__
-
 1. What is a function?
 ----------------------
 

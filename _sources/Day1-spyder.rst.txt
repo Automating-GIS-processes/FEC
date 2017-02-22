@@ -30,6 +30,7 @@ that is included with
 just one of `many Python
 IDEs <https://wiki.python.org/moin/IntegratedDevelopmentEnvironments>`__.
 
+
 An overview of the Spyder IDE
 -----------------------------
 
