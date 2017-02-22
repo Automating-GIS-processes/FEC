@@ -1,8 +1,8 @@
 Create a GitHub-account
 =======================
 
-The process for creating a `GitHub.com <https://www.github.com>`__
-account is straightforward.
+As mentioned, we will use GitHub for distributing course material and documenting your progress.
+If you don't already have a personal GitHub-account, here is how to do it in a few quick steps:
 
 1. Open a web browser and navigate to https://www.github.com.
 2. On the `GitHub.com <https://www.github.com>`__ home page, click on
@@ -17,5 +17,6 @@ account is straightforward.
    account**.
 4. When prompted to select a plan, choose the free option.
 
-** Please provide your GitHub-username to the course instructor once you are finished**
+
+**Once you are done, please provide your GitHub-username to the course instructor**
 
