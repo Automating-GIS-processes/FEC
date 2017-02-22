@@ -1,5 +1,8 @@
-ArcPy-module
+Python in ArcGIS
 ================
+
+arcpy
+-----
 
 Arcpy is a Python module that provides access to ArcGIS geoprocessing tools as well as additional functions, classes, and modules that allow you to create simple or
 complex workflows quickly and easily. **Arcpy comes only with ArcGIS software**, thus it cannot be downloaded freely from anywhere. The following materials are based on ArcGIS 10.3 -version.
