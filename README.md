@@ -34,7 +34,7 @@ The following packages are needed in order to modify the pages (We recommend usi
 ## .rst files
 
 Sphinx uses .rst -files ([reStucturedText](https://en.wikipedia.org/wiki/ReStructuredText)), and thus the source for the pages need to be written into .rst-files.
-Markdown-dokuments `.md` can be converted to `.rst` -format using [Pandoc_convert_md_to_rst.py](./Pandoc_convert_md_to_rst) (converts all `.md`-files from the source directory to `.rst`-files).
+Markdown-dokuments `.md` can be converted to `.rst` -format using [Pandoc_convert_md_to_rst.py](/Pandoc_convert_md_to_rst.py) (converts all `.md`-files from the source directory to `.rst`-files).
 
 `.rst` -files for these course pages are found under the [source](/source) -folder, and `.html` pages in the [docs](/docs) -folder (these are automatically generated using the make.bat command, see below).
 
