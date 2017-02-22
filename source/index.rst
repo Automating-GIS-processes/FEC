@@ -36,6 +36,12 @@ Course contents:
     :maxdepth: 2
     :caption: Day 2
 
+    String-operations
+    for-loops
+    conditional-statements
+    functions
+
+
 .. toctree::
     :maxdepth: 2
     :caption: Day 3
