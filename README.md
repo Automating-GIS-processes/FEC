@@ -50,7 +50,7 @@ If you can't see gh-pages in the list (in addition to master-branch), create it 
 
 `git branch gh-pages` -command in the Terminal-window (you only need to do this once!)
 
-## make.bat
+## Generate html-files
 
 - html-pages are built using the make.bat -batchfile:
 
