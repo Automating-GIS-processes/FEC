@@ -71,11 +71,3 @@ Course contents:
     :caption: Day 5
 
 
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
