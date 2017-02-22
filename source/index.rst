@@ -37,8 +37,10 @@ Course contents:
     :caption: Day 2
 
     String-operations
-    for-loops
     conditional-statements
+    for-loops
+    for-loops-mini-exercise
+
     functions
 
 

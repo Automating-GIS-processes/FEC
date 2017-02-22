@@ -101,8 +101,27 @@ certain conditions.
 
    This can be quite handy.
 
-**Next**: `Exercise 3: ``for`` loops and conditional
-statements <https://classroom.github.com/assignment-invitations/f8a6eacb78c2f06f8834b391d129a6ab>`__\ 
-**Home**: `Lesson 3 main
-page <https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements>`__\ 
-**Previous**: `Definite loops <for-loops.md>`__
+
+String comparisons
+------------------
+
+    .. code:: python
+
+        # Define two text strings:
+        text1 ="What's the story"
+        text2 = "Morning glory?"
+
+        #Check if strings are equal or not
+        text1 == text2
+        text1 != text2
+
+
+        #Check if a letter/work is found in a string
+        'a' in text1
+        'a' in text2
+        'glory' in text2
+        'Glory' in text2
+
+        # Check if string starts with spesific word /letter:
+        filename.startswith("Toto")
+        filename.startswith('.shp')

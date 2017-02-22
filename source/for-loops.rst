@@ -1,10 +1,7 @@
-``for`` loops
+for-loops
 =============
 
-Sources
--------
-
-This lesson is based on the `Software Carpentry
+This lesson is based on Dr. David Whipp's [material from the python-for-geo-people -course](https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/for-loops.md) and the `Software Carpentry
 group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
@@ -91,6 +88,7 @@ Loops allow parts of code to be repeated over some number of times.
        There are 10 letters
 
    Can you follow what happens in this loop?
+
 5. Note that the variable used in the loop, ``letter`` in the case above
    is just a normal variable and still exists after the loop has
    completed with the final value given to letter.
@@ -191,6 +189,3 @@ Loops allow parts of code to be repeated over some number of times.
    using list or array values is an *extremely* common operation in
    Python.
 
-**Next**: `Conditional statements <conditional-statements.md>`__\ 
-**Home**: `Lesson 3 main
-page <https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements>`__\ 
