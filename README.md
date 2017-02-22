@@ -40,16 +40,18 @@ Markdown-dokuments `.md` can be converted to `.rst` -format using [Pandoc_conver
 
 Shinx pages need to be built into html-format before publishing online.
 
-- If you are starting from scratch, make sure you have a branch `gh-pages`. If not,
+- If you are starting from scratch, make sure you have a branch `gh-pages`.
 
-`git branch gh-pages` (you only need to do this once!)
+`git branch -a`
+
+If not, create it using `git branch gh-pages` -command in the Terminal-window (you only need to do this once!)
 
 ## make.bat
 
 - html-pages are built using the make.bat -batchfile:
 
- `make html` (html-files will be under the docs-folder in the master-branch)
- `make gh-pages` (html-files are generated under the docs-folder in the gh-pages-branch)
+`make html` (html-files will be under the docs-folder in the master-branch - useful if you don't want to publish changes straight away!)
+`make gh-pages` (html-files are generated under the docs-folder in the gh-pages-branch - by default changes will be published online)
 
 - Note! When building site with `make gh-pages` it is necessary to have a folder called `data` with at least a single template file in the root of the repo. Typically you end up having there many files but it is important to have at least a single file there when starting to build your site.
 
