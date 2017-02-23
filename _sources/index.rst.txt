@@ -39,7 +39,7 @@ Course contents:
     Day1-Strings-mini-exercise
     Day1-VCS
     Day1-Data-types
-    Day1-exercise1
+    Day1-Exercise1
 
 .. toctree::
     :maxdepth: 2
@@ -51,6 +51,7 @@ Course contents:
     Day2-for-loops-mini-exercise
     Day2-functions
     Day2-modules
+    Day2-Exercise2
 
 
 .. toctree::

@@ -1,4 +1,4 @@
-String-operations [under construction!]
+String-operations
 =================
 
 
