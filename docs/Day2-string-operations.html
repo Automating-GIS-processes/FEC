@@ -35,7 +35,7 @@
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
         <link rel="next" title="Conditional statements" href="Day2-conditional-statements.html"/>
-        <link rel="prev" title="Data types, lists and indices" href="Day1-Data-types.html"/> 
+        <link rel="prev" title="Basic data types in Python" href="Day1-Data-types.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -93,7 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Data types, lists and indices</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Basic data types in Python</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
 <ul class="current">
@@ -101,8 +101,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#concatenation">Concatenation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#slicing-and-multiplication">Slicing and multiplication</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#insert-new-line-or-tab-within-text">Insert new line or tab within text</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#operator"><cite>%</cite>-operator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#replacement-upper-case-and-lower-case">Replacement, Upper-case and lower-case</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#operator"><cite>%</cite>-operator</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
@@ -216,13 +216,6 @@ You will find these string operations very useful in different context, for exam
 <p>Escape characters are non-printable characters that can be represented with back slash notation.
 Most commonly used characters are: <cite>n</cite> (new line) and <cite>t</cite> (tabulator):</p>
 </div>
-<div class="section" id="operator">
-<h2><cite>%</cite>-operator<a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><cite>%s</cite> –converts numbers into text</li>
-<li><cite>%f</cite> –rounds decimals into a desired length and converts the value into text</li>
-</ul>
-</div>
 <div class="section" id="replacement-upper-case-and-lower-case">
 <h2>Replacement, Upper-case and lower-case<a class="headerlink" href="#replacement-upper-case-and-lower-case" title="Permalink to this headline">¶</a></h2>
 <p>You can replace words/letters with another one by using a built-in <cite>replace</cite> function.</p>
@@ -232,6 +225,28 @@ Most commonly used characters are: <cite>n</cite> (new line) and <cite>t</cite> 
 <span class="c1"># Change letters to lower-case / upper-case</span>
 <span class="n">upper</span> <span class="o">=</span> <span class="n">replaced_word</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
 <span class="n">lower</span> <span class="o">=</span> <span class="n">replaced_word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="operator">
+<h2><cite>%</cite>-operator<a class="headerlink" href="#operator" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><cite>%s</cite> –converts numbers into text</li>
+<li><cite>%f</cite> –rounds decimals into a desired length and converts the value into text</li>
+</ul>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;value&quot;</span>
+<span class="n">number</span> <span class="o">=</span> <span class="mi">5</span>
+<span class="n">decimal</span> <span class="o">=</span> <span class="mf">3.14159265359</span>
+
+<span class="c1">#Formatting strings:</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">  </span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">number</span><span class="p">)</span> <span class="c1"># % automatically converts the number into text</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span><span class="o">%</span><span class="n">s</span> <span class="ow">is</span> <span class="o">%</span><span class="n">s</span><span class="s2">&quot; % (text, number)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
+
+<span class="c1">#Rounding decimals</span>
+<span class="n">result</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">  </span><span class="si">%.2f</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">number</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">result</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -247,7 +262,7 @@ Most commonly used characters are: <cite>n</cite> (new line) and <cite>t</cite> 
         <a href="Day2-conditional-statements.html" class="btn btn-neutral float-right" title="Conditional statements" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Day1-Data-types.html" class="btn btn-neutral" title="Data types, lists and indices" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day1-Data-types.html" class="btn btn-neutral" title="Basic data types in Python" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Data types, lists and indices &mdash; FEC-2017 1.0 documentation</title>
+  <title>Basic data types in Python &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -93,9 +93,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Data types, lists and indices</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#data-types-revisited">Data types revisited</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Basic data types in Python</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#data-types">Data types</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lists-and-indices">Lists and indices</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#the-concept-of-objects">The concept of objects</a></li>
 </ul>
@@ -147,7 +146,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Data types, lists and indices</li>
+    <li>Basic data types in Python</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -161,26 +160,23 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="data-types-lists-and-indices">
-<h1>Data types, lists and indices<a class="headerlink" href="#data-types-lists-and-indices" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
-<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="basic-data-types-in-python">
+<h1>Basic data types in Python<a class="headerlink" href="#basic-data-types-in-python" title="Permalink to this headline">¶</a></h1>
 <p>This lesson is inspired by the <a class="reference external" href="https://v4.software-carpentry.org/python/index.html">Programming in Python
 lessons</a> from
 the <a class="reference external" href="http://software-carpentry.org/">Software Carpentry
 organization</a>. The main sections of
 the lesson are below.</p>
 <ul class="simple">
-<li><a class="reference external" href="#data-types-revisited">Data types</a></li>
+<li><a class="reference external" href="#data-types">Data types</a></li>
 <li><a class="reference external" href="#lists-and-indices">Lists and indices</a></li>
 <li><a class="reference external" href="#the-concept-of-objects">The concept of objects</a></li>
 </ul>
-</div>
-<div class="section" id="data-types-revisited">
-<h2>Data types revisited<a class="headerlink" href="#data-types-revisited" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="data-types">
+<h2>Data types<a class="headerlink" href="#data-types" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic">
-<li><p class="first">We saw a bit about variables and their values in the lesson last
-week, and we continue today with some variables related to rock
+<li><p class="first">We saw a bit about variables and their values in first lesson,
+and we continue here with some variables related to rock
 samples collected on a recent field excursion. For a given rock
 sample, the standard for assigning a sample identification value is
 to use the format <code class="docutils literal"><span class="pre">PE-LO-NU-YR</span></code>, where <code class="docutils literal"><span class="pre">PE</span></code> is for the first and
@@ -188,7 +184,7 @@ last initials of the person that collected the sample, <code class="docutils lit
 two-letter abbreviation for the sample location, <code class="docutils literal"><span class="pre">NU</span></code> is the sample
 number on that excursion, and <code class="docutils literal"><span class="pre">YR</span></code> is the last two digits of the
 year in which the sample was collected. We can store this
-ipnformation and some additional information about the samples in
+information and some additional information about the samples in
 Python as follows:</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">SampleID</span> <span class="o">=</span> <span class="s1">&#39;DW-NP-48-16&#39;</span>
 <span class="n">SampleNumber</span> <span class="o">=</span> <span class="mi">48</span>
@@ -198,9 +194,9 @@ Python as follows:</p>
 </div>
 <p>Here we have 4 values assigned to variables related to a single rock
 sample. Each variable has a unique name and they can store different
-types of data.</p>
+types of data.n</p>
 </li>
-<li><p class="first">We can explore the different types of data stored in variables usint
+<li><p class="first">We can explore the different types of data stored in variables using
 the <code class="docutils literal"><span class="pre">type()</span></code> function. There are 4 basic <em>data types</em> in Python as
 shown in the table below.</p>
 </li>
@@ -324,7 +320,7 @@ The simplest type of <em>collection</em> in Python is a <strong>list</strong>.</
 <p>Here we have a list of 4 <code class="docutils literal"><span class="pre">SampleID</span></code> values in a list called
 <code class="docutils literal"><span class="pre">SampleIDs</span></code>. As you can see, the <code class="docutils literal"><span class="pre">type()</span></code> function recognizes
 this as a list. Lists can be created using the square brackets (<code class="docutils literal"><span class="pre">[</span></code>
-and <code class="docutils literal"><span class="pre">]</span></code>), with commas separating the values in the list.</p>
+and <code class="docutils literal"><span class="pre">]</span></code>), with commas separating the values in the list. n</p>
 </li>
 <li><p class="first">To access an individual value in the list we need to use an <strong>index
 value</strong>. An <strong>index value</strong> is a number that refers to a given
@@ -460,8 +456,7 @@ in this case). We&#8217;ll see a bit more about these below.</p>
 <div class="section" id="the-concept-of-objects">
 <h2>The concept of objects<a class="headerlink" href="#the-concept-of-objects" title="Permalink to this headline">¶</a></h2>
 <p>Python is one of a number of computer programming languages that are
-called &#8220;object-oriented languages&#8221;. It took me quite some time to
-understand what this meant, but the simple explanation is that we can
+called &#8220;object-oriented languages&#8221;. The simple explanation is that we can
 consider the variables that we define to be &#8220;objects&#8221; that can contain
 both data known as <em>attributes</em> and a specific set of functions
 (<em>methods</em>). The previous sentence could take quite some time to
@@ -511,10 +506,6 @@ value <code class="docutils literal"><span class="pre">None</span></code>. This 
 method, but there is no screen output when this occurs. Again, if you
 were to assign that output to <code class="docutils literal"><span class="pre">SampleIDs</span></code> the list would get
 reversed, but the contents would then be assigned <code class="docutils literal"><span class="pre">None</span></code>.</p>
-</li>
-<li><p class="first">We won&#8217;t discuss any list <em>attributes</em> because as far as I know there
-aren&#8217;t any, but we&#8217;ll encounter some very useful <em>attributes</em> of
-other data types in the future.</p>
 </li>
 </ol>
 </div>
