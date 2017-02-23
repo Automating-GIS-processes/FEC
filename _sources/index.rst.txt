@@ -38,6 +38,7 @@ Course contents:
     Day1-working-environment
     Day1-VCS
     Day1-Data-types
+    Day1-exercise1
 
 .. toctree::
     :maxdepth: 2

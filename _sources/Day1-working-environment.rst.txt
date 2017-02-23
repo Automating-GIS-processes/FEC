@@ -21,7 +21,7 @@ browsing files on the computer. For us, the main reason for introducing
 an IDE is that it makes it easier and faster to write and test Python
 scripts, and common mistakes that can be made when writing code can be
 indicated in the IDE text editor to help you fix thinks more easily. We
-will be using the `**Spyder** IDE <https://pythonhosted.org/spyder/>`__
+will be using the `Spyder IDE <https://pythonhosted.org/spyder/>`__
 that is included with
 `Anaconda <https://www.continuum.io/anaconda-overview>`__, but it is
 just one of `many Python
