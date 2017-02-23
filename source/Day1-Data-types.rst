@@ -38,7 +38,7 @@ Data types revisited
 
    Here we have 4 values assigned to variables related to a single rock
    sample. Each variable has a unique name and they can store different
-   types of data.
+   types of data.\n
 
 2. We can explore the different types of data stored in variables usint
    the ``type()`` function. There are 4 basic *data types* in Python as

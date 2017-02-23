@@ -32,7 +32,7 @@ as those in our course.
 
 During this course, we will use GitHub as the place for **distributing scripts
 and documenting our work**. For example, the source code of these pages can be found
-and downloaded from `here`<https://github.com/Automating-GIS-processes/FEC>`_
+and downloaded from `here <https://github.com/Automating-GIS-processes/FEC>`_
 
 Both **Git** and **GitHub** provide many more features than the ones mentioned
 here, and we encourage you to start using them for version control, documenting your personal work and collaborating with others.

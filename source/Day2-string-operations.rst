@@ -68,14 +68,6 @@ Most commonly used characters are: `\n` (new line) and `\t` (tabulator):
 
 
 
-`%`-operator
---------------
-
-- `%s` –converts numbers into text
-- `%f` –rounds decimals into a desired length and converts the value into text
-
-
-
 Replacement, Upper-case and lower-case
 --------------------------------------
 You can replace words/letters with another one by using a built-in `replace` function.
@@ -88,4 +80,30 @@ You can replace words/letters with another one by using a built-in `replace` fun
     # Change letters to lower-case / upper-case
     upper = replaced_word.upper()
     lower = replaced_word.lower()
+
+`%`-operator
+--------------
+
+- `%s` –converts numbers into text
+- `%f` –rounds decimals into a desired length and converts the value into text
+
+
+.. code:: python
+
+        text = "value"
+        number = 5
+        decimal = 3.14159265359
+
+        #Formatting strings:
+        result = "%s  %s" % (text, number) # % automatically converts the number into text
+        print(result)
+        result = ""%s is %s" % (text, number)
+        print(result)
+
+        #Rounding decimals
+        result = "%s  %.2f" % (text, number)
+        print(result)
+
+
+
 
