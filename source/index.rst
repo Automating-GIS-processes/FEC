@@ -35,7 +35,7 @@ Course contents:
 
     Day1-Intro
     Day1-Getting-started-with-python
-    Day1-CMD-terminal-intro
+    Day1-working.environment
     Day1-VCS
     Day1-Data-types
 

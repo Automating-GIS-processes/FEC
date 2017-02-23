@@ -1,6 +1,13 @@
 Getting started with Python
 ===========================
 
+This tutorial is based on material from the `python-for-geopeople <https://github.com/Python-for-geo-people>`_ -course and `Software Carpentry
+group's <http://software-carpentry.org/>`__ lessons on `Programming with
+Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
+
+For a full documentation of Python, please refer to the `online documentation <https://docs.python.org/3.5/>`_
+Throughout the course, if you get confused remember ask from others and to search for help online (just google it!).
+
 
 Python console
 ---------------
@@ -194,16 +201,10 @@ As you will see, the data types are important because some are not compatible wi
 Summary
 ---------
 
-In this first session we have seen a bit of what we can do in Python: defining variables,
+In this first section we have seen a bit of what we can do in Python: defining variables,
 basic arithmetic, importing libraries, using functions, and combining
 these things to put the computer to work for us.
 
-External material
------------------
-This tutorial is based on material from the `python-for-geopeople <https://github.com/Python-for-geo-people>`_ -course and  `Software Carpentry
-group's <http://software-carpentry.org/>`__ lessons on `Programming with
-Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
-Also, always remember to search for help online (just google it!) and read the documentation for the tools you are using:
-`General documentation for Python <https://docs.python.org/3.5/>`_
+
 

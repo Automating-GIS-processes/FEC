@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Spyder &mdash; FEC-2017 1.0 documentation</title>
+  <title>Spyder IDE &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -33,9 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="next" title="String-operations [under construction!]" href="Day2-string-operations.html"/>
-        <link rel="prev" title="Writing your own Python scripts" href="Day1-writing-scripts.html"/> 
+    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,25 +86,12 @@
             
             
                 <p class="caption"><span class="caption-text">Day 1</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-CMD-terminal-intro.html">Using the command line</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-CreateGitHubAccount.html">Create a GitHub-account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Data types, lists and indices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-writing-scripts.html">Writing your own Python scripts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Spyder</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#before-we-start">Before we start</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#what-is-an-integrated-development-environment">What is an integrated development environment?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#an-overview-of-the-spyder-ide">An overview of the Spyder IDE</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#the-editor-pane">The editor pane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#the-explorer-pane">The explorer pane</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#the-console-pane">The console pane</a></li>
-</ul>
-</li>
-</ul>
-</li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
 <ul>
@@ -154,7 +139,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Spyder</li>
+    <li>Spyder IDE</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -168,14 +153,11 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="spyder">
-<h1>Spyder<a class="headerlink" href="#spyder" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="before-we-start">
-<h2>Before we start<a class="headerlink" href="#before-we-start" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="spyder-ide">
+<h1>Spyder IDE<a class="headerlink" href="#spyder-ide" title="Permalink to this headline">¶</a></h1>
 <p>If you haven&#8217;t done so already, open <strong>Spyder</strong> from All Programs &gt; Anaconda3 &gt; Spyder</p>
 <p>Also, for this demonstration we will be using the <cite>Python script file
 ``Spyder-demo-script.py`</cite> &lt;../src/Spyder-demo-script.py&gt;`__ . Download the file from GitHub to your computer.</p>
-</div>
 <div class="section" id="what-is-an-integrated-development-environment">
 <h2>What is an integrated development environment?<a class="headerlink" href="#what-is-an-integrated-development-environment" title="Permalink to this headline">¶</a></h2>
 <p>An <em>integrated development environment</em> or <em>IDE</em> is a software program
@@ -211,8 +193,7 @@ look at each in the following sections.</p>
 <img alt="Spyder components" src="_images/Spyder-annotated.png" />
 <p class="caption"><span class="caption-text">Panes in the Spyder IDE window</span></p>
 </div>
-<div class="section" id="the-editor-pane">
-<h3>The editor pane<a class="headerlink" href="#the-editor-pane" title="Permalink to this headline">¶</a></h3>
+<p><strong>The editor pane</strong></p>
 <p>The main pane on the left is the editor pane, used for writing Python
 scripts. If you have already loaded the
 <code class="docutils literal"><span class="pre">`Spyder-demo-script.py</span></code> &lt;../src/Spyder-demo-script.py&gt;`__ file, you
@@ -234,9 +215,7 @@ some additional information about the possible cause of the error.</li>
 clicking on the green play icon in the set of icons at the top of the
 window, or by going to <strong>Run</strong> -&gt; <strong>Run</strong> in the menu bar.</li>
 </ol>
-</div>
-<div class="section" id="the-explorer-pane">
-<h3>The explorer pane<a class="headerlink" href="#the-explorer-pane" title="Permalink to this headline">¶</a></h3>
+<p><strong>The explorer pane</strong></p>
 <p>The explorer pane in <strong>Spyder</strong> serves three purposes</p>
 <ol class="arabic simple">
 <li><em>Providing documentation on demand for objects used in your Python
@@ -262,9 +241,7 @@ you can browse files on your computer using the <strong>File explorer</strong>
 tab. In future lessons and exercises you may find this helpful for
 locating data files, for example.</li>
 </ol>
-</div>
-<div class="section" id="the-console-pane">
-<h3>The console pane<a class="headerlink" href="#the-console-pane" title="Permalink to this headline">¶</a></h3>
+<p><strong>The console pane</strong></p>
 <p>The console pane is mainly useful because it provides an IPython console
 for your use. It is a normal IPython console, but note that similar to
 the editor pane, popup windows will appear when typing in functions to
@@ -276,21 +253,11 @@ them to a script in the editor pane. You can view the history pane by
 going to <strong>View</strong> -&gt; <strong>Panes</strong> -&gt; <strong>History log</strong> in the menu bar.</p>
 </div>
 </div>
-</div>
 
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Day2-string-operations.html" class="btn btn-neutral float-right" title="String-operations [under construction!]" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Day1-writing-scripts.html" class="btn btn-neutral" title="Writing your own Python scripts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
@@ -298,7 +265,7 @@ going to <strong>View</strong> -&gt; <strong>Panes</strong> -&gt; <strong>Histor
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Vuokko.
-      Last updated on Feb 22, 2017.
+      Last updated on Feb 23, 2017.
 
     </p>
   </div>
