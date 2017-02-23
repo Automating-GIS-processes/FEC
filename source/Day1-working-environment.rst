@@ -1,6 +1,6 @@
 
-Working environment during the course
-=====================================
+Working environment
+====================
 
 During this course we will work on Window's computers which have Python 3.5. installed via the Anaconda distribution and Python 2.7. installed together with the ArcGIS-software.
 There are different options of how to run Python code. We will start with using Python 3.5. trough the Spyder IDE while learning the basics of python. Later in the week we will

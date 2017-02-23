@@ -39,6 +39,7 @@ quite easily create a basic script file and test things out.
    **Save As** window that appears, and enter the file name as
    ``sampleinfo.py``. Click the ``Save`` button on the lower right of
    the window to save the file.
+
 3. Return to your IPython interpreter window (or start a new one if you
    have closed it), change the directory in IPython to the home
    directory by typing ``cd``, and run the script using the ``%run``
@@ -65,6 +66,7 @@ quite easily create a basic script file and test things out.
        print("Sample", SampleID, "is a", SampleWeightLbs, "pound chunk of", SampleRockType)
 
    Save your changes.
+
 5. Once again, go back to the IPython interpreter and use the ``%run``
    magic command to run the modified script. Don't worry, we'll cover a
    much better way to edit and test scripts later in today's lesson.
@@ -132,6 +134,7 @@ make sure your code is easy to understand.
 
    Dividing even a short script into section using blank lines makes it
    much easier to read the code.
+
 3. **Add a block comment section at the start of the script to state its
    purpose, how it is run, who wrote it, and possibly some licencing
    information**. In contrast to the inline comments above that describe

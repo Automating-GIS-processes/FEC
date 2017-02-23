@@ -44,13 +44,21 @@ Data types revisited
    the ``type()`` function. There are 4 basic *data types* in Python as
    shown in the table below.
 
-   \| Data type name \| Data type \| Example \| \| -------------- \|
-   -------------------- \| --------------- \| \| ``int`` \| Whole
-   integer values \| ``4`` \| \| ``float`` \| Decimal values \|
-   ``3.1415`` \| \| ``str`` \| Character strings \| ``'Hello'`` \| \|
-   ``bool`` \| True/false values \| ``True`` \| As you will see, the
-   data types are important because some are not compatible with one
-   another.
+
++----------------+----------------------+-----------+
+| Data type name | Data type            | Example   |
++================+======================+===========+
+| ``int``        | Whole integer values | ``4``     |
++----------------+----------------------+-----------+
+| ``float``      | Decimal values       |``3.1415`` |
++----------------+----------------------+-----------+
+| ``str``        | Character strings    | ``'Hei'`` |
++----------------+----------------------+-----------+
+| ``bool``       | True/false values    | ``True``  |
++----------------+----------------------+-----------+
+
+
+As you will see, the data types are important because some are not compatible with one another.
 
    .. code:: python
 

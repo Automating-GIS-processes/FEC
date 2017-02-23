@@ -179,6 +179,8 @@ libraries
 | ``str``        | Character strings    | ``'Hot'`` |
 +----------------+----------------------+-----------+
 | ``bool``       | True/false values    | ``True``  |
++----------------+----------------------+-----------+
+
 
 The data types are displayed when using ``%whos``, but can also be found using the``type()`` function.
 As you will see, the data types are important because some are not compatible with one another.
