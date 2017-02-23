@@ -4,15 +4,16 @@
    contain the root `toctree` directive.
 
 Welcome to Automating GIS processes/ FEC 2017!
-=============================================================
+================================================
 
 
-**6.-10.3.2017 at the Kumpula Campus**, University of Helsinki.
+**6.-10.3.2017 at the Kumpula Campus**, University of Helsinki. Rooms A113-A114.
 
 
 This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
 
-Materials have been custom-made for the **Paikkatiedon käyttö ja hyödyntäminen F.E.C. (Further Educated With Companies)** - course organized by `HY+ <http://hyplus.helsinki.fi/>`_ and the **Department of Geosciences and Geography, University of Helsinki**.
+Materials have been tailored for the *Paikkatiedon käyttö ja hyödyntäminen* F.E.C. (Further Educated With Companies) - course organized by `HY+ <http://hyplus.helsinki.fi/>`_ and the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, **University of Helsinki**.
+The course consists of interactive lectures and exercises. All course material will be distributed via these pages.
 
 Materials are based two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_.
 
@@ -36,10 +37,7 @@ Course contents:
     Day1-Getting-started-with-python
     Day1-CMD-terminal-intro
     Day1-VCS
-    Day1-CreateGitHubAccount
     Day1-Data-types
-    Day1-writing-scripts
-    Day1-spyder
 
 .. toctree::
     :maxdepth: 2

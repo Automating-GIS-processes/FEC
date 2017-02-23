@@ -1,10 +1,6 @@
-Spyder
-==========
+Spyder IDE
+=======
 
-
-
-Before we start
----------------
 
 If you haven't done so already, open **Spyder** from All Programs > Anaconda3 > Spyder
 
@@ -52,8 +48,8 @@ look at each in the following sections.
 
    Panes in the Spyder IDE window
 
-The editor pane
-~~~~~~~~~~~~~~~
+**The editor pane**
+
 
 The main pane on the left is the editor pane, used for writing Python
 scripts. If you have already loaded the
@@ -77,8 +73,8 @@ useful than a standard text editor:
    clicking on the green play icon in the set of icons at the top of the
    window, or by going to **Run** -> **Run** in the menu bar.
 
-The explorer pane
-~~~~~~~~~~~~~~~~~
+**The explorer pane**
+
 
 The explorer pane in **Spyder** serves three purposes
 
@@ -105,8 +101,7 @@ The explorer pane in **Spyder** serves three purposes
    tab. In future lessons and exercises you may find this helpful for
    locating data files, for example.
 
-The console pane
-~~~~~~~~~~~~~~~~
+**The console pane**
 
 The console pane is mainly useful because it provides an IPython console
 for your use. It is a normal IPython console, but note that similar to
