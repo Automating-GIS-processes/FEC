@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Spyder IDE &mdash; FEC-2017 1.0 documentation</title>
+  <title>Working environment &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -33,7 +33,9 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/> 
+    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
+        <link rel="next" title="Version control" href="Day1-VCS.html"/>
+        <link rel="prev" title="Getting started with Python" href="Day1-Getting-started-with-python.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -86,10 +88,16 @@
             
             
                 <p class="caption"><span class="caption-text">Day 1</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Working environment</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-an-integrated-development-environment">What is an integrated development environment?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spyder-ide">Spyder IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#an-overview-of-the-spyder-ide">An overview of the Spyder IDE</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#using-the-command-line">Using the command line</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Data types, lists and indices</a></li>
 </ul>
@@ -139,11 +147,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Spyder IDE</li>
+    <li>Working environment</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day1-spyder.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day1-working-environment.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -153,11 +161,12 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="spyder-ide">
-<h1>Spyder IDE<a class="headerlink" href="#spyder-ide" title="Permalink to this headline">¶</a></h1>
-<p>If you haven&#8217;t done so already, open <strong>Spyder</strong> from All Programs &gt; Anaconda3 &gt; Spyder</p>
-<p>Also, for this demonstration we will be using the <cite>Python script file
-``Spyder-demo-script.py`</cite> &lt;../src/Spyder-demo-script.py&gt;`__ . Download the file from GitHub to your computer.</p>
+  <div class="section" id="working-environment">
+<h1>Working environment<a class="headerlink" href="#working-environment" title="Permalink to this headline">¶</a></h1>
+<p>During this course we will work on Window&#8217;s computers which have Python 3.5. installed via the Anaconda distribution and Python 2.7. installed together with the ArcGIS-software.
+There are different options of how to run Python code. We will start with using Python 3.5. trough the Spyder IDE while learning the basics of python. Later in the week we will
+swhitch to python 2.7. in order to run ArcGIS processes trough Python.</p>
+<p>In addition to the different Python-interfaces we will be using, it is also useful to be familiar with basic command line functions in the Windows Command Prompt.</p>
 <div class="section" id="what-is-an-integrated-development-environment">
 <h2>What is an integrated development environment?<a class="headerlink" href="#what-is-an-integrated-development-environment" title="Permalink to this headline">¶</a></h2>
 <p>An <em>integrated development environment</em> or <em>IDE</em> is a software program
@@ -176,17 +185,22 @@ that is included with
 just one of <a class="reference external" href="https://wiki.python.org/moin/IntegratedDevelopmentEnvironments">many Python
 IDEs</a>.</p>
 </div>
+<div class="section" id="spyder-ide">
+<h2>Spyder IDE<a class="headerlink" href="#spyder-ide" title="Permalink to this headline">¶</a></h2>
+<p>If you haven&#8217;t done so already, open <strong>Spyder</strong> from All Programs &gt; Anaconda3 &gt; Spyder</p>
+<p>Also, for this demonstration we will be using the <cite>Python script file
+``Spyder-demo-script.py`</cite> &lt;../src/Spyder-demo-script.py&gt;`__ . Download the file from GitHub to your computer.</p>
+</div>
 <div class="section" id="an-overview-of-the-spyder-ide">
 <h2>An overview of the Spyder IDE<a class="headerlink" href="#an-overview-of-the-spyder-ide" title="Permalink to this headline">¶</a></h2>
 <div class="figure" id="id1">
 <img alt="Spyder" src="_images/Spyder.png" />
 <p class="caption"><span class="caption-text">Spyder IDE</span></p>
 </div>
-<p>For the rest of the lessons and exercises in this course we will be
-using the <strong>Spyder</strong> IDE. As mentioned above, this will allow us to more
-easily create and edit Python scripts, as well as provide some helpful
-tools for continuing to learn programming in Python and resolve common
-code bugs. As you can see above, the Spyder IDE window is broken into
+<p>We will be using the <strong>Spyder</strong> IDE in the basic exercises of this course.
+As mentioned above, this will allow us to more easily create and edit Python scripts,
+as well as provide some helpful tools for continuing to learn programming in Python and resolve common
+code bugs. The Spyder IDE window is broken into
 several different panes, labeled in the figure below. We will briefly
 look at each in the following sections.</p>
 <div class="figure" id="id2">
@@ -216,7 +230,7 @@ clicking on the green play icon in the set of icons at the top of the
 window, or by going to <strong>Run</strong> -&gt; <strong>Run</strong> in the menu bar.</li>
 </ol>
 <p><strong>The explorer pane</strong></p>
-<p>The explorer pane in <strong>Spyder</strong> serves three purposes</p>
+<p>The explorer pane in <strong>Spyder</strong> serves three purposes:</p>
 <ol class="arabic simple">
 <li><em>Providing documentation on demand for objects used in your Python
 scripts or in the IPython console</em>. The <strong>Object inspector</strong> tab can
@@ -252,12 +266,64 @@ helpful if you&#8217;re testing things in the IPython console before copying
 them to a script in the editor pane. You can view the history pane by
 going to <strong>View</strong> -&gt; <strong>Panes</strong> -&gt; <strong>History log</strong> in the menu bar.</p>
 </div>
+<div class="section" id="using-the-command-line">
+<h2>Using the command line<a class="headerlink" href="#using-the-command-line" title="Permalink to this headline">¶</a></h2>
+<p>It is good to be familiar with the basics in navigating and using the Disk Operating System (DOS) from  a command line. Open command prompt window by typing <cite>cmd</cite> to Windows search in the start menu.</p>
+<p>Here are some quick tips on how to navigate in Windows Command line, which are needed in this course:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="28%" />
+<col width="72%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Command</th>
+<th class="head">Result</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">C:</span></code></td>
+<td>Move to C:-drive</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">cd</span> <span class="pre">folder</span></code></td>
+<td>move to folder in current directory</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">cd..</span></code></td>
+<td>move to parent directory</td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">cd</span> <span class="pre">C:/temp</span></code></td>
+<td>move to directory C:/temp</td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">dir</span></code></td>
+<td>lists contents of the current directory</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Keyboard shortcuts</strong></p>
+<ul class="simple">
+<li>Ctrl+C stop ongoing process</li>
+<li>Use up and down arrows for calling previous commands</li>
+<li>Use copy/paste with long file paths!</li>
+</ul>
+<div class="figure" id="id3">
+<img alt="Command prompt" src="_images/cmd.png" />
+<p class="caption"><span class="caption-text">Windows command line</span></p>
+</div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Day1-VCS.html" class="btn btn-neutral float-right" title="Version control" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day1-Getting-started-with-python.html" class="btn btn-neutral" title="Getting started with Python" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

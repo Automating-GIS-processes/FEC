@@ -34,7 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Using the command line" href="Day1-CMD-terminal-intro.html"/>
+        <link rel="next" title="Working environment" href="Day1-working-environment.html"/>
         <link rel="prev" title="Introduction to the course" href="Day1-Intro.html"/> 
 
   
@@ -95,15 +95,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#variables-and-basic-arithmetic">Variables and basic arithmetic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#libraries">libraries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#summary">Summary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#external-material">External material</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-CMD-terminal-intro.html">Using the command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-CreateGitHubAccount.html">Create a GitHub-account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Data types, lists and indices</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-writing-scripts.html">Writing your own Python scripts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-spyder.html">Spyder</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
 <ul>
@@ -167,6 +163,11 @@
             
   <div class="section" id="getting-started-with-python">
 <h1>Getting started with Python<a class="headerlink" href="#getting-started-with-python" title="Permalink to this headline">¶</a></h1>
+<p>This tutorial is based on material from the <a class="reference external" href="https://github.com/Python-for-geo-people">python-for-geopeople</a> -course and <a class="reference external" href="http://software-carpentry.org/">Software Carpentry
+group&#8217;s</a> lessons on <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/">Programming with
+Python</a>.</p>
+<p>For a full documentation of Python, please refer to the <a class="reference external" href="https://docs.python.org/3.5/">online documentation</a>
+Throughout the course, if you get confused remember ask from others and to search for help online (just google it!).</p>
 <div class="section" id="python-console">
 <h2>Python console<a class="headerlink" href="#python-console" title="Permalink to this headline">¶</a></h2>
 <p>There are different ways of using the Python-interpreter. We will start familiarizing ourselves with the python syntax via the IPython console window in Spyder, which is an integrated development environment (IDE) for
@@ -341,36 +342,7 @@ variables are in memory by typing <code class="docutils literal"><span class="pr
 <li><p class="first">There are 4 basic <em>data types</em> in Python as shown in the table below.</p>
 </li>
 </ol>
-<table border="1" class="docutils">
-<colgroup>
-<col width="33%" />
-<col width="45%" />
-<col width="22%" />
-</colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Data type name</th>
-<th class="head">Data type</th>
-<th class="head">Example</th>
-</tr>
-</thead>
-<tbody valign="top">
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">int</span></code></td>
-<td>Whole integer values</td>
-<td><code class="docutils literal"><span class="pre">4</span></code></td>
-</tr>
-<tr class="row-odd"><td><code class="docutils literal"><span class="pre">float</span></code></td>
-<td>Decimal values</td>
-<td><code class="docutils literal"><span class="pre">3.1415</span></code></td>
-</tr>
-<tr class="row-even"><td><code class="docutils literal"><span class="pre">str</span></code></td>
-<td>Character strings</td>
-<td><code class="docutils literal"><span class="pre">'Hot'</span></code></td>
-</tr>
-</tbody>
-</table>
-<div class="line-block">
-<div class="line"><code class="docutils literal"><span class="pre">str</span></code>        | Character strings    | <code class="docutils literal"><span class="pre">'Hot'</span></code> |</div>
-</div>
+<p>cd</p>
 <p>The data types are displayed when using <code class="docutils literal"><span class="pre">%whos</span></code>, but can also be found using the``type()`` function.
 As you will see, the data types are important because some are not compatible with one another.</p>
 <blockquote>
@@ -392,17 +364,9 @@ As you will see, the data types are important because some are not compatible wi
 </div>
 <div class="section" id="summary">
 <h2>Summary<a class="headerlink" href="#summary" title="Permalink to this headline">¶</a></h2>
-<p>In this first session we have seen a bit of what we can do in Python: defining variables,
+<p>In this first section we have seen a bit of what we can do in Python: defining variables,
 basic arithmetic, importing libraries, using functions, and combining
 these things to put the computer to work for us.</p>
-</div>
-<div class="section" id="external-material">
-<h2>External material<a class="headerlink" href="#external-material" title="Permalink to this headline">¶</a></h2>
-<p>This tutorial is based on material from the <a class="reference external" href="https://github.com/Python-for-geo-people">python-for-geopeople</a> -course and  <a class="reference external" href="http://software-carpentry.org/">Software Carpentry
-group&#8217;s</a> lessons on <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/">Programming with
-Python</a>.</p>
-<p>Also, always remember to search for help online (just google it!) and read the documentation for the tools you are using:
-<a class="reference external" href="https://docs.python.org/3.5/">General documentation for Python</a></p>
 </div>
 </div>
 
@@ -413,7 +377,7 @@ Python</a>.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day1-CMD-terminal-intro.html" class="btn btn-neutral float-right" title="Using the command line" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Day1-working-environment.html" class="btn btn-neutral float-right" title="Working environment" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Day1-Intro.html" class="btn btn-neutral" title="Introduction to the course" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -426,7 +390,7 @@ Python</a>.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Vuokko.
-      Last updated on Feb 22, 2017.
+      Last updated on Feb 23, 2017.
 
     </p>
   </div>

@@ -34,8 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Writing your own Python scripts" href="Day1-writing-scripts.html"/>
-        <link rel="prev" title="Create a GitHub-account" href="Day1-CreateGitHubAccount.html"/> 
+        <link rel="next" title="String-operations [under construction!]" href="Day2-string-operations.html"/>
+        <link rel="prev" title="Version control" href="Day1-VCS.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -91,9 +91,8 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-CMD-terminal-intro.html">Using the command line</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-VCS.html">Version control</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-CreateGitHubAccount.html">Create a GitHub-account</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Data types, lists and indices</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#data-types-revisited">Data types revisited</a></li>
@@ -101,8 +100,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#the-concept-of-objects">The concept of objects</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-writing-scripts.html">Writing your own Python scripts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day1-spyder.html">Spyder</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
 <ul>
@@ -206,14 +203,42 @@ types of data.</p>
 <li><p class="first">We can explore the different types of data stored in variables usint
 the <code class="docutils literal"><span class="pre">type()</span></code> function. There are 4 basic <em>data types</em> in Python as
 shown in the table below.</p>
-<p>| Data type name | Data type | Example | | &#8212;&#8212;&#8212;&#8212;&#8211; |
-&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211; | &#8212;&#8212;&#8212;&#8212;&#8212; | | <code class="docutils literal"><span class="pre">int</span></code> | Whole
-integer values | <code class="docutils literal"><span class="pre">4</span></code> | | <code class="docutils literal"><span class="pre">float</span></code> | Decimal values |
-<code class="docutils literal"><span class="pre">3.1415</span></code> | | <code class="docutils literal"><span class="pre">str</span></code> | Character strings | <code class="docutils literal"><span class="pre">'Hello'</span></code> | |
-<code class="docutils literal"><span class="pre">bool</span></code> | True/false values | <code class="docutils literal"><span class="pre">True</span></code> | As you will see, the
-data types are important because some are not compatible with one
-another.</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">SampleNumber</span><span class="p">)</span>
+</li>
+</ol>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="45%" />
+<col width="22%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Data type name</th>
+<th class="head">Data type</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">int</span></code></td>
+<td>Whole integer values</td>
+<td><code class="docutils literal"><span class="pre">4</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">float</span></code></td>
+<td>Decimal values</td>
+<td><code class="docutils literal"><span class="pre">3.1415</span></code></td>
+</tr>
+<tr class="row-even"><td><code class="docutils literal"><span class="pre">str</span></code></td>
+<td>Character strings</td>
+<td><code class="docutils literal"><span class="pre">'Hei'</span></code></td>
+</tr>
+<tr class="row-odd"><td><code class="docutils literal"><span class="pre">bool</span></code></td>
+<td>True/false values</td>
+<td><code class="docutils literal"><span class="pre">True</span></code></td>
+</tr>
+</tbody>
+</table>
+<p>As you will see, the data types are important because some are not compatible with one another.</p>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">SampleNumber</span><span class="p">)</span>
 <span class="go">int</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="nb">type</span><span class="p">(</span><span class="n">SampleWeightLbs</span><span class="p">)</span>
 <span class="go">float</span>
@@ -221,7 +246,8 @@ another.</p>
 <span class="go">str</span>
 </pre></div>
 </div>
-</li>
+</div></blockquote>
+<ol class="arabic" start="3">
 <li><p class="first">Ok. So we can get the data types for variables in Python using the
 <code class="docutils literal"><span class="pre">type()</span></code> function, but why does this matter? The main reason is
 that some types of data are compatible with one another, while others
@@ -501,10 +527,10 @@ other data types in the future.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day1-writing-scripts.html" class="btn btn-neutral float-right" title="Writing your own Python scripts" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Day2-string-operations.html" class="btn btn-neutral float-right" title="String-operations [under construction!]" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Day1-CreateGitHubAccount.html" class="btn btn-neutral" title="Create a GitHub-account" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day1-VCS.html" class="btn btn-neutral" title="Version control" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -514,7 +540,7 @@ other data types in the future.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Vuokko.
-      Last updated on Feb 22, 2017.
+      Last updated on Feb 23, 2017.
 
     </p>
   </div>
