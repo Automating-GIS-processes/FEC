@@ -1,8 +1,6 @@
-Data types, lists and indices
-=================================
+Basic data types in Python
+===========================
 
-Overview
---------
 
 This lesson is inspired by the `Programming in Python
 lessons <https://v4.software-carpentry.org/python/index.html>`__ from
@@ -10,15 +8,15 @@ the `Software Carpentry
 organization <http://software-carpentry.org/>`__. The main sections of
 the lesson are below.
 
--  `Data types <#data-types-revisited>`__
+-  `Data types <#data-types>`__
 -  `Lists and indices <#lists-and-indices>`__
 -  `The concept of objects <#the-concept-of-objects>`__
 
-Data types revisited
---------------------
+Data types
+----------
 
-1. We saw a bit about variables and their values in the lesson last
-   week, and we continue today with some variables related to rock
+1. We saw a bit about variables and their values in first lesson,
+   and we continue here with some variables related to rock
    samples collected on a recent field excursion. For a given rock
    sample, the standard for assigning a sample identification value is
    to use the format ``PE-LO-NU-YR``, where ``PE`` is for the first and
@@ -26,7 +24,7 @@ Data types revisited
    two-letter abbreviation for the sample location, ``NU`` is the sample
    number on that excursion, and ``YR`` is the last two digits of the
    year in which the sample was collected. We can store this
-   ipnformation and some additional information about the samples in
+   information and some additional information about the samples in
    Python as follows:
 
    .. code:: python
@@ -40,7 +38,7 @@ Data types revisited
    sample. Each variable has a unique name and they can store different
    types of data.\n
 
-2. We can explore the different types of data stored in variables usint
+2. We can explore the different types of data stored in variables using
    the ``type()`` function. There are 4 basic *data types* in Python as
    shown in the table below.
 
@@ -156,7 +154,7 @@ The simplest type of *collection* in Python is a **list**.
    Here we have a list of 4 ``SampleID`` values in a list called
    ``SampleIDs``. As you can see, the ``type()`` function recognizes
    this as a list. Lists can be created using the square brackets (``[``
-   and ``]``), with commas separating the values in the list.
+   and ``]``), with commas separating the values in the list. \n
 2. To access an individual value in the list we need to use an **index
    value**. An **index value** is a number that refers to a given
    position in the list. Let's check out the first value in our list as
@@ -309,8 +307,7 @@ The concept of objects
 ----------------------
 
 Python is one of a number of computer programming languages that are
-called "object-oriented languages". It took me quite some time to
-understand what this meant, but the simple explanation is that we can
+called "object-oriented languages". The simple explanation is that we can
 consider the variables that we define to be "objects" that can contain
 both data known as *attributes* and a specific set of functions
 (*methods*). The previous sentence could take quite some time to
@@ -367,6 +364,3 @@ much easier to understand.
    were to assign that output to ``SampleIDs`` the list would get
    reversed, but the contents would then be assigned ``None``.
 
-4. We won't discuss any list *attributes* because as far as I know there
-   aren't any, but we'll encounter some very useful *attributes* of
-   other data types in the future.
