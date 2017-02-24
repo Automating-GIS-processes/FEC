@@ -1,11 +1,11 @@
 Exercise 4: ArcPy-script for processing species data
 =====================================================
 
-As an output of this excersise we will create three  ArcPy-scripts are written together during the session:
+As an output of this exercise we will create three  ArcPy-scripts are written together during the session:
 
-1. `Arcpy_1_SimplePoly2Raster.py`
-2. `Arcpy_2_SpeciesPoly2Raster.py`
-3. `Arcpy_3_SpeciesPoly2Raster_Iterate.py`
+1.`Arcpy_1_SimplePoly2Raster.py`
+2.`Arcpy_2_SpeciesPoly2Raster.py`
+3.`Arcpy_3_SpeciesPoly2Raster_Iterate.py`
 
 You can document your codes into GitHub.
 
@@ -14,21 +14,20 @@ Version 1:
 --------------------------------------
 
 Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
-Toolbox asks three parameters: input shapefile, output rasterdataset, raster_value.
-Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py’ that contains all the required functionalities of the tool.
+Toolbox asks three parameters: input shapefile, output rasterdataset, and value field (raster_value).
+Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.
 
-**Required steps**
-1.Import the required module arcpy
+**Required steps in the script-file**
+1.Import the required module arcpy
 2.Get parameters from the toolbox using ‘GetParametersAsText’ function
 3.Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function
-
 
 Version 2:
 --------------------------------------
 
 Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
-Tool asks four parameters: input shapefile, output rasterdataset, attribute_name, raster_value.
-Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionalities of the tool.
+Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
+Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionality of the tool.
 
 1.Import the required module arcpy
 2.Get parameters from the toolbox using ‘GetParametersAsText’ function
