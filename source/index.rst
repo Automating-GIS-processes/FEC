@@ -49,15 +49,16 @@ Course contents:
     Day2-conditional-statements
     Day2-for-loops
     Day2-for-loops-mini-exercise
+    Day2-Exercise2
     Day2-functions
     Day2-modules
-    Day2-Exercise2
 
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 3
 
+    Day3-Exercise3-Functions
     Day3-arcpy-overview
     Day3-arcpy
     Day3-toolbox
