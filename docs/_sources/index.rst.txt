@@ -16,7 +16,7 @@ Materials have been tailored for the further education course *Paikkatiedon käy
 
 The course consists of interactive lectures and exercises. All course material will be distributed via these pages. Materials are based on previous further education courses and two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_ developed at the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, **University of Helsinki**.
 
-
+.. figure:: img/GISprocess.png
 
 Course contents:
 ----------------
