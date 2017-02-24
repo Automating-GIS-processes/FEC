@@ -35,8 +35,8 @@ First thing to do is to import the arcpy module:
 
     Notice that arcpy can only be imported with Python interpreter that comes with ArcGIS. If you try to import it e.g. in Spyder, you will receive an error ``ImportError: No module named 'arcpy'``.
 
-    Well...actually there is a way to `import arcpy from other places <http://gis.stackexchange.com/questions/86850/making-separate-python-installation-that-can-call-arcpy>`_ as well and also `import it into Spyder <http://gis.stackexchange.com/questions/176879/importing-arcpy-in-spyder>`_ but this is
-    not a topic of this course.
+    Well...actually there is a way to `import arcpy from other places <http://gis.stackexchange.com/questions/86850/making-separate-python-installation-that-can-call-arcpy>`_ as well and also `import it into Spyder <http://gis.stackexchange.com/questions/176879/importing-arcpy-in-spyder>`_ but we will not
+    cover this during our course.
 
 Getting parameters from the toolbox
 -----------------------------------

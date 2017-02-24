@@ -16,7 +16,7 @@ Materials have been tailored for the further education course *Paikkatiedon käy
 
 The course consists of interactive lectures and exercises. All course material will be distributed via these pages. Materials are based on previous further education courses and two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_ developed at the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, University of Helsinki.
 
-At the end of the course you should be able to generate, understand and use code for automating GIS-processes (such as the one below).
+At the end of the course you should be able to generate, understand and use code for automating GIS-processes such as the one below.
 
 .. figure:: img/GISprocess.png
 
@@ -51,15 +51,16 @@ Course contents:
     Day2-Exercise2
     Day2-functions
     Day2-modules
+    Day2-Exercise3-Functions
 
 
 .. toctree::
     :maxdepth: 2
     :caption: Day 3
 
-    Day3-Exercise3-Functions
     Day3-arcpy-overview
     Day3-arcpy
+    Day3-Exercise4-ArcPy
     Day3-toolbox
     Day3-arcpy-script
     Day3-run-the-tool
