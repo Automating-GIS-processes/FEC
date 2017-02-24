@@ -65,8 +65,8 @@ master_doc = 'index'
 
 # General information about the project.
 project = 'FEC-2017'
-copyright = '2017, Vuokko'
-author = 'Vuokko'
+copyright = '2017, Digital Geography Lab'
+author = 'Vuokko H. & Henrikki T. / Digital Geography Lab'
 
 # The version info for the project you're documenting, acts as replacement for
 # |version| and |release|, also used in various other places throughout the
