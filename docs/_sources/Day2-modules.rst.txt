@@ -135,8 +135,3 @@ Here are a few things to avoid.
    to read and understand the code you write, keep it simple and
    logical.
 
-**Next**: `Exercise 4: A temperature
-calculator <https://classroom.github.com/assignment-invitations/b1ad919e5a8248a11839fec83e45093e>`__\ 
-**Home**: `Lesson 4 main
-page <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules>`__\ 
-**Previous**: `Basic concepts of functions <functions.md>`__

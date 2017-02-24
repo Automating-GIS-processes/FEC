@@ -5,19 +5,16 @@
 
 Welcome to Automating GIS processes/ FEC 2017!
 ================================================
-
-
 **6.-10.3.2017 at the Kumpula Campus**, University of Helsinki. Rooms A113-A114.
+
+.. figure:: img/GISflowchart.png
 
 
 This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
 
-Materials have been tailored for the *Paikkatiedon käyttö ja hyödyntäminen* F.E.C. (Further Educated With Companies) - course organized by `HY+ <http://hyplus.helsinki.fi/>`_ and the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, **University of Helsinki**.
-The course consists of interactive lectures and exercises. All course material will be distributed via these pages.
+Materials have been tailored for the further education course *Paikkatiedon käyttö ja hyödyntäminen* F.E.C. organized by `HY+ <http://hyplus.helsinki.fi/>`_
 
-Materials are based two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_.
-
-
+The course consists of interactive lectures and exercises. All course material will be distributed via these pages. Materials are based on previous further education courses and two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_ developed at the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, **University of Helsinki**.
 
 
 
