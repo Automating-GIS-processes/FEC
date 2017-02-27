@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>ArcPy-module &mdash; FEC-2017 1.0 documentation</title>
+  <title>Reading and writing text files &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -33,9 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Exercise 4: ArcPy-script for processing species data" href="Day3-Exercise4-ArcPy.html"/>
-        <link rel="prev" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/> 
+    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -108,12 +106,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 3</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">ArcPy-module</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#using-arcpy">Using arcpy</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
@@ -148,11 +143,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>ArcPy-module</li>
+    <li>Reading and writing text files</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day3-arcpy.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/reading-files.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -162,28 +157,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="arcpy-module">
-<h1>ArcPy-module<a class="headerlink" href="#arcpy-module" title="Permalink to this headline">¶</a></h1>
-<p>Arcpy is a Python module that provides access to ArcGIS geoprocessing tools as well as additional functions, classes, and modules that allow you to create simple or
-complex workflows quickly and easily. <strong>Arcpy comes only with ArcGIS software</strong>, thus it cannot be downloaded freely from anywhere. The following materials are based on ArcGIS 10.3 -version.</p>
-<div class="section" id="using-arcpy">
-<h2>Using arcpy<a class="headerlink" href="#using-arcpy" title="Permalink to this headline">¶</a></h2>
-<p>There are two different ways of using Python and the arcpy -module in ArcGIS:</p>
-<blockquote>
-<div><ol class="arabic simple">
-<li><strong>Using the Python console</strong> in ArcGIS which you can access by using the menus (Geoprocessing &#8211;&gt; Python), or by pushing the dedicated Python button:</li>
+  <div class="section" id="reading-and-writing-text-files">
+<h1>Reading and writing text files<a class="headerlink" href="#reading-and-writing-text-files" title="Permalink to this headline">¶</a></h1>
+<p>Reading and writing text files within a python code can be very handy for example when you want to document a process,
+or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
+<div class="section" id="delimited-text-files">
+<h2>Delimited text files<a class="headerlink" href="#delimited-text-files" title="Permalink to this headline">¶</a></h2>
+<p>Simple tabular data is often stored in delimited text files, where each row of data represents
+a record of data (for example a country) and the attributes for each row are separated
+with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
+<p>When working with Comma-Separated Values file (<a href="#id1"><span class="problematic" id="id2">*</span></a>csv), pay attention to your language and region-settings! (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
+There you ca determine the decimal separator as`` . <code class="docutils literal"><span class="pre">(recommended)</span> <span class="pre">or</span> <span class="pre">``,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
+</div>
+<div class="section" id="listing-all-files-in-a-directory">
+<h2>Listing all files in a directory<a class="headerlink" href="#listing-all-files-in-a-directory" title="Permalink to this headline">¶</a></h2>
+<p>Listing and searching for file path names from file system can be done
+using a specific module called
+<strong>`glob &lt;https://docs.python.org/3/library/glob.html&gt;`__</strong>.</p>
+<p>The glob library contains a function, also called glob, that finds files
+and directories whose names match a pattern [0]. We provide those
+patterns as strings: the character * matches zero or more characters,
+while ? matches any one character.</p>
+<ol class="arabic simple">
+<li>We can use this to get the names of all files in the data directory
+(&#8216;/data&#8217;):</li>
 </ol>
-</div></blockquote>
-<div class="figure">
-<img alt="_images/arcgis-python-console.PNG" src="_images/arcgis-python-console.PNG" />
-</div>
-<p>Even though ArcGIS provides its own Python console with nice Syntax infobar, it is more practical and recommendable to write your code using Python IDLE bundled
-in ArcGIS because you cannot save your code easily using Python console in ArcGIS. ArcGIS Python console is, however,
-good for testing how specific geoprocessing functions of arcpy work.</p>
-<p>Good thing to understand is that <strong>the Python console within ArcGIS Desktop is the same thing as Python IDLE of ArcGIS</strong> that can be found under All Programs in Windows:</p>
-<div class="figure">
-<img alt="_images/arcgis-idle.PNG" src="_images/arcgis-idle.PNG" />
-</div>
+<ol class="arabic simple" start="2">
+<li>We can also search for only specific files and file formats. Here, we
+search for files that starts with &#8220;<a href="#id3"><span class="problematic" id="id4">travel_times_to_</span></a> 59721&#8221; and ends with file
+format &#8216;.txt&#8217;:</li>
+</ol>
+<hr class="docutils" />
+<p>As the previous examples show, glob.glob’s result is a <strong>list</strong> of file
+and directory paths in arbitrary order. This means we can loop over it
+to do something with each filename in turn. What we want to do next is
+to read the first line of each file and add it to a list called
+<code class="docutils literal"><span class="pre">headers</span></code>.</p>
+<ol class="arabic simple">
+<li>Let&#8217;s create a list of headers for the files:</li>
+</ol>
 </div>
 </div>
 
@@ -191,15 +203,6 @@ good for testing how specific geoprocessing functions of arcpy work.</p>
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Day3-Exercise4-ArcPy.html" class="btn btn-neutral float-right" title="Exercise 4: ArcPy-script for processing species data" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Day3-arcpy-overview.html" class="btn btn-neutral" title="Automating ArcGIS-processes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

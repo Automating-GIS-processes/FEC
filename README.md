@@ -1,7 +1,8 @@
-# FEC
+# Automating GIS processes/ FEC 2017!
 Python &lt;3 GIS
 
-This course will introduce you to the basic concepts of computer programming in the Python programming language and 
+This repo contains the source files of course material available at [https://automating-gis-processes.github.io/FEC/](https://automating-gis-processes.github.io/FEC/)
+The course you to the basic concepts of computer programming in the Python programming language and
 
 
 Materials are based on a python-course taught at the Department of Geosciences and Geography, University of Helsinki:
