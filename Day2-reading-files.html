@@ -111,8 +111,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#writing-text-files">Writing text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reading-data-from-multiple-files">Reading data from multiple files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#delimited-text-files">Delimited text files</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#useful-modules">Useful modules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-with-delimited-text-files">Working with delimited text files</a></li>
 </ul>
 </li>
 </ul>
@@ -214,8 +213,8 @@ and directories whose names match a given pattern (for example all files startin
 </div>
 <ol class="arabic simple" start="2">
 <li>We can also search for only specific files and file formats. Here, we
-search for files that starts with &#8220;<a href="#id1"><span class="problematic" id="id2">travel_times_to_</span></a> 59721&#8221; and ends with file
-format &#8216;.txt&#8217;:</li>
+search for files that starts with <code class="docutils literal"><span class="pre">travel_times_to_</span> <span class="pre">59721</span></code> and ends with file
+format <code class="docutils literal"><span class="pre">.txt</span></code>:</li>
 </ol>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">DataPathList</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/data/travel_times_to_ 59721*.txt&#39;</span><span class="p">))</span>
 
@@ -253,8 +252,8 @@ to read the first line of each file and add it to a list called
 </pre></div>
 </div>
 </div>
-<div class="section" id="delimited-text-files">
-<h2>Delimited text files<a class="headerlink" href="#delimited-text-files" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="working-with-delimited-text-files">
+<h2>Working with delimited text files<a class="headerlink" href="#working-with-delimited-text-files" title="Permalink to this headline">¶</a></h2>
 <p>Simple tabular data is often stored in delimited text files, where each row of data represents
 a record of data (for example a country) and the attributes for each row are separated
 with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
@@ -263,13 +262,12 @@ with a specific character (for example a comma <code class="docutils literal"><s
 <p class="last">When working with Comma-Separated Values file (<em>csv), **pay attention to your language and region-settings!*</em> (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
 There you can determine the decimal separator as <code class="docutils literal"><span class="pre">.</span></code> (recommended) or <code class="docutils literal"><span class="pre">,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
 </div>
-</div>
-<div class="section" id="useful-modules">
-<h2>Useful modules<a class="headerlink" href="#useful-modules" title="Permalink to this headline">¶</a></h2>
 <p>Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
 You can find more information about essential modules for handling tabular data in Python from the more extensive versions of this course:</p>
-<p>-<a class="reference external" href="https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html">Pandas and Geopandas</a>
--<a class="reference external" href="https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy">NumPy</a></p>
+<ul class="simple">
+<li><a class="reference external" href="https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html">Pandas and Geopandas</a></li>
+<li><a class="reference external" href="https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy">NumPy</a></li>
+</ul>
 </div>
 </div>
 
