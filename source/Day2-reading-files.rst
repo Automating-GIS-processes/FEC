@@ -1,7 +1,7 @@
 Reading and writing text files
 ==============================
 
-Reading and writing text files within a python code can be very handy for example when you want to document a process,
+Reading and writing text files within a Python code can be very handy for example when you want to document a process,
 or to automatically print out simple information and results (for example statistics) when running a bigger process.
 
 Delimited text files
@@ -11,8 +11,15 @@ Simple tabular data is often stored in delimited text files, where each row of d
 a record of data (for example a country) and the attributes for each row are separated
 with a specific character (for example a comma ``,``). First row of data often contains the column names for the array.
 
-When working with Comma-Separated Values file (*csv), pay attention to your language and region-settings! (In Windows: Control panel > Region and language > Additional Settings)
-There you ca determine the decimal separator as`` . ``(recommended) or ``,`` and the list separator as ``;`` or ``,``.
+.. note::
+
+    When working with Comma-Separated Values file (*csv), pay attention to your language and region-settings! (In Windows: Control panel > Region and language > Additional Settings)
+    There you can determine the decimal separator as``.``(recommended) or ``,`` and the list separator as ``;`` or ``,``.
+
+During this short course we will not be working extensively with tabular data in Python. You can find more information about essential modules for handling tabular data in Python
+from the more extensive versions of this course:
+- `Pandas and Geopandas modules <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
+- `NumPy-module <https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy>`_
 
 Listing all files in a directory
 --------------------------------
