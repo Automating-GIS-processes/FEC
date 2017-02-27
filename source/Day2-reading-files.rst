@@ -53,8 +53,8 @@ and directories whose names match a given pattern (for example all files startin
 
 
 2. We can also search for only specific files and file formats. Here, we
-   search for files that starts with "travel_times_to_ 59721" and ends with file
-   format '.txt':
+   search for files that starts with ``travel_times_to_ 59721`` and ends with file
+   format ``.txt``:
 
 .. code:: python
 
@@ -95,8 +95,8 @@ to read the first line of each file and add it to a list called
     #After going trough all the files, print the list of headers
     print(headers)
 
-Delimited text files
----------------------
+Working with delimited text files
+-----------------------------------
 
 Simple tabular data is often stored in delimited text files, where each row of data represents
 a record of data (for example a country) and the attributes for each row are separated
@@ -108,10 +108,8 @@ with a specific character (for example a comma ``,``). First row of data often c
     There you can determine the decimal separator as ``.`` (recommended) or ``,`` and the list separator as ``;`` or ``,``.
 
 
-Useful modules
----------------
 Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
 You can find more information about essential modules for handling tabular data in Python from the more extensive versions of this course:
 
--`Pandas and Geopandas <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
--`NumPy <https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy>`_
+* `Pandas and Geopandas <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
+* `NumPy <https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy>`_
