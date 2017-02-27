@@ -7,24 +7,39 @@ or to automatically print out simple information and results (for example statis
 Reading text files
 --------------------
 
+.. code:: python
+
+    fp= ""
+
+    # Read all contents of the file:
+    with open(fp, "r") as infile:
+        text = infile.read()
+        print(text)
+
 Writing text files
 --------------------
+
+.. code:: python
+
+    out_file = 'test.txt'
+
+    with open(out_file, 'w') as w:
+        # Write a line of text into that file
+        my_line = "This is my first line of text written in Python!"
+        w.write(my_line)
+
 
 
 Listing all files in a directory
 --------------------------------
 
 Listing and searching for file path names from file system can be done
-using a specific module called
-**`glob <https://docs.python.org/3/library/glob.html>`__**.
+using a specific module called `glob <https://docs.python.org/3/library/glob.html>`_.
 
 The glob library contains a function, also called glob, that finds files
-and directories whose names match a pattern [0]. We provide those
-patterns as strings: the character \* matches zero or more characters,
-while ? matches any one character.
+and directories whose names match a given pattern (for example all files starting with the letter A).
 
-1. We can use this to get the names of all files in the data directory
-   ('/data'):
+1. We can use the glob-module to get the names of all files in a given directory (``C:/.../data/5972xxx/``):
 
 .. code:: python
     import glob
