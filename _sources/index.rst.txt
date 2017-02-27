@@ -52,6 +52,7 @@ Course contents:
     Day2-functions
     Day2-modules
     Day2-Exercise3-Functions
+    Day2-reading-files
 
 
 .. toctree::

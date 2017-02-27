@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Running the Python script from ArcGIS &mdash; FEC-2017 1.0 documentation</title>
+  <title>Reading and writing text files &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -34,7 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="prev" title="Writing arcpy scripts" href="Day3-arcpy-script.html"/> 
+        <link rel="next" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/>
+        <link rel="prev" title="Loading and using Python modules" href="Day2-modules.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -97,7 +98,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day2-string-operations.html">String-operations</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
@@ -105,19 +106,20 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and writing text files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#delimited-text-files">Delimited text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
+</ul>
+</li>
 </ul>
 <p class="caption"><span class="caption-text">Day 3</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Python script from ArcGIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-proceed-from-here">How to proceed from here?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 </ul>
 
             
@@ -148,11 +150,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Running the Python script from ArcGIS</li>
+    <li>Reading and writing text files</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day3-run-the-tool.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day2-reading-files.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -162,35 +164,45 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="running-the-python-script-from-arcgis">
-<h1>Running the Python script from ArcGIS<a class="headerlink" href="#running-the-python-script-from-arcgis" title="Permalink to this headline">¶</a></h1>
-<p>Now that we have the interface and script ready for our tool, we can start using them from ArcGIS.</p>
-<p>Before we can run the tool, we need to specify <strong>which Python script will be run when the tool is executed</strong>. This can be done from the <code class="docutils literal"><span class="pre">Properties</span></code> of your Script tool under a <code class="docutils literal"><span class="pre">Source</span></code> -tab. Add the
-<code class="docutils literal"><span class="pre">PolyToRaster.py</span></code> -file that we just created as the source file for this tool.</p>
-<div class="figure align-left">
-<a class="reference internal image-reference" href="_images/arcgis-properties.png"><img alt="_images/arcgis-properties.png" src="_images/arcgis-properties.png" style="width: 317.3px; height: 301.15px;" /></a>
+  <div class="section" id="reading-and-writing-text-files">
+<h1>Reading and writing text files<a class="headerlink" href="#reading-and-writing-text-files" title="Permalink to this headline">¶</a></h1>
+<p>Reading and writing text files within a python code can be very handy for example when you want to document a process,
+or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
+<div class="section" id="delimited-text-files">
+<h2>Delimited text files<a class="headerlink" href="#delimited-text-files" title="Permalink to this headline">¶</a></h2>
+<p>Simple tabular data is often stored in delimited text files, where each row of data represents
+a record of data (for example a country) and the attributes for each row are separated
+with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
+<p>When working with Comma-Separated Values file (<a href="#id1"><span class="problematic" id="id2">*</span></a>csv), pay attention to your language and region-settings! (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
+There you ca determine the decimal separator as`` . <code class="docutils literal"><span class="pre">(recommended)</span> <span class="pre">or</span> <span class="pre">``,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
 </div>
-<div class="figure align-left">
-<a class="reference internal image-reference" href="_images/arcgis-source.png"><img alt="_images/arcgis-source.png" src="_images/arcgis-source.png" style="width: 323.25px; height: 423.0px;" /></a>
-</div>
-<p>That&#8217;s it! Now you can test your tool by running it from ArcGIS!</p>
-<p>After running your tool, you should get rasters such as following from the tool:</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/arcgis-raster-result.png"><img alt="_images/arcgis-raster-result.png" src="_images/arcgis-raster-result.png" style="width: 555.0px; height: 375.75px;" /></a>
-</div>
-<div class="section" id="how-to-proceed-from-here">
-<h2>How to proceed from here?<a class="headerlink" href="#how-to-proceed-from-here" title="Permalink to this headline">¶</a></h2>
-<p>Okey, now you have seen a little bit how arcpy can be used to automatize a specific GIS process flow. Of course, our tutorial only covered a tiny fraction of all different functionalities that ArcGIS has to offer
-but the basic logic is more or less similar with different tools (except raster processing and map algebra &#8211;&gt; see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/map-algebra/a-quick-tour-of-using-map-algebra.htm">quick tour</a>).
-Thus, you can use similar programming approach for many other tools as well that ArcGIS provides.</p>
-<p><strong>I am interested in using arcpy in my work..How can I find information how to use those tools?</strong></p>
-<p>Basically how you can proceed from here is to read the <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy/what-is-arcpy-.htm">documentation of arcpy</a> to find out how your typical analysis steps and tools in ArcGIS
-can be called from Python using arcpy -module. One good way to find documentation about the tool that you are searching is to use e.g. Google or use the search functionality in ArcGIS documentation pages.</p>
-<div class="admonition hint">
-<p class="first admonition-title">Hint</p>
-<p class="last">If you know how to use <a class="reference external" href="http://pro.arcgis.com/en/pro-app/help/analysis/geoprocessing/modelbuilder/what-is-modelbuilder-.htm">Model Builder</a>, it is possible to <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/analyze/modelbuilder/exporting-a-model-to-a-python-script.htm">export your model to a Python script</a>.
-In that way, you can at least see how those tools that you use in your model can be called from Python using arcpy module.</p>
-</div>
+<div class="section" id="listing-all-files-in-a-directory">
+<h2>Listing all files in a directory<a class="headerlink" href="#listing-all-files-in-a-directory" title="Permalink to this headline">¶</a></h2>
+<p>Listing and searching for file path names from file system can be done
+using a specific module called
+<strong>`glob &lt;https://docs.python.org/3/library/glob.html&gt;`__</strong>.</p>
+<p>The glob library contains a function, also called glob, that finds files
+and directories whose names match a pattern [0]. We provide those
+patterns as strings: the character * matches zero or more characters,
+while ? matches any one character.</p>
+<ol class="arabic simple">
+<li>We can use this to get the names of all files in the data directory
+(&#8216;/data&#8217;):</li>
+</ol>
+<ol class="arabic simple" start="2">
+<li>We can also search for only specific files and file formats. Here, we
+search for files that starts with &#8220;<a href="#id3"><span class="problematic" id="id4">travel_times_to_</span></a> 59721&#8221; and ends with file
+format &#8216;.txt&#8217;:</li>
+</ol>
+<hr class="docutils" />
+<p>As the previous examples show, glob.glob’s result is a <strong>list</strong> of file
+and directory paths in arbitrary order. This means we can loop over it
+to do something with each filename in turn. What we want to do next is
+to read the first line of each file and add it to a list called
+<code class="docutils literal"><span class="pre">headers</span></code>.</p>
+<ol class="arabic simple">
+<li>Let&#8217;s create a list of headers for the files:</li>
+</ol>
 </div>
 </div>
 
@@ -201,8 +213,10 @@ In that way, you can at least see how those tools that you use in your model can
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="Day3-arcpy-overview.html" class="btn btn-neutral float-right" title="Automating ArcGIS-processes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="Day3-arcpy-script.html" class="btn btn-neutral" title="Writing arcpy scripts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="Day2-modules.html" class="btn btn-neutral" title="Loading and using Python modules" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
