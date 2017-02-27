@@ -107,8 +107,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and writing text files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#delimited-text-files">Delimited text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-text-files">Reading text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-text-files">Writing text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-data-from-multiple-files">Reading data from multiple files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delimited-text-files">Delimited text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#useful-modules">Useful modules</a></li>
 </ul>
 </li>
 </ul>
@@ -166,15 +170,13 @@
             
   <div class="section" id="reading-and-writing-text-files">
 <h1>Reading and writing text files<a class="headerlink" href="#reading-and-writing-text-files" title="Permalink to this headline">¶</a></h1>
-<p>Reading and writing text files within a python code can be very handy for example when you want to document a process,
+<p>Reading and writing text files within a Python code can be very handy for example when you want to document a process,
 or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
-<div class="section" id="delimited-text-files">
-<h2>Delimited text files<a class="headerlink" href="#delimited-text-files" title="Permalink to this headline">¶</a></h2>
-<p>Simple tabular data is often stored in delimited text files, where each row of data represents
-a record of data (for example a country) and the attributes for each row are separated
-with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
-<p>When working with Comma-Separated Values file (<a href="#id1"><span class="problematic" id="id2">*</span></a>csv), pay attention to your language and region-settings! (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
-There you ca determine the decimal separator as`` . <code class="docutils literal"><span class="pre">(recommended)</span> <span class="pre">or</span> <span class="pre">``,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
+<div class="section" id="reading-text-files">
+<h2>Reading text files<a class="headerlink" href="#reading-text-files" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="writing-text-files">
+<h2>Writing text files<a class="headerlink" href="#writing-text-files" title="Permalink to this headline">¶</a></h2>
 </div>
 <div class="section" id="listing-all-files-in-a-directory">
 <h2>Listing all files in a directory<a class="headerlink" href="#listing-all-files-in-a-directory" title="Permalink to this headline">¶</a></h2>
@@ -194,7 +196,9 @@ while ? matches any one character.</p>
 search for files that starts with &#8220;<a href="#id3"><span class="problematic" id="id4">travel_times_to_</span></a> 59721&#8221; and ends with file
 format &#8216;.txt&#8217;:</li>
 </ol>
-<hr class="docutils" />
+</div>
+<div class="section" id="reading-data-from-multiple-files">
+<h2>Reading data from multiple files<a class="headerlink" href="#reading-data-from-multiple-files" title="Permalink to this headline">¶</a></h2>
 <p>As the previous examples show, glob.glob’s result is a <strong>list</strong> of file
 and directory paths in arbitrary order. This means we can loop over it
 to do something with each filename in turn. What we want to do next is
@@ -203,6 +207,24 @@ to read the first line of each file and add it to a list called
 <ol class="arabic simple">
 <li>Let&#8217;s create a list of headers for the files:</li>
 </ol>
+</div>
+<div class="section" id="delimited-text-files">
+<h2>Delimited text files<a class="headerlink" href="#delimited-text-files" title="Permalink to this headline">¶</a></h2>
+<p>Simple tabular data is often stored in delimited text files, where each row of data represents
+a record of data (for example a country) and the attributes for each row are separated
+with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When working with Comma-Separated Values file (<a href="#id1"><span class="problematic" id="id2">*</span></a>csv), pay attention to your language and region-settings! (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
+There you can determine the decimal separator as``.``(recommended) or <code class="docutils literal"><span class="pre">,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
+</div>
+</div>
+<div class="section" id="useful-modules">
+<h2>Useful modules<a class="headerlink" href="#useful-modules" title="Permalink to this headline">¶</a></h2>
+<p>Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
+You can find more information about essential modules for handling tabular data in Python from the more extensive versions of this course:
+- <a class="reference external" href="https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html">Pandas and Geopandas</a>
+- <a class="reference external" href="https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy">NumPy</a></p>
 </div>
 </div>
 
