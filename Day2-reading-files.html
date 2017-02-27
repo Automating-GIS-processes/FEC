@@ -174,22 +174,34 @@
 or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
 <div class="section" id="reading-text-files">
 <h2>Reading text files<a class="headerlink" href="#reading-text-files" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">fp</span><span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="c1"># Read all contents of the file:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="writing-text-files">
 <h2>Writing text files<a class="headerlink" href="#writing-text-files" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">out_file</span> <span class="o">=</span> <span class="s1">&#39;test.txt&#39;</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+    <span class="c1"># Write a line of text into that file</span>
+    <span class="n">my_line</span> <span class="o">=</span> <span class="s2">&quot;This is my first line of text written in Python!&quot;</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_line</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 <div class="section" id="listing-all-files-in-a-directory">
 <h2>Listing all files in a directory<a class="headerlink" href="#listing-all-files-in-a-directory" title="Permalink to this headline">¶</a></h2>
 <p>Listing and searching for file path names from file system can be done
-using a specific module called
-<strong>`glob &lt;https://docs.python.org/3/library/glob.html&gt;`__</strong>.</p>
+using a specific module called <a class="reference external" href="https://docs.python.org/3/library/glob.html">glob</a>.</p>
 <p>The glob library contains a function, also called glob, that finds files
-and directories whose names match a pattern [0]. We provide those
-patterns as strings: the character * matches zero or more characters,
-while ? matches any one character.</p>
+and directories whose names match a given pattern (for example all files starting with the letter A).</p>
 <ol class="arabic simple">
-<li>We can use this to get the names of all files in the data directory
-(&#8216;/data&#8217;):</li>
+<li>We can use the glob-module to get the names of all files in a given directory (<code class="docutils literal"><span class="pre">C:/.../data/5972xxx/</span></code>):</li>
 </ol>
 <ol class="arabic simple" start="2">
 <li>We can also search for only specific files and file formats. Here, we
