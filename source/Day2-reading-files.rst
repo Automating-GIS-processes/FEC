@@ -42,6 +42,7 @@ and directories whose names match a given pattern (for example all files startin
 1. We can use the glob-module to get the names of all files in a given directory (``C:/.../data/5972xxx/``):
 
 .. code:: python
+
     import glob
 
     #Read file paths for all files in the folder to a list:
@@ -56,6 +57,7 @@ and directories whose names match a given pattern (for example all files startin
    format '.txt':
 
 .. code:: python
+
     DataPathList = glob.glob('/data/travel_times_to_ 59721*.txt'))
 
     len(DataPathList)   #number of items in the list
@@ -75,6 +77,7 @@ to read the first line of each file and add it to a list called
 
 
 .. code:: python
+
      filepaths = glob.glob('/data/5972xxx/travel_times_to_ 59721*.txt') #modify the filepath if needed!
 
      headers = [] # empty list for collecting the headers
@@ -101,13 +104,14 @@ with a specific character (for example a comma ``,``). First row of data often c
 
 .. note::
 
-    When working with Comma-Separated Values file (*csv), pay attention to your language and region-settings! (In Windows: Control panel > Region and language > Additional Settings)
-    There you can determine the decimal separator as``.``(recommended) or ``,`` and the list separator as ``;`` or ``,``.
+    When working with Comma-Separated Values file (*csv), **pay attention to your language and region-settings!** (In Windows: Control panel > Region and language > Additional Settings)
+    There you can determine the decimal separator as ``.`` (recommended) or ``,`` and the list separator as ``;`` or ``,``.
 
 
 Useful modules
 ---------------
 Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
 You can find more information about essential modules for handling tabular data in Python from the more extensive versions of this course:
-- `Pandas and Geopandas <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
-- `NumPy <https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy>`_
+
+-`Pandas and Geopandas <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
+-`NumPy <https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy>`_
