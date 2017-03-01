@@ -39,8 +39,8 @@ Course contents:
     Day1-string-operations
     Day1-Strings-mini-exercise
     Day1-writing-scripts
-    Day1-VCS
-    Day1-Create-GitHubAccount
+    Day1-intro-to-GitHub
+    Day1-create-GitHub-account
     Day1-Exercise1
 
 .. toctree::
