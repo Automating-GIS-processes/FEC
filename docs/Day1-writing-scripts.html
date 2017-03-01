@@ -115,6 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day-3-useful-functions.html">Footnotes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Mini-exercise on writing text files</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 3</span></p>
@@ -275,6 +276,11 @@ scientists like ourselves to both help us remember how a script works
 and to make it easier to share with colleagues. It is best to get
 into the habit of adding comments as you write.</p>
 </li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="2">
 <li><p class="first"><strong>Use blank lines to visually divide your script</strong>. Perhaps it is
 obvious, but Python will ignore blank lines in a script. They don&#8217;t
 matter to Python, but they are very helpful to users.</p>
@@ -295,6 +301,11 @@ matter to Python, but they are very helpful to users.</p>
 <p>Dividing even a short script into section using blank lines makes it
 much easier to read the code.</p>
 </li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="3">
 <li><p class="first"><strong>Add a block comment section at the start of the script to state its
 purpose, how it is run, who wrote it, and possibly some licencing
 information</strong>. In contrast to the inline comments above that describe
@@ -390,42 +401,6 @@ template</a>. Software
 licensing is an important consideration when posting your software in
 online repositories such as GitHub. It is one way to protect your
 intellectual property from being used in ways you do not wish.</p>
-</li>
-<li><p class="first"><strong>Start with a shebang</strong>. This part gets a bit more complicated, but
-we can add one line above our first block comment to help make the
-script easier to run for users. Here, we add a line at the very top
-of the script that starts with <code class="docutils literal"><span class="pre">#!</span></code> (often referred to as shebang).
-The meaning of this line is given below the script.</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="ch">#!/usr/bin/env python3</span>
-<span class="sd">&#39;&#39;&#39;sampleinfo.py</span>
-
-<span class="sd">A simple Python script to print information for a rock sample on the screen.</span>
-
-<span class="sd">Usage: ./sampleinfo.py</span>
-
-<span class="sd">David Whipp - 12.9.2016</span>
-<span class="sd">&#39;&#39;&#39;</span>
-
-<span class="c1"># Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)</span>
-<span class="c1"># Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi</span>
-
-<span class="c1"># Basic sample information</span>
-<span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
-<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
-
-<span class="c1"># Sample weight given in pounds (sorry, most of the world)</span>
-<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
-
-<span class="c1"># Print basic information about this sample to the screen</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
-</pre></div>
-</div>
-<p>Basically, this additional line allows users to run the script in a
-terminal window without having to use the <code class="docutils literal"><span class="pre">%run</span></code> magic command from
-within IPython or explicitly launch a new Python interpreter. The
-line states that when the script is executed in a terminal it should
-use the default system Python 3 interpreter. We&#8217;ll leave it at that
-for now, but if you have questions let us know.</p>
 </li>
 </ol>
 </div>

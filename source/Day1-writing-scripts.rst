@@ -33,12 +33,14 @@ quite easily create a basic script file and test things out.
        SampleWeightLbs = 6.89
        print("Sample", SampleID, "weighs", SampleWeightLbs, "pounds")
 
+
 2. Save this script file as ``sampleinfo.py`` in your home directory
    ``/home/geo`` by clicking on **File -> Save** in the menu bar of the
    **gedit** window. Click on the **Home** icon on the top left of the
    **Save As** window that appears, and enter the file name as
    ``sampleinfo.py``. Click the ``Save`` button on the lower right of
    the window to save the file.
+
 
 3. Return to your IPython interpreter window (or start a new one if you
    have closed it), change the directory in IPython to the home
@@ -113,6 +115,8 @@ make sure your code is easy to understand.
    scientists like ourselves to both help us remember how a script works
    and to make it easier to share with colleagues. It is best to get
    into the habit of adding comments as you write.
+
+|
 2. **Use blank lines to visually divide your script**. Perhaps it is
    obvious, but Python will ignore blank lines in a script. They don't
    matter to Python, but they are very helpful to users.
@@ -135,6 +139,7 @@ make sure your code is easy to understand.
    Dividing even a short script into section using blank lines makes it
    much easier to read the code.
 
+|
 3. **Add a block comment section at the start of the script to state its
    purpose, how it is run, who wrote it, and possibly some licencing
    information**. In contrast to the inline comments above that describe
@@ -235,43 +240,7 @@ make sure your code is easy to understand.
    online repositories such as GitHub. It is one way to protect your
    intellectual property from being used in ways you do not wish.
 
-4. **Start with a shebang**. This part gets a bit more complicated, but
-   we can add one line above our first block comment to help make the
-   script easier to run for users. Here, we add a line at the very top
-   of the script that starts with ``#!`` (often referred to as shebang).
-   The meaning of this line is given below the script.
 
-   .. code:: python
-
-       #!/usr/bin/env python3
-       '''sampleinfo.py
-
-       A simple Python script to print information for a rock sample on the screen.
-
-       Usage: ./sampleinfo.py
-
-       David Whipp - 12.9.2016
-       '''
-
-       # Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)
-       # Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi
-
-       # Basic sample information
-       SampleID = "DW-NP-48-16"
-       SampleRockType = "Mica schist"
-
-       # Sample weight given in pounds (sorry, most of the world)
-       SampleWeightLbs = 6.89
-
-       # Print basic information about this sample to the screen
-       print("Sample", SampleID, "is a", SampleWeightLbs, "pound chunk of", SampleRockType)
-
-   Basically, this additional line allows users to run the script in a
-   terminal window without having to use the ``%run`` magic command from
-   within IPython or explicitly launch a new Python interpreter. The
-   line states that when the script is executed in a terminal it should
-   use the default system Python 3 interpreter. We'll leave it at that
-   for now, but if you have questions let us know.
 
 Page summary
 ------------
