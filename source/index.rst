@@ -16,9 +16,6 @@ Materials have been tailored for the further education course *Paikkatiedon käy
 
 The course consists of interactive lectures and exercises. All course material will be distributed via these pages. Materials are based on previous further education courses and two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_ developed at the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, University of Helsinki.
 
-At the end of the course you should be able to generate, understand and use code for automating GIS-processes such as the one below.
-
-.. figure:: img/GISprocess.png
 
 Course chedule:
 -----------------
@@ -28,36 +25,42 @@ we will learn the basics of python. During the last days of the course we will a
 using the ArcPy-model for automating GIS-processes. Here is the preliminary schedule for the course
 (might be subject to changes depending on how fast we proceed as a group!)
 
-+----------------+---------------------------------+------------------+
-| Day            | Theme                           | Content          |
-+================+=================================+==================+
-| **Monday**     | Basics of Python 1              | - Intro          |
-|                |                                 | - GitHub         |
-|                |                                 | - Spyder,        |
-|                |                                 | - data types     |
-|                |                                 | - Exercise 1     |
-+----------------+---------------------------------+------------------+
-| **Tuesday**    | Basics of Python 2              | - if-clause      |
-|                |                                 | - for-loops      |
-|                |                                 | - Exercise 2     |
-+----------------+---------------------------------+------------------+
-| **Wednesday**  | Basics of Python 2              | - Functions      |
-|                |                                 | - File I/O       |
-|                |                                 | - Exercise 3     |
-|                | Automating ArcGIS Processes     | - Modules        |
-|                |                                 | - ArcPy-module   |
-+----------------+---------------------------------+------------------+
-|                |                                 | - ModelBuilder   |
-| **Thursday**   | Automating ArcGIS Processes     | - ArcToolbox     |
-|                |                                 | - Arcpy-scripts  |
-|                |                                 | - Final exercise |
-+----------------+---------------------------------+------------------+
-| **Friday**     | Automating ArcGIS Processes     | - Final exercise |
-|                |                                 | - revision       |
-|                |                                 | - feedback       |
-+----------------+---------------------------------+------------------+
++----------------+---------------------------------+--------------------+
+| Day            | Theme                           | Content            |
++================+=================================+====================+
+| **Monday**     | Basics of Python 1              | - Intro            |
+|                |                                 | - GitHub           |
+|                |                                 | - Spyder           |
+|                |                                 | - data types       |
+|                |                                 | - *Exercise 1*     |
++----------------+---------------------------------+--------------------+
+| **Tuesday**    | Basics of Python 2              | - if-clause        |
+|                |                                 | - for-loops        |
+|                |                                 | - *Exercise 2*     |
++----------------+---------------------------------+--------------------+
+| **Wednesday**  | Basics of Python 2              | - Functions        |
+|                |                                 | - File I/O         |
+|                |                                 | - *Exercise 3*     |
+|                | Automating ArcGIS Processes     | - Modules          |
+|                |                                 | - ArcPy-module     |
++----------------+---------------------------------+--------------------+
+|                |                                 | - ModelBuilder     |
+| **Thursday**   | Automating ArcGIS Processes     | - ArcToolbox       |
+|                |                                 | - Arcpy-scripts    |
+|                |                                 | - *Final exercise* |
++----------------+---------------------------------+--------------------+
+| **Friday**     | Automating ArcGIS Processes     | - *Final exercise* |
+|                |                                 | - revision         |
+|                |                                 | - feedback         |
++----------------+---------------------------------+--------------------+
 
 |
+At the end of the course you should be able to generate, understand and use code for automating GIS-processes such as the one below.
+
+.. figure:: img/GISprocess.png
+
+|
+
 Course contents:
 ----------------
 
