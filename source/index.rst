@@ -30,7 +30,7 @@ Course contents:
 
 .. toctree::
     :maxdepth: 2
-    :caption: Days 1-2: Basics of Python
+    :caption: Basics of Python
 
     Day1-Intro
     Day1-Getting-started-with-python
@@ -42,6 +42,11 @@ Course contents:
     Day1-intro-to-GitHub
     Day1-create-GitHub-account
     Day1-Exercise1
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Conditional statements, for-loops and functions
     Day2-conditional-statements
     Day2-for-loops
     Day2-for-loops-mini-exercise
@@ -56,7 +61,7 @@ Course contents:
 
 .. toctree::
     :maxdepth: 2
-    :caption: Day 3
+    :caption: Automating ArcGIS-processes
 
     Day3-arcpy-overview
     Day3-arcpy
@@ -65,13 +70,5 @@ Course contents:
     Day3-arcpy-script
     Day3-run-the-tool
 
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Day 4
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Day 5
 
 
