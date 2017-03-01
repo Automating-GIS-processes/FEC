@@ -173,12 +173,11 @@
   <div class="section" id="final-exercise-arcpy-script-for-processing-species-data">
 <h1>Final Exercise: ArcPy-script for processing species data<a class="headerlink" href="#final-exercise-arcpy-script-for-processing-species-data" title="Permalink to this headline">¶</a></h1>
 <p>As an output of this exercise we will create three  ArcPy-scripts are written together during the session:</p>
-<p><strong>Version 1:</strong> Arcpy_1_SimplePoly2Raster.py
-|
-<strong>Version 2:</strong> Arcpy_2_SpeciesPoly2Raster.py
-|
-<strong>Version 3:</strong> Arcpy_3_SpeciesPoly2Raster_Iterate.py
-|</p>
+<ul class="simple">
+<li><strong>Version 1:</strong> Arcpy_1_SimplePoly2Raster.py</li>
+<li><strong>Version 2:</strong> Arcpy_2_SpeciesPoly2Raster.py</li>
+<li><strong>Version 3:</strong> Arcpy_3_SpeciesPoly2Raster_Iterate.py</li>
+</ul>
 <p>You can document your codes into GitHub.</p>
 <div class="section" id="version-1">
 <h2>Version 1:<a class="headerlink" href="#version-1" title="Permalink to this headline">¶</a></h2>
@@ -186,31 +185,23 @@
 Toolbox asks three parameters: input shapefile, output rasterdataset, and value field (raster_value).
 Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.</p>
 <p><strong>Required steps in the script-file</strong>
-|
-1. Import the required module (arcpy)
-|
-2. Get parameters from the toolbox using ‘GetParametersAsText’ function
-|
-3. Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function
-|</p>
+- Import the required module (arcpy)
+- Get parameters from the toolbox using ‘GetParametersAsText’ function
+- Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function</p>
 </div>
 <div class="section" id="version-2">
 <h2>Version 2:<a class="headerlink" href="#version-2" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
 Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
 Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionality of the tool.</p>
-<p>1. Import the required module (arcpy)
-|
-2. Get parameters from the toolbox using ‘GetParametersAsText’ function
-|
-3. Add a new field into the Shapefile with ‘AddField_management’ function
-|
-4. Update the value for the attribute just created with ‘CalculateField_management’ function
-|
-5. Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function
-|
-6. Print info for the user that tool has finished successfully using ‘AddMessage’ function
-|</p>
+<ul class="simple">
+<li>Import the required module (arcpy)</li>
+<li>Get parameters from the toolbox using ‘GetParametersAsText’ function</li>
+<li>Add a new field into the Shapefile with ‘AddField_management’ function</li>
+<li>Update the value for the attribute just created with ‘CalculateField_management’ function</li>
+<li>Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function</li>
+<li>Print info for the user that tool has finished successfully using ‘AddMessage’ function</li>
+</ul>
 </div>
 <div class="section" id="version-3">
 <h2>Version 3:<a class="headerlink" href="#version-3" title="Permalink to this headline">¶</a></h2>
@@ -218,28 +209,17 @@ Tool will print useful information for the user about the execution process. Too
 Tool asks five parameters: input shapefile, output folder, species_attribute, attribute_name_for_raster_value, raster_value.
 Tool will print useful information for the user about the execution process.
 Toolbox executes a python script called ‘Arcpy_3_SpeciesPoly2Raster_Iterate.py’ that contains all the required functionalities of the tool.</p>
-<p>1. Import the required module (arcpy)
-|
-2. Get parameters from the toolbox using ‘GetParametersAsText’ function
-|
-3. Add a new field into the Shapefile with ‘AddField_management’ function
-|
-4. Update the value for the attribute with ‘CalculateField_management’ function
-|
-5. Determine a list of unique species in the Shapefile using ‘SearchCursor’ function
-|
-6. Create a Feature Layer from the shapefile using ‘MakeFeatureLayer_management’ function</p>
-<blockquote>
-<div><div class="line-block">
-<div class="line"><br /></div>
-</div>
-</div></blockquote>
-<p>7. Select individual species from the Shapefile using ‘SelectLayerByAttribute_management’ function
-|
-8. Convert individual species in the Shapefile into Raster Datasets using ‘PolygonToRaster_conversion’ function
-|
-9. Print info for the user that tool has finished successfully using ‘AddMessage’ function
-|</p>
+<ul class="simple">
+<li>Import the required module (arcpy)</li>
+<li>Get parameters from the toolbox using ‘GetParametersAsText’ function</li>
+<li>Add a new field into the Shapefile with ‘AddField_management’ function</li>
+<li>Update the value for the attribute with ‘CalculateField_management’ function</li>
+<li>Determine a list of unique species in the Shapefile using ‘SearchCursor’ function</li>
+<li>Create a Feature Layer from the shapefile using ‘MakeFeatureLayer_management’ function</li>
+<li>Select individual species from the Shapefile using ‘SelectLayerByAttribute_management’ function</li>
+<li>Convert individual species in the Shapefile into Raster Datasets using ‘PolygonToRaster_conversion’ function</li>
+<li>Print info for the user that tool has finished successfully using ‘AddMessage’ function</li>
+</ul>
 </div>
 </div>
 
