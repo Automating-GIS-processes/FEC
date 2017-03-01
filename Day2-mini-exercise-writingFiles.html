@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction to the course &mdash; FEC-2017 1.0 documentation</title>
+  <title>Mini-exercise on writing text files &mdash; FEC-2017 1.0 documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/>
-        <link rel="next" title="Getting started with Python" href="Day1-Getting-started-with-python.html"/>
-        <link rel="prev" title="Welcome to Automating GIS processes/ FEC 2017!" href="index.html"/> 
+        <link rel="next" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/>
+        <link rel="prev" title="Reading and writing text files" href="Day2-reading-files.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -88,11 +88,8 @@
             
             
                 <p class="caption"><span class="caption-text">Day 1</span></p>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to the course</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#intro">Intro</a></li>
-</ul>
-</li>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Strings-mini-exercise.html">Task: Hello world!</a></li>
@@ -102,7 +99,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 2</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Mini-exercise on for-loops</a></li>
@@ -111,7 +108,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Mini-exercise on writing text files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mini-exercise on writing text files</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Day 3</span></p>
 <ul>
@@ -151,11 +148,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Introduction to the course</li>
+    <li>Mini-exercise on writing text files</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day1-Intro.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day2-mini-exercise-writingFiles.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -165,10 +162,22 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="introduction-to-the-course">
-<h1>Introduction to the course<a class="headerlink" href="#introduction-to-the-course" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="intro">
-<h2>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="mini-exercise-on-writing-text-files">
+<h1>Mini-exercise on writing text files<a class="headerlink" href="#mini-exercise-on-writing-text-files" title="Permalink to this headline">¶</a></h1>
+<p>In Exercise 3 on functions you were asked to define a function <cite>circleArea()`which takes in one parameter `radius</cite>
+and returns the Area of a circle with the given radius. Using the function, update the following code so that
+you store the output into a text file <cite>Circle_areas.txt</cite> on your computer:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">textfile</span> <span class="o">=</span> <span class="s2">&quot;Circle_areas.txt&quot;</span> <span class="c1">#Update full filepath if needed</span>
+
+<span class="c1"># Update the variable result for different radius, and save the text into a text file (one result per row)</span>
+<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+
+    <span class="c1"># Generate the result sentence and store it in a variable:</span>
+    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;The area for a circle with a radius of &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; mm is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">circleArea</span><span class="p">(</span><span class="n">r</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39; mm^2&#39;</span>
+
+    <span class="c1"># Save the contents of the variable result to the textfile</span>
+    <span class="c1"># your code here!!</span>
+</pre></div>
 </div>
 </div>
 
@@ -179,10 +188,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day1-Getting-started-with-python.html" class="btn btn-neutral float-right" title="Getting started with Python" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Day3-arcpy-overview.html" class="btn btn-neutral float-right" title="Automating ArcGIS-processes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to Automating GIS processes/ FEC 2017!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day2-reading-files.html" class="btn btn-neutral" title="Reading and writing text files" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
