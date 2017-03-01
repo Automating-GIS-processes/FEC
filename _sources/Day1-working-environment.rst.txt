@@ -2,11 +2,12 @@
 Working environment
 ====================
 
-During this course we will work on Window's computers which have Python 3.5. installed via the Anaconda distribution and Python 2.7. installed together with the ArcGIS-software.
-There are different options of how to run Python code. We will start with using Python 3.5. trough the Spyder IDE while learning the basics of python. Later in the week we will
+During this course we will work on Window's computers which have Python 3. installed via the Anaconda distribution and Python 2.7. installed together with the ArcGIS-software.
+There are different options of how to run Python code. We will start with using Python trough the Spyder IDE while learning the basics of Python. Later in the week we will
 swhitch to python 2.7. in order to run ArcGIS processes trough Python.
 
-In addition to the different Python-interfaces we will be using, it is also useful to be familiar with basic command line functions in the Windows Command Prompt.
+In addition to the different Python-interfaces we will be using,it is also useful to be familiar
+with basic `command line functions <#Using the command line>`__ in the Windows Command Prompt.
 
 What is an integrated development environment?
 ----------------------------------------------
