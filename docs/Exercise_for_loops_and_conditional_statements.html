@@ -1,0 +1,436 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Exercise 3 - for loops and conditional statements &mdash; FEC-2017 1.0 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="FEC-2017 1.0 documentation" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> FEC-2017
+          
+
+          
+            
+            <img src="_static/logo_hy_geo_135.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Basics of Python 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Basic data types in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-string-operations.html">String-operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Strings-mini-exercise.html">Task: Hello world!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-writing-scripts.html">Script Files (*.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-intro-to-GitHub.html">Version Control and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-create-GitHub-account.html">Task: Create a GitHub-account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of Python 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">FEC-2017</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Exercise 3 - <code class="docutils literal"><span class="pre">for</span></code> loops and conditional statements</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Exercise_for_loops_and_conditional_statements.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="exercise-3-for-loops-and-conditional-statements">
+<h1>Exercise 3 - <code class="docutils literal"><span class="pre">for</span></code> loops and conditional statements<a class="headerlink" href="#exercise-3-for-loops-and-conditional-statements" title="Permalink to this headline">¶</a></h1>
+<p>The exercise for this week is meant to help you to understand <code class="docutils literal"><span class="pre">for</span></code>
+loops and conditional statements in Python. Below you have a series of
+problems in which you are asked to create new script files and write the
+code necessary to produce the desired results. After making your
+changes, you will need to upload these files to GitHub. The answers to
+the questions in this week&#8217;s exercise should be given by modifying the
+end of this document in the <a class="reference external" href="#answers">section titled Answers</a>.</p>
+<div class="section" id="problem-1-batch-processing-data-files-with-a-for-loop">
+<h2>Problem 1 - Batch processing data files with a <code class="docutils literal"><span class="pre">for</span></code> loop<a class="headerlink" href="#problem-1-batch-processing-data-files-with-a-for-loop" title="Permalink to this headline">¶</a></h2>
+<p>This problem is meant to simulate a common problem dealing with data
+files: batch processing. Batch processing involves using scripts to
+process many data files, and one common task is generating a list of
+filenames that will be processed. For this problem you will need to
+create a new script file <code class="docutils literal"><span class="pre">animal_file_generator.py</span></code> that does the
+following:</p>
+<ol class="arabic">
+<li><p class="first">Creates a new variable <code class="docutils literal"><span class="pre">basename</span></code> that contains the text
+<code class="docutils literal"><span class="pre">&quot;Animal&quot;</span></code>.</p>
+</li>
+<li><p class="first">Creates a new variable <code class="docutils literal"><span class="pre">filenames</span></code> that contains the text <code class="docutils literal"><span class="pre">&quot;&quot;</span></code>.</p>
+</li>
+<li><p class="first">Iterates over the number range 0-30 and</p>
+</li>
+<li><p class="first">Prints the value in <code class="docutils literal"><span class="pre">basename</span></code> with the numbers in the range to the
+screen as follows:</p>
+<p><code class="docutils literal"><span class="pre">Animal_0</span>&#160;&#160; <span class="pre">Animal_1</span>&#160;&#160; <span class="pre">Animal_2</span>&#160;&#160; <span class="pre">...</span>&#160;&#160; <span class="pre">Animal_30</span></code> You will most
+likely need to use the built-in <code class="docutils literal"><span class="pre">str()</span></code> function to produce this
+output. You can learn about how <code class="docutils literal"><span class="pre">str()</span></code> works by typing
+<code class="docutils literal"><span class="pre">help(str)</span></code> in an IPython interpreter window.</p>
+</li>
+<li><p class="first">Modifies the value in <code class="docutils literal"><span class="pre">filenames</span></code> to contain the output above plus
+the file extension for a shapefile <code class="docutils literal"><span class="pre">.shp</span></code>. You must also include a
+special escape character <code class="docutils literal"><span class="pre">\n</span></code> to indicate a break in the line after
+each listed shapefile name.</p>
+</li>
+</ol>
+<p>At the end of the script the variable <code class="docutils literal"><span class="pre">filenames</span></code> should include a
+complete list of the different Animal filenames. The output of
+<code class="docutils literal"><span class="pre">print(filenames)</span></code> in your script should be</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="n">Animal_0</span><span class="o">.</span><span class="n">shp</span>
+<span class="n">Animal_1</span><span class="o">.</span><span class="n">shp</span>
+<span class="n">Animal_2</span><span class="o">.</span><span class="n">shp</span>
+<span class="o">...</span>
+<span class="n">Animal_30</span><span class="o">.</span><span class="n">shp</span>
+</pre></div>
+</div>
+<div class="section" id="questions-for-problem-1">
+<h3>Questions for Problem 1<a class="headerlink" href="#questions-for-problem-1" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>What could be some advantages of using a string variable (e.g.,
+<code class="docutils literal"><span class="pre">filenames</span></code>) to contain a list of files?</li>
+<li>What are some disadvantages of using a string variable for a list of
+files, in contrast to a Python list variable?</li>
+<li>Can you think of any cases where <strong>you</strong> might use a list of
+filenames like we generate in this exercise?</li>
+</ol>
+</div>
+</div>
+<div class="section" id="problem-2-nested-for-loops">
+<h2>Problem 2 - Nested <code class="docutils literal"><span class="pre">for</span></code> loops<a class="headerlink" href="#problem-2-nested-for-loops" title="Permalink to this headline">¶</a></h2>
+<p>In addition to having single <code class="docutils literal"><span class="pre">for</span></code> loops that iterate across some
+variable range, it is possible to <em>nest</em> <code class="docutils literal"><span class="pre">for</span></code> loops within one
+another. Consider the example below:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="s1">&#39;dog&#39;</span><span class="p">:</span>
+<span class="gp">... </span>    <span class="k">for</span> <span class="n">char2</span> <span class="ow">in</span> <span class="s1">&#39;cat&#39;</span><span class="p">:</span>
+<span class="gp">... </span>        <span class="nb">print</span> <span class="p">(</span><span class="n">char</span><span class="p">,</span> <span class="n">char2</span><span class="p">)</span>
+<span class="go">    d c</span>
+<span class="go">    d a</span>
+<span class="go">    d t</span>
+<span class="go">    o c</span>
+<span class="go">    o a</span>
+<span class="go">    o t</span>
+<span class="go">    g c</span>
+<span class="go">    g a</span>
+<span class="go">    g t</span>
+</pre></div>
+</div>
+<p>Here, you can see that in the first pass through the first <code class="docutils literal"><span class="pre">for</span></code> loop,
+the value of <code class="docutils literal"><span class="pre">char</span></code> is <code class="docutils literal"><span class="pre">d</span></code>. Entering the inner (or nested) loop,
+<code class="docutils literal"><span class="pre">char2</span></code> is set to <code class="docutils literal"><span class="pre">c</span></code>. After this, the output is written to the
+screen and since there are more letters to loop over in the inner
+<code class="docutils literal"><span class="pre">for</span></code> loop, the value of <code class="docutils literal"><span class="pre">char2</span></code> will be updated upon the next pass.
+The second time through the inner loop, <code class="docutils literal"><span class="pre">char2</span></code> is set to <code class="docutils literal"><span class="pre">a</span></code> while
+<code class="docutils literal"><span class="pre">char</span></code> remains <code class="docutils literal"><span class="pre">d</span></code>. Like this, the inner loop will run through all
+of the letters in <code class="docutils literal"><span class="pre">cat</span></code> for each time that <code class="docutils literal"><span class="pre">char</span></code> is updated in the
+outer loop. It doesn&#8217;t take too much imagination to figure out this is a
+very useful concept.</p>
+<p>For this problem you should create a new Python script <code class="docutils literal"><span class="pre">make_flag.py</span></code>
+that does the following:</p>
+<ol class="arabic">
+<li><p class="first">Creates a variable <code class="docutils literal"><span class="pre">star</span></code> with text <code class="docutils literal"><span class="pre">&quot;*&quot;</span></code> and an empty string
+variable <code class="docutils literal"><span class="pre">text</span></code>. Recall, you can created empty string variables by
+assigning <code class="docutils literal"><span class="pre">&quot;&quot;</span></code> as their value.</p>
+</li>
+<li><p class="first">Uses nested <code class="docutils literal"><span class="pre">for</span></code> loops and the variables above to produce the text
+formation below when <code class="docutils literal"><span class="pre">print(text)</span></code> is run at the end of your
+script.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*******</span>
+<span class="o">*******</span>
+<span class="o">*******</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Creates a varaiable <code class="docutils literal"><span class="pre">line</span></code> with text <code class="docutils literal"><span class="pre">&quot;-&quot;</span></code> and an empty string
+variable <code class="docutils literal"><span class="pre">flag</span></code>.</p>
+</li>
+<li><p class="first">Uses nested <code class="docutils literal"><span class="pre">for</span></code> loops and the variables above to produce the text
+formation below when <code class="docutils literal"><span class="pre">print(flag)</span></code> is run at the end of your
+script. <strong>Note</strong>: You will need to use conditional statements to
+produce the desired output.</p>
+<div class="highlight-default"><div class="highlight"><pre><span></span><span class="o">*******------------</span>
+<span class="o">*******------------</span>
+<span class="o">*******------------</span>
+<span class="o">-------------------</span>
+<span class="o">-------------------</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<div class="section" id="questions-for-problem-2">
+<h3>Questions for Problem 2<a class="headerlink" href="#questions-for-problem-2" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>If faced with having to reproduce the character patterns in this
+exercise with a Python script any way you can, how might you approach
+this problem differently? For example, let&#8217;s say you did not need to
+use the variables <code class="docutils literal"><span class="pre">star</span> <span class="pre">=</span> <span class="pre">&quot;*&quot;</span></code> and <code class="docutils literal"><span class="pre">line</span> <span class="pre">=</span> <span class="pre">&quot;-&quot;</span></code>.</li>
+<li>Using nested loops is very common for Python scripts that deal with
+two-dimensional data such as latitude and longitude, or depth versus
+distance. Can you think of any cases in which you might use a nested
+loop in a Python script?</li>
+</ol>
+</div>
+</div>
+<div class="section" id="problem-3-working-with-projections-using-conditional-statements">
+<h2>Problem 3 - Working with projections using conditional statements<a class="headerlink" href="#problem-3-working-with-projections-using-conditional-statements" title="Permalink to this headline">¶</a></h2>
+<p>In Python there is a handy way of asking input from the user using
+<code class="docutils literal"><span class="pre">input</span></code> function such as:</p>
+<p><code class="docutils literal"><span class="pre">python</span>&#160;&#160;&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">name</span> <span class="pre">=</span> <span class="pre">input('Please</span> <span class="pre">tell</span> <span class="pre">me</span> <span class="pre">your</span> <span class="pre">name:\n')</span>&#160;&#160;&#160; <span class="pre">Please</span> <span class="pre">tell</span> <span class="pre">me</span> <span class="pre">your</span> <span class="pre">name:</span>&#160;&#160;&#160; <span class="pre">Henrikki</span>&#160;&#160;&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">print(&quot;Hello&quot;,</span> <span class="pre">name)</span>&#160;&#160;&#160; <span class="pre">Hello</span> <span class="pre">Henrikki</span></code></p>
+<p>Your job in this problem is to create a new Python script
+<code class="docutils literal"><span class="pre">epsg_finder.py</span></code> that:</p>
+<ol class="arabic simple">
+<li>Asks the user for an input value by displaying the text &#8220;What is the
+EPSG value of the input shapefile?&#8221;</li>
+</ol>
+<ul class="simple">
+<li>If the user says <code class="docutils literal"><span class="pre">4326</span></code>, the program prints &#8220;EPSG value 4326
+corresponds to WGS84&#8221; to the screen</li>
+<li>If the user says <code class="docutils literal"><span class="pre">3067</span></code>, the program prints “EPSG value 3067
+corresponds to ETRS-TM35FIN&#8221; to the screen</li>
+<li>If the user says <code class="docutils literal"><span class="pre">2392</span></code>, the program prints “EPSG value 2392
+corresponds to KKJ / Finland zone2&#8221; to the screen</li>
+<li>If the user enters any other value, the program should print &#8220;There
+are so many spatial references..I don’t know them all, sorry.&#8221; to the
+screen</li>
+</ul>
+<div class="section" id="questions-for-problem-3">
+<h3>Questions for Problem 3<a class="headerlink" href="#questions-for-problem-3" title="Permalink to this headline">¶</a></h3>
+<ol class="arabic simple">
+<li>Did you use any <code class="docutils literal"><span class="pre">elif</span></code> statements in your Python code? If so, can
+you think of any way in which you could rewrite you code without
+using <code class="docutils literal"><span class="pre">elif</span></code> statements? If not, can you think of any way in which
+you could rewrite your code to include them?</li>
+<li>Why did you choose to include or not include <code class="docutils literal"><span class="pre">elif</span></code> statements in
+your code? Did it make more sense to use to use them, or was it
+easier to write your code without?</li>
+</ol>
+</div>
+</div>
+<div class="section" id="general-tips">
+<h2>General tips<a class="headerlink" href="#general-tips" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic">
+<li><p class="first">Create a general template for your new script files and commit it to
+GitHub right when you start working on your script(s).</p>
+</li>
+<li><p class="first">Your scripts should also follow the format described earlier in the
+course with a block comment at the start of the file, inline comments
+describing how it works and good use of blank lines to make the code
+easy to read.</p>
+</li>
+<li><p class="first">Look carefully at the requirements for each exercise and be sure to
+follow them.</p>
+</li>
+<li><p class="first">In case you have forgotten, string variables can be added together.
+For example,</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;Taco &quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">b</span> <span class="o">=</span> <span class="s2">&quot;time&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">c</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">b</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">c</span><span class="p">)</span>
+<span class="go">Taco time</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">The questions after the exercises do not necessarily have correct or
+incorrect answers, but they are meant to make you think a bit about
+how you have written your scripts and how they might be applied to
+your own data/research/studies.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="answers">
+<h1>Answers<a class="headerlink" href="#answers" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="problem-1">
+<h2>Problem 1<a class="headerlink" href="#problem-1" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Digital Geography Lab.
+      Last updated on Mar 01, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'1.0',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
