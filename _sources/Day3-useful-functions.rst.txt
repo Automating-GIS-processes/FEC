@@ -1,4 +1,4 @@
- Useful functions related to filepaths
+Useful functions related to filepaths
 ======================================
 
 When dealing with file paths in Python there are several useful
@@ -94,8 +94,7 @@ And each of those files have the first line as content:
 
    Results
 
-Footnotes
-=========
+**Footnotes**
 
 -  [0]: When reading / writing in Python, it is best to use the ``with``
    -statement as it takes care of closing your file after you have

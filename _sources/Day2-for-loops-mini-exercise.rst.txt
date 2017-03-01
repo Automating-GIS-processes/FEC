@@ -1,5 +1,5 @@
-Mini-exercise on for-loops
-==========================
+Task: generate numbers
+=======================
 
 1. Write a short script which prints out numbers 1-10 using a for-loop (2 lines of code!). Comment your code and store it in a script file `printNumbers.py`.
 
