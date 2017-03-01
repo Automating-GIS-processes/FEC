@@ -17,7 +17,8 @@ Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
 Toolbox asks three parameters: input shapefile, output rasterdataset, and value field (raster_value).
 Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.
 
-**Required steps in the script-file**
+**Required steps in the script-file for Version 1:**
+
 - Import the required module (arcpy)
 - Get parameters from the toolbox using ‘GetParametersAsText’ function
 - Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function
@@ -29,6 +30,8 @@ Version 2:
 Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
 Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
 Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionality of the tool.
+
+**Required steps in the script-file for Version 2:**
 
 - Import the required module (arcpy)
 - Get parameters from the toolbox using ‘GetParametersAsText’ function
@@ -47,6 +50,7 @@ Tool asks five parameters: input shapefile, output folder, species_attribute, at
 Tool will print useful information for the user about the execution process.
 Toolbox executes a python script called ‘Arcpy_3_SpeciesPoly2Raster_Iterate.py’ that contains all the required functionalities of the tool.
 
+**Required steps in the script-file for Version 3:**
 
 - Import the required module (arcpy)
 - Get parameters from the toolbox using ‘GetParametersAsText’ function
