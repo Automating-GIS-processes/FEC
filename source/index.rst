@@ -30,28 +30,29 @@ using the ArcPy-model for automating GIS-processes.
 +----------------+---------------------------------+-----------------+
 | Day            | Theme                           | Content         |
 +================+=================================+=================+
-| Monday         | Basics of Python 1              | Intro, GitHub,  |
-|                |                                 | IPython,Spyder, |
-|                |                                 | data types,     |
+| **Monday**     | Basics of Python 1              | - Intro,        |
+|                |                                 | - GitHub        |
+|                |                                 | - Spyder,       |
+|                |                                 | - data types,   |
++----------------+---------------------------------+-----------------+
+| **Tuesday**    | Basics of Python 2              | - if-clause     |
+|                |                                 | - for-loops     |
 |                |                                 |                 |
 +----------------+---------------------------------+-----------------+
-| Tuesday        | Basics of Python 2              |Conditional      |
-|                |                                 |statements, for- |
-|                |                                 |loops            |
+| **Wednesday**  | Basics of Python 2              | - Functions     |
+|                |                                 | - File I/O      |
+|                | Automating ArcGIS Processes     | - ArcPy-module  |
+|                |                                 |                 |
 +----------------+---------------------------------+-----------------+
-| Wednesday      | Basics of Python 2              | Functions,      |
-|                |                                 | File I/O.       |
-|                | Automating ArcGIS Processes     | ArcPy-module,   |
-|                |                                 | ModelBuilder    |
-+----------------+---------------------------------+-----------------+
-| Friday         | Automating ArcGIS Processes     | Creating a      |
+| **Thursday**   | Automating ArcGIS Processes     | Creating a      |
 |                |                                 | toolbox using   |
 |                |                                 | Python          |
 +----------------+---------------------------------+-----------------+
-| Friday         | Automating ArcGIS Processes     | Finalizing      |
+| **Friday**     | Automating ArcGIS Processes     | Finalizing      |
 |                | Revision                        | exercises       |
 +----------------+---------------------------------+-----------------+
 
+|
 Course contents:
 ----------------
 
