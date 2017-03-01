@@ -30,7 +30,7 @@ Course contents:
 
 .. toctree::
     :maxdepth: 2
-    :caption: Basics of Python
+    :caption: Basics of Python 1
 
     Day1-Intro
     Day1-Getting-started-with-python
@@ -46,7 +46,7 @@ Course contents:
 
 .. toctree::
     :maxdepth: 2
-    :caption: Conditional statements, for-loops and functions
+    :caption: Basics of Python 2
 
     Day2-conditional-statements
     Day2-for-loops

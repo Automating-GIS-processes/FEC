@@ -1,5 +1,5 @@
-Introduction to Version Control and GitHub
-==========================================
+Version Control and GitHub
+============================
 
 One of the core components of this course (besides learning programming)
 is to learn how to use `version

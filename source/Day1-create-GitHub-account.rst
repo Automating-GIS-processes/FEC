@@ -9,7 +9,7 @@ Both **Git** and **GitHub** provide many more features than the ones mentioned
 here, and we encourage you to start using them for version control, documenting your personal work and collaborating with others.
 
 
-Create a GitHub-account
+Task: Create a GitHub-account
 -----------------------
 
 .. figure:: img/GitHub-home.png

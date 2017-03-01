@@ -1,5 +1,5 @@
-Writing your own Python scripts
-===============================
+Script Files (*.py)
+===================
 
 As you may be noticing by now, it isn't that convenient to type in all
 of the commands you would like to use in the IPython interpreter window.
