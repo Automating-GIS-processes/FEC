@@ -20,6 +20,38 @@ At the end of the course you should be able to generate, understand and use code
 
 .. figure:: img/GISprocess.png
 
+Course chedule:
+-----------------
+
+The course is divided into three blocks. During the first days of the course,
+we will learn the basics of python. During the last days of the course we will apply the basic skills
+using the ArcPy-model for automating GIS-processes.
+
++----------------+---------------------------------+-----------------+
+| Day            | Theme                           | Content         |
++================+=================================+=================+
+| Monday         | Basics of Python 1              | Intro, GitHub,  |
+|                |                                 | IPython,Spyder, |
+|                |                                 | data types,     |
+|                |                                 |                 |
++----------------+---------------------------------+-----------------+
+| Tuesday        | Basics of Python 2              |Conditional      |
+|                |                                 |statements, for- |
+|                |                                 |loops            |
++----------------+---------------------------------+-----------------+
+| Wednesday      | Basics of Python 2              | Functions,      |
+|                |                                 | File I/O.       |
+|                | Automating ArcGIS Processes     | ArcPy-module,   |
+|                |                                 | ModelBuilder    |
++----------------+---------------------------------+-----------------+
+| Friday         | Automating ArcGIS Processes     | Creating a      |
+|                |                                 | toolbox using   |
+|                |                                 | Python          |
++----------------+---------------------------------+-----------------+
+| Friday         | Automating ArcGIS Processes     | Finalizing      |
+|                | Revision                        | exercises       |
++----------------+---------------------------------+-----------------+
+
 Course contents:
 ----------------
 
