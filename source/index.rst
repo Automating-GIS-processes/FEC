@@ -35,10 +35,12 @@ Course contents:
     Day1-Intro
     Day1-Getting-started-with-python
     Day1-working-environment
-    Day1-Strings-mini-exercise
-    Day1-string-operations
-    Day1-VCS
     Day1-Data-types
+    Day1-string-operations
+    Day1-Strings-mini-exercise
+    Day1-writing-scripts
+    Day1-VCS
+    Day1-Create-GitHubAccount
     Day1-Exercise1
 
 .. toctree::
