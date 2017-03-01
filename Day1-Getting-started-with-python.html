@@ -171,12 +171,12 @@
 <p>This tutorial is based on material from the <a class="reference external" href="https://github.com/Python-for-geo-people">python-for-geopeople</a> -course and <a class="reference external" href="http://software-carpentry.org/">Software Carpentry
 group&#8217;s</a> lessons on <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/">Programming with
 Python</a>.</p>
-<p>For a full documentation of Python, please refer to the <a class="reference external" href="https://docs.python.org/3.5/">online documentation</a>
-Throughout the course, if you get confused remember ask from others and to search for help online (just google it!).</p>
+<p>For a full documentation of Python, please refer to the <a class="reference external" href="https://docs.python.org/3.5/">online documentation</a>.
+Throughout the course, remember to ask help from others and to search for documentation and related discussions online (just google it!).</p>
 <div class="section" id="python-console">
 <h2>Python console<a class="headerlink" href="#python-console" title="Permalink to this headline">¶</a></h2>
 <p>There are different ways of using the Python-interpreter. We will start familiarizing ourselves with the python syntax via the IPython console window in Spyder, which is an integrated development environment (IDE) for
-scientific programming with Python.</p>
+scientific programming with Python, and later we will learn how to define our own functions.</p>
 <ol class="arabic simple">
 <li>Open Spyder from Start&gt; All Programs &gt; Anaconda3 &gt; Spyder</li>
 </ol>
@@ -324,7 +324,7 @@ use capital letters for each word with no spaces between (e.g.,
 <code class="docutils literal"><span class="pre">TemperatureInFahrenheit</span></code>). This is called CamelCaseNaming. Both
 options are easy to read and help you use <em>good</em> variable names.
 After all, <em>people</em> should be able to easily understand what
-different variables contain :+1:.</p>
+different variables contain.</p>
 </li>
 <li><p class="first">Note that changing the values of a variable does not affect those of
 other variables.</p>
@@ -347,7 +347,35 @@ variables are in memory by typing <code class="docutils literal"><span class="pr
 <li><p class="first">There are 4 basic <em>data types</em> in Python as shown in the table below.</p>
 </li>
 </ol>
-<p>cd</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="29%" />
+<col width="40%" />
+<col width="31%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Data type name</td>
+<td>Data type</td>
+<td>Example</td>
+</tr>
+<tr class="row-even"><td><cite>int</cite></td>
+<td>Whole integer values</td>
+<td><cite>4</cite></td>
+</tr>
+<tr class="row-odd"><td><cite>float</cite></td>
+<td>Decimal values</td>
+<td><cite>3.1415</cite></td>
+</tr>
+<tr class="row-even"><td><cite>str</cite></td>
+<td>Character strings</td>
+<td><cite>&#8216;Hot&#8217;</cite></td>
+</tr>
+<tr class="row-odd"><td><cite>bool</cite></td>
+<td>True/false values</td>
+<td><cite>True</cite></td>
+</tr>
+</tbody>
+</table>
 <p>The data types are displayed when using <code class="docutils literal"><span class="pre">%whos</span></code>, but can also be found using the``type()`` function.
 As you will see, the data types are important because some are not compatible with one another.</p>
 <blockquote>
@@ -395,7 +423,7 @@ these things to put the computer to work for us.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Digital Geography Lab.
-      Last updated on Feb 27, 2017.
+      Last updated on Mar 01, 2017.
 
     </p>
   </div>
