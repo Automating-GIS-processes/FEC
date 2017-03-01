@@ -62,7 +62,7 @@ inflammation\_paths = glob.glob(source\_dir + "/inflammation\*.csv")
 filename of the input file and print it as information for the user
 filename = os.path.basename(fp) print(filename)
 
-::
+.. code:: python
 
          # Open the source file in read mode
          with open(fp, 'r') as f:
@@ -78,7 +78,7 @@ filename = os.path.basename(fp) print(filename)
                 # Write it to the output file
                 w.write(first_line)
 
-\`\`\`
+
 
 Now we have copied the inflammation files in our Results -folder:
 
