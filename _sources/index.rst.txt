@@ -36,6 +36,7 @@ Course contents:
     Day1-Getting-started-with-python
     Day1-working-environment
     Day1-Strings-mini-exercise
+    Day1-string-operations
     Day1-VCS
     Day1-Data-types
     Day1-Exercise1
@@ -44,7 +45,6 @@ Course contents:
     :maxdepth: 2
     :caption: Day 2
 
-    Day2-string-operations
     Day2-conditional-statements
     Day2-for-loops
     Day2-for-loops-mini-exercise
