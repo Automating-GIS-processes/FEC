@@ -169,13 +169,17 @@ libraries
 
 9. There are 4 basic *data types* in Python as shown in the table below.
 
-
-    | Data type name | Data type            | Example         |
-    | -------------- | -------------------- | --------------- |
-    | `int`          | Whole integer values | `4`             |
-    | `float`        | Decimal values       | `3.1415`        |
-    | `str`          | Character strings    | `'Hot'`         |
-    | `bool`         | True/false values    | `True`          |
++----------------+----------------------+-----------------+
+| Data type name | Data type            | Example         |
++----------------+----------------------+-----------------+
+| `int`          | Whole integer values | `4`             |
++----------------+----------------------+-----------------+
+| `float`        | Decimal values       | `3.1415`        |
++----------------+----------------------+-----------------+
+| `str`          | Character strings    | `'Hot'`         |
++----------------+----------------------+-----------------+
+| `bool`         | True/false values    | `True`          |
++----------------+----------------------+-----------------+
 
 The data types are displayed when using ``%whos``, but can also be found using the``type()`` function.
 As you will see, the data types are important because some are not compatible with one another.
