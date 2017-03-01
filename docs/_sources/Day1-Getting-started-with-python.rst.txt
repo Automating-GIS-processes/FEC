@@ -5,14 +5,14 @@ This tutorial is based on material from the `python-for-geopeople <https://githu
 group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
-For a full documentation of Python, please refer to the `online documentation <https://docs.python.org/3.5/>`_
-Throughout the course, if you get confused remember ask from others and to search for help online (just google it!).
+For a full documentation of Python, please refer to the `online documentation <https://docs.python.org/3.5/>`_.
+Throughout the course, remember to ask help from others and to search for documentation and related discussions online (just google it!).
 
 
 Python console
 ---------------
 There are different ways of using the Python-interpreter. We will start familiarizing ourselves with the python syntax via the IPython console window in Spyder, which is an integrated development environment (IDE) for
-scientific programming with Python.
+scientific programming with Python, and later we will learn how to define our own functions.
 
 1. Open Spyder from Start> All Programs > Anaconda3 > Spyder
 
@@ -57,6 +57,7 @@ operations you can perform using Python.
 
    Wait, what? Python can't calculate square roots or do basic
    trigonometry? Of course it can, but we need one more step.
+
 
 3. The list of basic arithmetic operations that can be done by default
    in Python is in the table below.
@@ -144,7 +145,7 @@ libraries
    ``TemperatureInFahrenheit``). This is called CamelCaseNaming. Both
    options are easy to read and help you use *good* variable names.
    After all, *people* should be able to easily understand what
-   different variables contain :+1:.
+   different variables contain.
 
 7. Note that changing the values of a variable does not affect those of
    other variables.
@@ -168,8 +169,17 @@ libraries
 
 9. There are 4 basic *data types* in Python as shown in the table below.
 
-
-cd
++----------------+----------------------+-----------------+
+| Data type name | Data type            | Example         |
++================+======================+=================+
+| `int`          | Whole integer values | `4`             |
++----------------+----------------------+-----------------+
+| `float`        | Decimal values       | `3.1415`        |
++----------------+----------------------+-----------------+
+| `str`          | Character strings    | `'Hot'`         |
++----------------+----------------------+-----------------+
+| `bool`         | True/false values    | `True`          |
++----------------+----------------------+-----------------+
 
 The data types are displayed when using ``%whos``, but can also be found using the``type()`` function.
 As you will see, the data types are important because some are not compatible with one another.
