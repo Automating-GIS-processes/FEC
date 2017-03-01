@@ -47,6 +47,7 @@ Course contents:
 .. toctree::
     :maxdepth: 2
     :caption: Conditional statements, for-loops and functions
+
     Day2-conditional-statements
     Day2-for-loops
     Day2-for-loops-mini-exercise
