@@ -1,5 +1,5 @@
-Create a GitHub-account
-=======================
+Task: Create a GitHub-account
+=============================
 
 During this course, we will use GitHub as the place for **distributing scripts
 and documenting our work**. For example, the source code of these pages can be found
@@ -9,7 +9,7 @@ Both **Git** and **GitHub** provide many more features than the ones mentioned
 here, and we encourage you to start using them for version control, documenting your personal work and collaborating with others.
 
 
-Task: Create a GitHub-account
+Create a GitHub-account
 -----------------------
 
 .. figure:: img/GitHub-home.png
