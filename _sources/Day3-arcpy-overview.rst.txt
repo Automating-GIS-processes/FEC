@@ -6,7 +6,7 @@ Automating ArcGIS-processes
     :width: 200 px
 
 
-This week we will take a quick tour on **how to use Python in ArcGIS** using `arcpy <http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm>`_ -module.
+In this section we will take a tour on **how to use Python in ArcGIS** using `arcpy <http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm>`_ -module.
 For doing the ArcPy-exercises you need to work on a computer where `ArcGIS <http://desktop.arcgis.com/en/>`_ is installed. ArcGIS is not an open source or freely available
 software such as `Quantum GIS <http://www.qgis.org/en/site/>`_ or the other Python tools that we have been using. However, it is widely used software in many places (companies, public sector etc.)
 which is the reason why we give this introduction how you can automatize ArcGIS workflows using Python scripting and the ArcPy-module.
@@ -22,11 +22,11 @@ After completing the ArcPy-lesson and exercises you should be able to:
 
  - Create a simple user interface using ArcGIS ToolBox.
 
- - Run ArcGIS-tools tools from Python using the ArcPy-module.
+ - Run ArcGIS-tools from Python using the ArcPy-module.
 
  - Find and know how to read the ArcPy documentation online.
 
-Task: Processing species distribution data
+Case: Processing species distribution data
 --------------------------------------------
 
 Source data for the ArcPy-exercise has been downloaded from the `IUCN Red List of Threatened Species website <http://www.iucnredlist.org/>`_.

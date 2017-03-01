@@ -117,11 +117,11 @@
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Automating ArcGIS-processes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#task-processing-species-distribution-data">Task: Processing species distribution data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#case-processing-species-distribution-data">Case: Processing species distribution data</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
@@ -174,7 +174,7 @@
 <div class="figure">
 <img alt="_images/arcpy-logo.png" src="_images/arcpy-logo.png" />
 </div>
-<p>This week we will take a quick tour on <strong>how to use Python in ArcGIS</strong> using <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm">arcpy</a> -module.
+<p>In this section we will take a tour on <strong>how to use Python in ArcGIS</strong> using <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm">arcpy</a> -module.
 For doing the ArcPy-exercises you need to work on a computer where <a class="reference external" href="http://desktop.arcgis.com/en/">ArcGIS</a> is installed. ArcGIS is not an open source or freely available
 software such as <a class="reference external" href="http://www.qgis.org/en/site/">Quantum GIS</a> or the other Python tools that we have been using. However, it is widely used software in many places (companies, public sector etc.)
 which is the reason why we give this introduction how you can automatize ArcGIS workflows using Python scripting and the ArcPy-module.</p>
@@ -186,13 +186,13 @@ create a graphical user interface for your custom scripts in the ArcToolbox (.tb
 <blockquote>
 <div><ul class="simple">
 <li>Create a simple user interface using ArcGIS ToolBox.</li>
-<li>Run ArcGIS-tools tools from Python using the ArcPy-module.</li>
+<li>Run ArcGIS-tools from Python using the ArcPy-module.</li>
 <li>Find and know how to read the ArcPy documentation online.</li>
 </ul>
 </div></blockquote>
 </div>
-<div class="section" id="task-processing-species-distribution-data">
-<h2>Task: Processing species distribution data<a class="headerlink" href="#task-processing-species-distribution-data" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="case-processing-species-distribution-data">
+<h2>Case: Processing species distribution data<a class="headerlink" href="#case-processing-species-distribution-data" title="Permalink to this headline">¶</a></h2>
 <p>Source data for the ArcPy-exercise has been downloaded from the <a class="reference external" href="http://www.iucnredlist.org/">IUCN Red List of Threatened Species website</a>.
 We will be working with the species distribution data of different subspecies of Damselfish (<em>lat. Pomacentridae</em>). In practice, we will incrementally create an ArcGIS Python tool that
 <strong>converts the individual Damselfish species distribution Polygons into raster layers</strong> (<code class="docutils literal"><span class="pre">.tif</span></code>). Such processing step has been included in the methodology for prioritizing global
