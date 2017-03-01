@@ -25,32 +25,37 @@ Course chedule:
 
 The course is divided into three blocks. During the first days of the course,
 we will learn the basics of python. During the last days of the course we will apply the basic skills
-using the ArcPy-model for automating GIS-processes.
+using the ArcPy-model for automating GIS-processes. Here is the preliminary schedule for the course
+(might be subject to changes depending on how fast we proceed as a group!)
 
-+----------------+---------------------------------+-----------------+
-| Day            | Theme                           | Content         |
-+================+=================================+=================+
-| **Monday**     | Basics of Python 1              | - Intro,        |
-|                |                                 | - GitHub        |
-|                |                                 | - Spyder,       |
-|                |                                 | - data types,   |
-+----------------+---------------------------------+-----------------+
-| **Tuesday**    | Basics of Python 2              | - if-clause     |
-|                |                                 | - for-loops     |
-|                |                                 |                 |
-+----------------+---------------------------------+-----------------+
-| **Wednesday**  | Basics of Python 2              | - Functions     |
-|                |                                 | - File I/O      |
-|                | Automating ArcGIS Processes     | - ArcPy-module  |
-|                |                                 |                 |
-+----------------+---------------------------------+-----------------+
-| **Thursday**   | Automating ArcGIS Processes     | Creating a      |
-|                |                                 | toolbox using   |
-|                |                                 | Python          |
-+----------------+---------------------------------+-----------------+
-| **Friday**     | Automating ArcGIS Processes     | Finalizing      |
-|                | Revision                        | exercises       |
-+----------------+---------------------------------+-----------------+
++----------------+---------------------------------+------------------+
+| Day            | Theme                           | Content          |
++================+=================================+==================+
+| **Monday**     | Basics of Python 1              | - Intro          |
+|                |                                 | - GitHub         |
+|                |                                 | - Spyder,        |
+|                |                                 | - data types     |
+|                |                                 | - Exercise 1     |
++----------------+---------------------------------+------------------+
+| **Tuesday**    | Basics of Python 2              | - if-clause      |
+|                |                                 | - for-loops      |
+|                |                                 | - Exercise 2     |
++----------------+---------------------------------+------------------+
+| **Wednesday**  | Basics of Python 2              | - Functions      |
+|                |                                 | - File I/O       |
+|                |                                 | - Exercise 3     |
+|                | Automating ArcGIS Processes     | - Modules        |
+|                |                                 | - ArcPy-module   |
++----------------+---------------------------------+------------------+
+|                |                                 | - ModelBuilder   |
+| **Thursday**   | Automating ArcGIS Processes     | - ArcToolbox     |
+|                |                                 | - Arcpy-scripts  |
+|                |                                 | - Final exercise |
++----------------+---------------------------------+------------------+
+| **Friday**     | Automating ArcGIS Processes     | - Final exercise |
+|                |                                 | - revision       |
+|                |                                 | - feedback       |
++----------------+---------------------------------+------------------+
 
 |
 Course contents:
