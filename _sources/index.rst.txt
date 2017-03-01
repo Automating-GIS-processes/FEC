@@ -55,6 +55,7 @@ Course contents:
     Day2-modules
     Day2-Exercise3-Functions
     Day2-reading-files
+    Day-3-useful-functions
     Day2-mini-exercise-writingFiles
 
 
