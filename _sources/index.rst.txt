@@ -30,7 +30,7 @@ Course contents:
 
 .. toctree::
     :maxdepth: 2
-    :caption: Day 1
+    :caption: Days 1-2: Basics of Python
 
     Day1-Intro
     Day1-Getting-started-with-python
@@ -42,11 +42,6 @@ Course contents:
     Day1-intro-to-GitHub
     Day1-create-GitHub-account
     Day1-Exercise1
-
-.. toctree::
-    :maxdepth: 2
-    :caption: Day 2
-
     Day2-conditional-statements
     Day2-for-loops
     Day2-for-loops-mini-exercise
@@ -55,7 +50,7 @@ Course contents:
     Day2-modules
     Day2-Exercise3-Functions
     Day2-reading-files
-    Day-3-useful-functions
+    Day3-useful-functions
     Day2-mini-exercise-writingFiles
 
 

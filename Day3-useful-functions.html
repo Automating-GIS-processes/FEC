@@ -87,8 +87,8 @@
           
             
             
-                <p class="caption"><span class="caption-text">Day 1</span></p>
-<ul>
+                <p class="caption"><span class="caption-text">Days 1-2: Basics of Python</span></p>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
@@ -99,9 +99,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-intro-to-GitHub.html">Introduction to Version Control and GitHub</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-create-GitHub-account.html">Create a GitHub-account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
-</ul>
-<p class="caption"><span class="caption-text">Day 2</span></p>
-<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Mini-exercise on for-loops</a></li>
@@ -155,7 +152,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day-3-useful-functions.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day3-useful-functions.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -222,7 +219,7 @@ inflammation_paths = glob.glob(source_dir + &#8220;/inflammation*.csv&#8221;)</p
 <p># Iterate over the files &gt;&gt;&gt; for fp in inflammation_paths: # Parse the
 filename of the input file and print it as information for the user
 filename = os.path.basename(fp) print(filename)</p>
-<div class="highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Open the source file in read mode</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Open the source file in read mode</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="c1"># Parse the output file name, combine the result_dir folder-path and the filename of the input file</span>
     <span class="n">output_fp</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
@@ -237,7 +234,6 @@ filename = os.path.basename(fp) print(filename)</p>
        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">first_line</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>```</p>
 <p>Now we have copied the inflammation files in our Results -folder:</p>
 <div class="figure" id="id2">
 <img alt="Results" src="../img/copy-files-1-line.PNG" />
