@@ -33,10 +33,6 @@ Thus, you can use similar programming approach for many other tools as well that
 Basically how you can proceed from here is to read the `documentation of arcpy <http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy/what-is-arcpy-.htm>`_ to find out how your typical analysis steps and tools in ArcGIS
 can be called from Python using arcpy -module. One good way to find documentation about the tool that you are searching is to use e.g. Google or use the search functionality in ArcGIS documentation pages.
 
-.. hint::
-
-    If you know how to use `Model Builder <http://pro.arcgis.com/en/pro-app/help/analysis/geoprocessing/modelbuilder/what-is-modelbuilder-.htm>`_, it is possible to `export your model to a Python script <http://desktop.arcgis.com/en/arcmap/10.3/analyze/modelbuilder/exporting-a-model-to-a-python-script.htm>`_.
-    In that way, you can at least see how those tools that you use in your model can be called from Python using arcpy module.
 
 .. todo::
 
