@@ -11,7 +11,7 @@ the codes (privately) in `GitHub <https://github.com/>`__.
 Familiar?
 ----------
 
-.. figure:: ../img/version_control_motivation_comics.png
+.. figure:: /img/version_control_motivation_comics.png
    :alt: Motivation for version control
 
    Motivation for version control
@@ -40,7 +40,7 @@ think of it as a tape: if you rewind the tape and start at the base
 document, then you can play back each change and end up with your latest
 version.
 
-.. figure:: ../img/play-changes.PNG
+.. figure:: /img/play-changes.PNG
    :alt: Illustration of committing changes
 
    Illustration of committing changes
