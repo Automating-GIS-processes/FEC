@@ -1,5 +1,6 @@
 Model Builder tutorial
 ======================
+.. figure:: img/GISflowchart.png
 
 In this section, we assume that you are familiar with the most common geoprocessing tools in
 ArcGIS and how to use them via the ArcGIS model builder. In this tutorial, we will revise

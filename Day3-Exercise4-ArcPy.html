@@ -173,18 +173,22 @@
             
   <div class="section" id="final-exercise-arcpy-script-for-processing-species-data">
 <h1>Final Exercise: ArcPy-script for processing species data<a class="headerlink" href="#final-exercise-arcpy-script-for-processing-species-data" title="Permalink to this headline">¶</a></h1>
-<p>As an output of this exercise we will create three  ArcPy-scripts are written together during the session:</p>
+<p>As an output of this exercise we will create three  ArcPy-scripts:</p>
 <ul class="simple">
 <li><strong>Version 1:</strong> Arcpy_1_SimplePoly2Raster.py</li>
 <li><strong>Version 2:</strong> Arcpy_2_SpeciesPoly2Raster.py</li>
 <li><strong>Version 3:</strong> Arcpy_3_SpeciesPoly2Raster_Iterate.py</li>
 </ul>
-<p>You can document your codes into GitHub.</p>
+<p>We will write the scripts together in the class, but if you wish you can also proceed at your own pace by following the
+instructions in the upcoming sections. Feel free to document your codes into GitHub.</p>
 <div class="section" id="version-1">
 <h2>Version 1:<a class="headerlink" href="#version-1" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
-Toolbox asks three parameters: input shapefile, output rasterdataset, and value field (raster_value).
+Toolbox asks three parameters from the user: input shapefile, output rasterdataset, and value field (raster_value).
 Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.</p>
+<div class="figure">
+<img alt="_images/Arcpy_version1_interface.png" src="_images/Arcpy_version1_interface.png" />
+</div>
 <p><strong>Required steps in the script-file for Version 1:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
@@ -197,6 +201,9 @@ Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that co
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
 Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
 Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionality of the tool.</p>
+<div class="figure">
+<img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
+</div>
 <p><strong>Required steps in the script-file for Version 2:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
@@ -213,6 +220,9 @@ Tool will print useful information for the user about the execution process. Too
 Tool asks five parameters: input shapefile, output folder, species_attribute, attribute_name_for_raster_value, raster_value.
 Tool will print useful information for the user about the execution process.
 Toolbox executes a python script called ‘Arcpy_3_SpeciesPoly2Raster_Iterate.py’ that contains all the required functionalities of the tool.</p>
+<div class="figure">
+<img alt="_images/Arcpy_version3_interface.png" src="_images/Arcpy_version3_interface.png" />
+</div>
 <p><strong>Required steps in the script-file for Version 3:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
