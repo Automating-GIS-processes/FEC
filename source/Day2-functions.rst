@@ -33,7 +33,7 @@ e.g. weather or climate data between the US and Europe.
        ...    return 9/5 * temp + 32
 
 .. figure:: img/Function_anatomy.png
-   :alt: Function anatomy
+   :scale: 40 %
 
 The function definition opens with the keyword ``def`` followed by the
 name of the function and a list of parameter names in parentheses. The
@@ -102,17 +102,12 @@ be given when the function is used.
        >>> print('Absolute zero in Fahrenheit:', absolute_zero_f)
        Absolute zero in Fahrenheit: -459.66999999999996
 
-Next steps
-----------
+**Next steps**
 
 Next, if you are interested you can go through the `extra materials
 below <#4>`__ that teach you how to write and import functions from a
 dedicated Python file. This can be quite handy when you start to have
-many customized functions for different tasks. Otherwise, you can
-`continue with the lecture materials. <../README.md>`__
-
-"Pro" tips (extra material)
-============================
+many customized functions for different tasks.
 
 4. Importing functions from a script
 ------------------------------------
@@ -374,7 +369,3 @@ Footnotes
    `modules.md <modules.md#using-modules>`__). Warning: there is a risk
    of conflict when doing this, use with care (see more from modules.md)
 
-**Next**: `Loading and using modules <modules.md>`__\  **Home**: `Lesson
-4 main
-page <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules>`__\ 
-**Previous**: `Using the Spyder IDE <spyder.md>`__
