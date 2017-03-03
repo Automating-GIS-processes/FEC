@@ -343,10 +343,10 @@ Let's use it:
 
 .. code:: python
 
-    >>>temp_in_kelvin = 30
-    >>>temperature_c = temp_calculator(temp=temp_in_kelvin, convert_to="C")
-    >>>print("Temperature", temp_in_kelvin, "in Kelvin is", temperature_c, "in Celsius")
-    Temperature 30 in Kelvin is -243.14999999999998 in Celsius.
+    temp_in_kelvin = 30
+    temperature_c = temp_calculator(temp=temp_in_kelvin, convert_to="C")
+    print("Temperature", temp_in_kelvin, "in Kelvin is", temperature_c, "in Celsius")
+    # The last line should print out: "Temperature 30 in Kelvin is -243.14999999999998 in Celsius."
 
 Footnotes
 ---------
