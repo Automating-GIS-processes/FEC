@@ -184,7 +184,7 @@ instructions in the upcoming sections. Feel free to document your codes into Git
 <div class="section" id="version-1">
 <h2>Version 1:<a class="headerlink" href="#version-1" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
-Toolbox asks three parameters from the user: input shapefile, output rasterdataset, and value field (raster_value).
+Toolbox asks three parameters from the user: <strong>input shapefile</strong>, <strong>output rasterdataset</strong>, and <strong>value field</strong> (raster_value).
 Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.</p>
 <div class="figure">
 <img alt="_images/Arcpy_version1_interface.png" src="_images/Arcpy_version1_interface.png" />
@@ -192,48 +192,48 @@ Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that co
 <p><strong>Required steps in the script-file for Version 1:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
-<li>Get parameters from the toolbox using ‘GetParametersAsText’ function</li>
-<li>Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function</li>
+<li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>
+<li>Convert input shapefile into a Raster Dataset using <a class="reference external" href="http://pro.arcgis.com/en/pro-app/tool-reference/conversion/polygon-to-raster.htm">PolygonToRaster_conversion</a> -function</li>
 </ul>
 </div>
 <div class="section" id="version-2">
 <h2>Version 2:<a class="headerlink" href="#version-2" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
 Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
-Tool will print useful information for the user about the execution process. Toolbox executes a python script called ‘Arcpy_2_SpeciesPoly2Raster.py’ that contains all the required functionality of the tool.</p>
+Tool will print useful information for the user about the execution process. Toolbox executes a python script called <em>Arcpy_2_SpeciesPoly2Raster.py</em> that contains all the required functionality of the tool.</p>
 <div class="figure">
 <img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
 </div>
 <p><strong>Required steps in the script-file for Version 2:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
-<li>Get parameters from the toolbox using ‘GetParametersAsText’ function</li>
-<li>Add a new field into the Shapefile with ‘AddField_management’ function</li>
-<li>Update the value for the attribute just created with ‘CalculateField_management’ function</li>
-<li>Convert input shapefile into a Raster Dataset using ‘PolygonToRaster_conversion’ function</li>
-<li>Print info for the user that tool has finished successfully using ‘AddMessage’ function</li>
+<li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>
+<li>Add a new field into the Shapefile with <code class="docutils literal"><span class="pre">AddField_management</span></code> function</li>
+<li>Update the value for the attribute just created with <code class="docutils literal"><span class="pre">CalculateField_management</span></code> function</li>
+<li>Convert input shapefile into a Raster Dataset using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion</span></code> function</li>
+<li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
 </ul>
 </div>
 <div class="section" id="version-3">
 <h2>Version 3:<a class="headerlink" href="#version-3" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts individual species in a Shapefile into Raster Datasets based on species information on attribute field ‘binomial’.
-Tool asks five parameters: input shapefile, output folder, species_attribute, attribute_name_for_raster_value, raster_value.
+Tool asks five parameters: <strong>input shapefile</strong>, <strong>output folder</strong>, <strong>species_attribute</strong>, <strong>attribute_name_for_raster_value</strong>, <strong>raster_value</strong>.
 Tool will print useful information for the user about the execution process.
-Toolbox executes a python script called ‘Arcpy_3_SpeciesPoly2Raster_Iterate.py’ that contains all the required functionalities of the tool.</p>
+Toolbox executes a python script called <em>Arcpy_3_SpeciesPoly2Raster_Iterate.py</em> that contains all the required functionality of the tool.</p>
 <div class="figure">
 <img alt="_images/Arcpy_version3_interface.png" src="_images/Arcpy_version3_interface.png" />
 </div>
 <p><strong>Required steps in the script-file for Version 3:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
-<li>Get parameters from the toolbox using ‘GetParametersAsText’ function</li>
-<li>Add a new field into the Shapefile with ‘AddField_management’ function</li>
-<li>Update the value for the attribute with ‘CalculateField_management’ function</li>
-<li>Determine a list of unique species in the Shapefile using ‘SearchCursor’ function</li>
-<li>Create a Feature Layer from the shapefile using ‘MakeFeatureLayer_management’ function</li>
-<li>Select individual species from the Shapefile using ‘SelectLayerByAttribute_management’ function</li>
-<li>Convert individual species in the Shapefile into Raster Datasets using ‘PolygonToRaster_conversion’ function</li>
-<li>Print info for the user that tool has finished successfully using ‘AddMessage’ function</li>
+<li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>
+<li>Add a new field into the Shapefile with <code class="docutils literal"><span class="pre">AddField_management</span></code> function</li>
+<li>Update the value for the attribute with <code class="docutils literal"><span class="pre">CalculateField_management</span></code> function</li>
+<li>Determine a list of unique species in the Shapefile using <code class="docutils literal"><span class="pre">SearchCursor</span></code> function</li>
+<li>Create a Feature Layer from the shapefile using <code class="docutils literal"><span class="pre">MakeFeatureLayer_management</span></code> function</li>
+<li>Select individual species from the Shapefile using <code class="docutils literal"><span class="pre">SelectLayerByAttribute_management</span></code> function</li>
+<li>Convert individual species in the Shapefile into Raster Datasets using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion</span></code> function</li>
+<li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
 </ul>
 </div>
 </div>

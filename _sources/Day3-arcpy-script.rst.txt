@@ -6,7 +6,7 @@ At this point we have created a nice interface for our Python tool in ArcGIS:
 .. figure:: img/arcgis-my-script.png
     :scale: 80 %
 
-Now we need to write the functionalities for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
+Now we need to write the functionality for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
 Let's see how this can be done.
 
 First, we need start the ArcGIS IDLE (if it is not open already) from **All Programs** --> **ArcGIS**:
