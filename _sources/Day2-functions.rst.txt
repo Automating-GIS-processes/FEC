@@ -16,7 +16,7 @@ does a common task, such as converting temperatures from Fahrenheit to
 Celsius. During the course we have already used some functions such as
 ``print()`` command which is actually a built-in function in Python.
 
- 2. Anatomy of a function
+2. Anatomy of a function
 -------------------------
 
 Let's consider the task from the first week when we converted
@@ -32,6 +32,9 @@ e.g. weather or climate data between the US and Europe.
        >>> def celsius_to_fahr(temp):
        ...    return 9/5 * temp + 32
 
+.. figure:: img/Function_anatomy.png
+   :alt: Function anatomy
+
 The function definition opens with the keyword ``def`` followed by the
 name of the function and a list of parameter names in parentheses. The
 body of the function — the statements that are executed when it runs —
@@ -43,7 +46,7 @@ function (e.g., the variable ``temp`` in this function example). Inside
 the function, we use a return statement to define the value that should
 be given when the function is used.
 
- 3. Calling functions
+3. Calling functions
 ---------------------
 
 2. Let’s try running our function. Calling our self-defined function is
@@ -108,7 +111,7 @@ dedicated Python file. This can be quite handy when you start to have
 many customized functions for different tasks. Otherwise, you can
 `continue with the lecture materials. <../README.md>`__
 
- "Pro" tips (extra material)
+"Pro" tips (extra material)
 ============================
 
 4. Importing functions from a script
@@ -121,7 +124,7 @@ analysis. Basically this is done by collecting useful functions to a
 single ``.py`` file from where you can then import and use them whenever
 needed.
 
- 4.1. Saving functions into a script file
+4.1. Saving functions into a script file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Before we can import our functions we need to create a new script file
@@ -132,12 +135,18 @@ We could write the functions again into our script file but we can also
 take advantage of the **History log** tab where we should find all
 commands that we wrote in the IPython console [`1 <#Footnotes>`__\ ]:
 
+.. figure:: img/history_log.PNG
+   :alt: history log
+
 1. Copy and paste (only) the functions that we wrote earlier from the
    History log tab and save them into the *temp\_converter.py* script (
    *optionally just write them again into the file* ). It should look
    like following:
 
- 4.2. Calling functions from another script file
+.. figure:: img/temp converter.PNG
+   :alt: temp converter
+
+4.2. Calling functions from another script file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Now as we have saved our temperature conversion functions into a script
@@ -171,7 +180,7 @@ the file into the SAME FOLDER where you saved the temp\_converter.py
 
    <li>
 
-Let's now import our celsius\_to\_fahr -function from the other script
+Let's now import our ``celsius_to_fahr`` -function from the other script
 by adding a specific import statement at the top of our calculator.py
 -script. Let's also use the function so that we can see that it is
 working [3]:
@@ -184,10 +193,12 @@ working [3]:
 
    </ol>
 
-\`\`\`python from temp\_converter import celsius\_to\_fahr
+.. code:: python
 
-# Testing that the function from another file works print("Water
-freezing point in Fahrenheit:", celsius\_to\_fahr(0)) \`\`\`
+    from temp_converter import celsius_to_fahr
+
+    # Testing that the function from another file works
+    print("Water freezing point in Fahrenheit:", celsius_to_fahr(0))
 
 .. raw:: html
 
@@ -197,7 +208,7 @@ freezing point in Fahrenheit:", celsius\_to\_fahr(0)) \`\`\`
 
    <li>
 
-Run the code by pressing F5 button or by pressing the -button in Spyder.
+Run the code by pressing F5 button or by pressing the "Run file"-button in Spyder.
 We should now get following output:
 
 .. raw:: html
@@ -211,7 +222,8 @@ We should now get following output:
 -  *It is also possible to import more functions at the same time by
    listing and separating them with colon:*
 
-``python   from my_script import func1, func2, func3``
+.. code:: python
+    from my_script import func1, func2, func3
 
 .. raw:: html
 
@@ -234,14 +246,16 @@ functions work [4]:
 
    </ol>
 
-\`\`\`python import temp\_converter as tc
+.. code:: python
 
-# Testing that all functions from another file works print("Water
-freezing point in Fahrenheit:", tc.celsius\_to\_fahr(0)) print('Absolute
-zero in Celsius:', tc.kelvin\_to\_celsius(temp\_k=0)) print('Absolute
-zero in Fahrenheit:', tc.kelvin\_to\_fahrenheit(temp\_k=0)) \`\`\`
+    python import temp_converter as tc
 
- 4.3. Temperature calculator
+    # Testing that all functions from another file works
+    print("Water freezing point in Fahrenheit:", tc.celsius_to_fahr(0))
+    print('Absolute zero in Celsius:', tc.kelvin_to_celsius(temp_k=0))
+    print('Absolute zero in Fahrenheit:', tc.kelvin_to_fahrenheit(temp_k=0))
+
+4.3. Temperature calculator
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 So far our functions has had only one parameter but it is also possible
@@ -251,7 +265,7 @@ temperature to either Celsius or Fahrenheit. Function will have two
 parameters:
 
 -  **temp** = parameter for passing temperature in Kelvin
--  **convert\_to** = parameter that determines whether to output should
+-  **convert_to** = parameter that determines whether to output should
    be in Celsius or in Fahrenheit (using letters "C" or "F" accordingly)
 
 1. Let's start defining our function by giving it a name and setting the
@@ -326,11 +340,18 @@ parameters:
    in Python to find out how our function should be used. Run the script
    and try following:
 
-``python   >>> help(temp_calculator)``
+.. code:: python
+
+    >>>help(temp_calculator)
 
 Let's use it:
 
-``python   >>> temp_in_kelvin = 30   >>> temperature_c = temp_calculator(temp=temp_in_kelvin, convert_to="C")   >>> print("Temperature", temp_in_kelvin, "in Kelvin is", temperature_c, "in Celsius")   Temperature 30 in Kelvin is -243.14999999999998 in Celsius.``
+.. code:: python
+
+    >>>temp_in_kelvin = 30
+    >>>temperature_c = temp_calculator(temp=temp_in_kelvin, convert_to="C")
+    >>>print("Temperature", temp_in_kelvin, "in Kelvin is", temperature_c, "in Celsius")
+    Temperature 30 in Kelvin is -243.14999999999998 in Celsius.
 
 Footnotes
 ---------
