@@ -29,8 +29,8 @@ After completing the ArcPy-lesson and exercises you should be able to:
 Case: Processing species distribution data
 --------------------------------------------
 
-Source data for the ArcPy-exercise has been downloaded from the `IUCN Red List of Threatened Species website <http://www.iucnredlist.org/>`_.
-We will be working with the species distribution data of different subspecies of Damselfish (*lat. Pomacentridae*). In practice, we will incrementally create an ArcGIS Python tool that
+Source data for the ArcPy-exercise has been downloaded from the `IUCN Red List of Threatened Species website <http://www.iucnredlist.org/technical-documents/spatial-data>`_.
+We will be working with the species distribution data of different subspecies of Damselfish (*Pomacentridae*). In practice, we will incrementally create an ArcGIS Python tool that
 **converts the individual Damselfish species distribution Polygons into raster layers** (``.tif``). Such processing step has been included in the methodology for prioritizing global
 conservation areas based on the occurrence of endangered species (`Pouzols et al. 2014 <https://helda.helsinki.fi/bitstream/handle/10138/156062/PouzolsToivonenEtal_NonFinalProof_Nature_2014.pdf?sequence=1>`_).
 

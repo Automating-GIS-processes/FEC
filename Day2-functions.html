@@ -128,6 +128,7 @@
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
@@ -430,10 +431,10 @@ and try following:</p>
 </pre></div>
 </div>
 <p>Let&#8217;s use it:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="go">&gt;&gt;&gt;temp_in_kelvin = 30</span>
-<span class="go">&gt;&gt;&gt;temperature_c = temp_calculator(temp=temp_in_kelvin, convert_to=&quot;C&quot;)</span>
-<span class="go">&gt;&gt;&gt;print(&quot;Temperature&quot;, temp_in_kelvin, &quot;in Kelvin is&quot;, temperature_c, &quot;in Celsius&quot;)</span>
-<span class="go">Temperature 30 in Kelvin is -243.14999999999998 in Celsius.</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">temp_in_kelvin</span> <span class="o">=</span> <span class="mi">30</span>
+<span class="n">temperature_c</span> <span class="o">=</span> <span class="n">temp_calculator</span><span class="p">(</span><span class="n">temp</span><span class="o">=</span><span class="n">temp_in_kelvin</span><span class="p">,</span> <span class="n">convert_to</span><span class="o">=</span><span class="s2">&quot;C&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Temperature&quot;</span><span class="p">,</span> <span class="n">temp_in_kelvin</span><span class="p">,</span> <span class="s2">&quot;in Kelvin is&quot;</span><span class="p">,</span> <span class="n">temperature_c</span><span class="p">,</span> <span class="s2">&quot;in Celsius&quot;</span><span class="p">)</span>
+<span class="c1"># The last line should print out: &quot;Temperature 30 in Kelvin is -243.14999999999998 in Celsius.&quot;</span>
 </pre></div>
 </div>
 </div>

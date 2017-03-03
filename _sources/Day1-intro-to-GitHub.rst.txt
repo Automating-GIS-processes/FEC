@@ -26,7 +26,7 @@ multiple nearly-identical versions of the same document. Some word
 processors let us deal with this a little better, such as Microsoft
 Word’s “Track Changes”.
 
- What is version control and why to use it?
+What is version control and why to use it?
 -------------------------------------------
 
 
@@ -85,7 +85,7 @@ control (not exhaustive).
    project are stored, usually abbreviated to “repo.” Each project will
    have its own repo, which is usually located on a server and can be
    accessed by a unique URL (a link to GitHub page for example).
-
+|
 -  **Commit** = To commit is to write or merge the changes made in the
    working copy back to the repository. Whe you commit, you are
    basically taking a “snapshot” of your repository at that point in
@@ -93,25 +93,25 @@ control (not exhaustive).
    your project to any previous state. The terms 'commit' or 'checkin'
    can also be used as nouns to describe the new revision that is
    created as a result of committing.
-
+|
 -  **Revision / version** = A revision or a version is any change in
    made in any form to a document(s).
-
+|
 -  **Clone** = Cloning means creating a repository containing the
    revisions from another repository. This is equivalent to pushing or
    pulling into an empty (newly initialized) repository. As a noun, two
    repositories can be said to be clones if they are kept synchronized,
    and contain the same revisions.
-
+|
 -  **Pull / push** = Copy revisions from one repository into another.
    Pull is initiated by the receiving repository, while push is
    initiated by the source. Fetch is sometimes used as a synonym for
    pull, or to mean a pull followed by an update.
-
+|
 -  **Merge** = A merge or integration is an operation in which two sets
    of changes are applied to a file or set of files.
 
- What is GitHub?
+What is GitHub?
 ----------------
 
 Now that you know the basics of version control we can dive into
@@ -197,12 +197,12 @@ ideas, enhancements, tasks for projects on GitHub. You can use Issues
 also to organize tasks you'd like to accomplish, such as adding new
 features or auditing old ones.
 
- Resources
+Resources
 ----------
 
 -  `Screencast series in Youtube for learning
    GitHub <https://www.youtube.com/playlist?list=PL4Q4HssKcxYsTuqUUvEHJ8XxOVOHTSmle>`__
--  `Tutorial on few extra features of GitHub not (most probably) covered
+-  `Tutorial on few extra features of GitHub not covered
    in this course (e.g. branch, pull-request,
    merge) <https://guides.github.com/activities/hello-world/>`__
 -  `A TechCrunch article about 'What is GitHub

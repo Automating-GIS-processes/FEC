@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Task: write results to text file &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Model Builder tutorial &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -34,8 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="next" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/>
-        <link rel="prev" title="Useful functions related to filepaths" href="Day3-useful-functions.html"/> 
+        <link rel="next" title="ArcPy-module" href="Day3-arcpy.html"/>
+        <link rel="prev" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -101,7 +101,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Basics of Python 2</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
@@ -111,12 +111,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Task: write results to text file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
@@ -152,11 +152,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Task: write results to text file</li>
+    <li>Model Builder tutorial</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day2-mini-exercise-writingFiles.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day3-ArcGIS-modelBuilder.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -166,23 +166,15 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="task-write-results-to-text-file">
-<h1>Task: write results to text file<a class="headerlink" href="#task-write-results-to-text-file" title="Permalink to this headline">¶</a></h1>
-<p>In Exercise 3 on functions you were asked to define a function <cite>circleArea()`which takes in one parameter `radius</cite>
-and returns the Area of a circle with the given radius. Using the function, update the following code so that
-you store the output into a text file <cite>Circle_areas.txt</cite> on your computer:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">textfile</span> <span class="o">=</span> <span class="s2">&quot;Circle_areas.txt&quot;</span> <span class="c1">#Update full filepath if needed</span>
-
-<span class="c1"># Update the variable result for different radius, and save the text into a text file (one result per row)</span>
-<span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
-
-    <span class="c1"># Generate the result sentence and store it in a variable:</span>
-    <span class="n">result</span> <span class="o">=</span> <span class="s1">&#39;The area for a circle with a radius of &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">r</span><span class="p">)</span> <span class="o">+</span> <span class="s1">&#39; mm is &#39;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">circleArea</span><span class="p">(</span><span class="n">r</span><span class="p">))</span><span class="o">+</span><span class="s1">&#39; mm^2&#39;</span>
-
-    <span class="c1"># Save the contents of the variable result to the textfile</span>
-    <span class="c1"># your code here!!</span>
-</pre></div>
-</div>
+  <div class="section" id="model-builder-tutorial">
+<h1>Model Builder tutorial<a class="headerlink" href="#model-builder-tutorial" title="Permalink to this headline">¶</a></h1>
+<p>In this section, we assume that you are familiar with the most common geoprocessing tools in
+ArcGIS and how to use them via the ArcGIS model builder. In this tutorial, we will revise
+some of the basics of building a model and practice how to iterate data columns and
+data files within the model.</p>
+<p>The purpose of this exercise is to motivate you to start thinking about the different steps in the process,
+and to finally translate the whole process into a Python script.</p>
+<p><strong>[power point tutorial here]</strong></p>
 </div>
 
 
@@ -192,10 +184,10 @@ you store the output into a text file <cite>Circle_areas.txt</cite> on your comp
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day3-arcpy-overview.html" class="btn btn-neutral float-right" title="Automating ArcGIS-processes" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Day3-arcpy.html" class="btn btn-neutral float-right" title="ArcPy-module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Day3-useful-functions.html" class="btn btn-neutral" title="Useful functions related to filepaths" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day3-arcpy-overview.html" class="btn btn-neutral" title="Automating ArcGIS-processes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
