@@ -7,10 +7,7 @@ Introduction to the course
 
 Following slideshow gives you a short introduction to the main goals of this course and gives you few ideas about the aforementioned questions.
 
-.. raw:: html
-
-    <div><iframe src="http://www.slideshare.net/slideshow/embed_code/key/1AjAOzJsDE9IHT" width="595" height="485" </iframe></div>
-
-
+.. image:: img/Intro_slides.PNG
+    :target: http://www.slideshare.net/HenrikkiTenkanen/fec2017introductiontoprogramming
 
 Next we are ready to get our hands dirty and ``start our programming expedition``.
