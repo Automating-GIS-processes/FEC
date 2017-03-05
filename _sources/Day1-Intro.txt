@@ -9,6 +9,8 @@ Following slideshow gives you a short introduction to the main goals of this cou
 
 .. raw:: html
 
-    <iframe src="http://www.slideshare.net/slideshow/embed_code/key/1AjAOzJsDE9IHT" width="595" height="485" </iframe>
+    <div><iframe src="http://www.slideshare.net/slideshow/embed_code/key/1AjAOzJsDE9IHT" width="595" height="485" </iframe></div>
+
+
 
 Next we are ready to get our hands dirty and ``start our programming expedition``.
