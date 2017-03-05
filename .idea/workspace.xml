@@ -1,7 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="08baed7a-9b2b-4b78-b784-0773cf4b07fd" name="Default" comment="" />
+    <list default="true" id="f194e8eb-774b-4b8a-a75e-0048c8961c6a" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/FEC.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/FEC2017.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.nojekyll" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Arcpy_version1_interface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Arcpy_version2_interface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Arcpy_version3_interface.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Function_anatomy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/GISflowchart.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/GISprocess.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/GitHub-home.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Spyder-annotated.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/Spyder.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-create-toolbox.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-idle-location.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-idle-new.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-idle.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-my-script.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-parameter-tab-lower.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-parameter-tab-upper.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-parameter-tab-whole.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-properties.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-python-console.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-raster-result.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-script-description.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-script-tool.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcgis-source.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/arcpy-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/cmd.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/damselfish-simple-map.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/history_log.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/play-changes.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_images/version_control_motivation_comics.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-Data-types.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-Exercise1.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-Getting-started-with-python.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-Intro.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-Strings-mini-exercise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-create-GitHub-account.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-intro-to-GitHub.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-spyder.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-string-operations.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-working-environment.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day1-writing-scripts.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-Exercise2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-Exercise3-Functions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-conditional-statements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-for-loops-mini-exercise.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-for-loops.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-functions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-mini-exercise-writingFiles.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-modules.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day2-reading-files.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-ArcGIS-modelBuilder.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-Exercise4-ArcPy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-arcpy-overview.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-arcpy-script.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-arcpy.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-run-the-tool.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-toolbox.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Day3-useful-functions.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_sources/Exercise_for_loops_and_conditional_statements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/ajax-loader.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/basic.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/comment-bright.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/comment-close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/comment.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/css/badge_only.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/css/theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/doctools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/down-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/down.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/file.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/Inconsolata-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/Inconsolata-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/Lato-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/Lato-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/RobotoSlab-Bold.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/RobotoSlab-Regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/fonts/fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/jquery-3.1.0.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/js/modernizr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/js/theme.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/logo_hy_geo_135.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/minus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/plus.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/pygments.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/searchtools.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/underscore-1.3.1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/underscore.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/up-pressed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/up.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/_static/websupport.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origs/spyder.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/origs/spyder.rst" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/source/slides/Introduction_to_programming.pdf" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.buildinfo" afterPath="$PROJECT_DIR$/.buildinfo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/objects.inv" afterPath="$PROJECT_DIR$/objects.inv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-Data-types.html" afterPath="$PROJECT_DIR$/Day1-Data-types.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-Exercise1.html" afterPath="$PROJECT_DIR$/Day1-Exercise1.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-Getting-started-with-python.html" afterPath="$PROJECT_DIR$/Day1-Getting-started-with-python.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-Intro.html" afterPath="$PROJECT_DIR$/Day1-Intro.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-Strings-mini-exercise.html" afterPath="$PROJECT_DIR$/Day1-Strings-mini-exercise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-create-GitHub-account.html" afterPath="$PROJECT_DIR$/Day1-create-GitHub-account.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-intro-to-GitHub.html" afterPath="$PROJECT_DIR$/Day1-intro-to-GitHub.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-spyder.html" afterPath="$PROJECT_DIR$/Day1-spyder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-string-operations.html" afterPath="$PROJECT_DIR$/Day1-string-operations.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-working-environment.html" afterPath="$PROJECT_DIR$/Day1-working-environment.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day1-writing-scripts.html" afterPath="$PROJECT_DIR$/Day1-writing-scripts.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-Exercise2.html" afterPath="$PROJECT_DIR$/Day2-Exercise2.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-Exercise3-Functions.html" afterPath="$PROJECT_DIR$/Day2-Exercise3-Functions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-conditional-statements.html" afterPath="$PROJECT_DIR$/Day2-conditional-statements.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-for-loops-mini-exercise.html" afterPath="$PROJECT_DIR$/Day2-for-loops-mini-exercise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-for-loops.html" afterPath="$PROJECT_DIR$/Day2-for-loops.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-functions.html" afterPath="$PROJECT_DIR$/Day2-functions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-mini-exercise-writingFiles.html" afterPath="$PROJECT_DIR$/Day2-mini-exercise-writingFiles.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-modules.html" afterPath="$PROJECT_DIR$/Day2-modules.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day2-reading-files.html" afterPath="$PROJECT_DIR$/Day2-reading-files.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-ArcGIS-modelBuilder.html" afterPath="$PROJECT_DIR$/Day3-ArcGIS-modelBuilder.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-Exercise4-ArcPy.html" afterPath="$PROJECT_DIR$/Day3-Exercise4-ArcPy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-arcpy-overview.html" afterPath="$PROJECT_DIR$/Day3-arcpy-overview.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-arcpy-script.html" afterPath="$PROJECT_DIR$/Day3-arcpy-script.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-arcpy.html" afterPath="$PROJECT_DIR$/Day3-arcpy.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-run-the-tool.html" afterPath="$PROJECT_DIR$/Day3-run-the-tool.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-toolbox.html" afterPath="$PROJECT_DIR$/Day3-toolbox.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Day3-useful-functions.html" afterPath="$PROJECT_DIR$/Day3-useful-functions.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Exercise_for_loops_and_conditional_statements.html" afterPath="$PROJECT_DIR$/Exercise_for_loops_and_conditional_statements.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/_sources/index.txt" afterPath="$PROJECT_DIR$/_sources/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/genindex.html" afterPath="$PROJECT_DIR$/genindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/search.html" afterPath="$PROJECT_DIR$/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/searchindex.js" afterPath="$PROJECT_DIR$/searchindex.js" />
+    </list>
     <ignored path="FEC.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,6 +157,9 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -45,6 +190,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -56,11 +203,13 @@
               <option name="myItemId" value="FEC2017" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="source" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,6 +366,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -226,7 +376,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -239,5 +388,39 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/source/Day2-for-loops.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-960">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/source/Day1-Intro.rst">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1756">
+          <caret line="19" column="20" lean-forward="true" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/make.bat">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
   </component>
 </project>
