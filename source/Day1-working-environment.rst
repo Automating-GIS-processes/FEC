@@ -34,7 +34,7 @@ Spyder IDE
 If you haven't done so already, open **Spyder** from All Programs > Anaconda3 > Spyder
 
 Also, for this demonstration we will be using the Python script file
-`Spyder-demo-script.py <src/Spyder-demo-script.py>`__. Download the file from GitHub to your computer.
+`Spyder-demo-script.py <https://raw.githubusercontent.com/Python-for-geo-people/Lesson-4-Functions-Modules/master/src/Spyder-demo-script.py>`__. Download the file from GitHub to your computer.
 
 
 An overview of the Spyder IDE
@@ -61,7 +61,7 @@ look at each in the following sections.
 
 The main pane on the left is the editor pane, used for writing Python
 scripts. If you have already loaded the
-`Spyder-demo-script.py <src/Spyder-demo-script.py>`__ file, you
+`Spyder-demo-script.py <https://raw.githubusercontent.com/Python-for-geo-people/Lesson-4-Functions-Modules/master/src/Spyder-demo-script.py>`__ file, you
 will see it is basically a normal text editor window with colors used to
 highlight the text in the script. In addition, you can see line numbers
 on the left side, which can be helpful when debugging.
@@ -95,14 +95,14 @@ The explorer pane in **Spyder** serves three purposes:
    in either location and press **Ctrl-i** to load the documentation. If
    you have it loaded you can try this with the ``bin()`` function on
    line 30 of the
-   `Spyder-demo-script.py <src/Spyder-demo-script.py>`__ file,
+   `Spyder-demo-script.py <https://raw.githubusercontent.com/Python-for-geo-people/Lesson-4-Functions-Modules/master/src/Spyder-demo-script.py>`__ file,
    for example.
 
 2. *Listing information about variables in memory*. If you have defined
    any variables in the IPython console or have run a script in the
    editor pane, you can find information about defined variables in
    memory listed in the **Variable explorer** tab. If you run the
-   `Spyder-demo-script.py <src/Spyder-demo-script.py>`__ script,
+   `Spyder-demo-script.py <https://raw.githubusercontent.com/Python-for-geo-people/Lesson-4-Functions-Modules/master/src/Spyder-demo-script.py>`__ script,
    for example, you will see that the initial value of variable
    ``BigNumber`` is modified within the script, but kept in the
    definition of the list ``OddList``.
