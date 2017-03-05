@@ -1,0 +1,350 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Reading and writing text files &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="next" title="Useful functions related to filepaths" href="Day3-useful-functions.html"/>
+        <link rel="prev" title="Exercise 3: Functions" href="Day2-Exercise3-Functions.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeoPython -AutoGIS/FEC
+          
+
+          
+            
+            <img src="_static/logo_hy_geo_135.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Basics of Python 1</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Basic data types in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-string-operations.html">String-operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Strings-mini-exercise.html">Task: Hello world!</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-writing-scripts.html">Script Files (*.py)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-intro-to-GitHub.html">Version Control and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-create-GitHub-account.html">Task: Create a GitHub-account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of Python 2</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and writing text files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reading-text-files">Reading text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-text-files">Writing text files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reading-data-from-multiple-files">Reading data from multiple files</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-with-delimited-text-files">Working with delimited text files</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">GeoPython -AutoGIS/FEC</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Reading and writing text files</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Day2-reading-files.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="reading-and-writing-text-files">
+<h1>Reading and writing text files<a class="headerlink" href="#reading-and-writing-text-files" title="Permalink to this headline">¶</a></h1>
+<p>Reading and writing text files within a Python code can be very handy for example when you want to document a process,
+or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
+<div class="section" id="reading-text-files">
+<h2>Reading text files<a class="headerlink" href="#reading-text-files" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">fp</span><span class="o">=</span> <span class="s2">&quot;&quot;</span>
+
+<span class="c1"># Read all contents of the file:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s2">&quot;r&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">infile</span><span class="p">:</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">infile</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="writing-text-files">
+<h2>Writing text files<a class="headerlink" href="#writing-text-files" title="Permalink to this headline">¶</a></h2>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">out_file</span> <span class="o">=</span> <span class="s1">&#39;test.txt&#39;</span>
+
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">out_file</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">w</span><span class="p">:</span>
+    <span class="c1"># Write a line of text into that file</span>
+    <span class="n">my_line</span> <span class="o">=</span> <span class="s2">&quot;This is my first line of text written in Python!&quot;</span>
+    <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">my_line</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="listing-all-files-in-a-directory">
+<h2>Listing all files in a directory<a class="headerlink" href="#listing-all-files-in-a-directory" title="Permalink to this headline">¶</a></h2>
+<p>Listing and searching for file path names from file system can be done
+using a specific module called <a class="reference external" href="https://docs.python.org/3/library/glob.html">glob</a>.</p>
+<p>The glob library contains a function, also called glob, that finds files
+and directories whose names match a given pattern (for example all files starting with the letter A).</p>
+<ol class="arabic simple">
+<li>We can use the glob-module to get the names of all files in a given directory (<code class="docutils literal"><span class="pre">C:/.../data/5972xxx/</span></code>):</li>
+</ol>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
+
+<span class="c1">#Read file paths for all files in the folder to a list:</span>
+<span class="n">DataPathList</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/data/5972xxx/*&#39;</span><span class="p">))</span>
+
+<span class="nb">len</span><span class="p">(</span><span class="n">DataPathList</span><span class="p">)</span>   <span class="c1">#number of items in the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DataPathList</span><span class="p">)</span> <span class="c1"># print all file paths</span>
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>We can also search for only specific files and file formats. Here, we
+search for files that starts with <code class="docutils literal"><span class="pre">travel_times_to_</span> <span class="pre">59721</span></code> and ends with file
+format <code class="docutils literal"><span class="pre">.txt</span></code>:</li>
+</ol>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">DataPathList</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/data/travel_times_to_ 59721*.txt&#39;</span><span class="p">))</span>
+
+<span class="nb">len</span><span class="p">(</span><span class="n">DataPathList</span><span class="p">)</span>   <span class="c1">#number of items in the list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">DataPathList</span><span class="p">)</span> <span class="c1"># print all file paths</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="reading-data-from-multiple-files">
+<h2>Reading data from multiple files<a class="headerlink" href="#reading-data-from-multiple-files" title="Permalink to this headline">¶</a></h2>
+<p>As the previous examples show, glob.glob’s result is a <strong>list</strong> of file
+and directory paths in arbitrary order. This means we can loop over it
+to do something with each filename in turn. What we want to do next is
+to read the first line of each file and add it to a list called
+<code class="docutils literal"><span class="pre">headers</span></code>.</p>
+<ol class="arabic simple">
+<li>Let&#8217;s create a list of headers for the files:</li>
+</ol>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span> <span class="n">filepaths</span> <span class="o">=</span> <span class="n">glob</span><span class="o">.</span><span class="n">glob</span><span class="p">(</span><span class="s1">&#39;/data/5972xxx/travel_times_to_ 59721*.txt&#39;</span><span class="p">)</span> <span class="c1">#modify the filepath if needed!</span>
+
+ <span class="n">headers</span> <span class="o">=</span> <span class="p">[]</span> <span class="c1"># empty list for collecting the headers</span>
+
+ <span class="c1"># iterate for each file path in the list</span>
+ <span class="k">for</span> <span class="n">fp</span> <span class="ow">in</span> <span class="n">filepaths</span><span class="p">:</span>
+
+    <span class="c1">#Open the file in read mode</span>
+   <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+       <span class="c1"># Read the first line of the file</span>
+       <span class="n">first_line</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readline</span><span class="p">()</span>
+       <span class="c1"># Append the first line into the headers-list</span>
+       <span class="n">headers</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">first_line</span><span class="p">)</span>
+
+<span class="c1">#After going trough all the files, print the list of headers</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">headers</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="working-with-delimited-text-files">
+<h2>Working with delimited text files<a class="headerlink" href="#working-with-delimited-text-files" title="Permalink to this headline">¶</a></h2>
+<p>Simple tabular data is often stored in delimited text files, where each row of data represents
+a record of data (for example a country) and the attributes for each row are separated
+with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">When working with Comma-Separated Values file (<em>csv), **pay attention to your language and region-settings!*</em> (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
+There you can determine the decimal separator as <code class="docutils literal"><span class="pre">.</span></code> (recommended) or <code class="docutils literal"><span class="pre">,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
+</div>
+<p>Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
+You can find more information about essential modules for handling tabular data in Python from the more extensive versions of this course:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html">Pandas and Geopandas</a></li>
+<li><a class="reference external" href="https://github.com/Python-for-geo-people/Lesson-6-Intro-to-NumPy">NumPy</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Day3-useful-functions.html" class="btn btn-neutral float-right" title="Useful functions related to filepaths" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day2-Exercise3-Functions.html" class="btn btn-neutral" title="Exercise 3: Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Digital Geography Lab / University of Helsinki.
+      Last updated on Mar 05, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2017 Spring',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,487 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Script Files (*.py) &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="next" title="Version Control and GitHub" href="Day1-intro-to-GitHub.html"/>
+        <link rel="prev" title="Task: Hello world!" href="Day1-Strings-mini-exercise.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> GeoPython -AutoGIS/FEC
+          
+
+          
+            
+            <img src="_static/logo_hy_geo_135.png" class="logo" />
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Basics of Python 1</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Day1-Intro.html">Introduction to the course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Getting-started-with-python.html">Getting started with Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-working-environment.html">Working environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Data-types.html">Basic data types in Python</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-string-operations.html">String-operations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Strings-mini-exercise.html">Task: Hello world!</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Script Files (*.py)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#getting-started">Getting started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-general-concept-of-a-py-script-file">The general concept of a <code class="docutils literal"><span class="pre">.py</span></code> script file</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#writing-our-scripts-the-right-way">Writing our scripts the &#8220;right&#8221; way</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#page-summary">Page summary</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-intro-to-GitHub.html">Version Control and GitHub</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-create-GitHub-account.html">Task: Create a GitHub-account</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Basics of Python 2</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">GeoPython -AutoGIS/FEC</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+    <li>Script Files (*.py)</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Day1-writing-scripts.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="script-files-py">
+<h1>Script Files (<a href="#id1"><span class="problematic" id="id2">*</span></a>.py)<a class="headerlink" href="#script-files-py" title="Permalink to this headline">¶</a></h1>
+<p>As you may be noticing by now, it isn&#8217;t that convenient to type in all
+of the commands you would like to use in the IPython interpreter window.
+An alternative to typing in all of the commands you would like to run is
+the list them in a Python script file. A Python script file is simple a
+file containing a list of the command you would like to run, with one
+command per line, and formatted in the same way as if you were to type
+them in. Python script files traditionally use the <code class="docutils literal"><span class="pre">.py</span></code> file
+extension in their names.</p>
+<div class="section" id="getting-started">
+<h2>Getting started<a class="headerlink" href="#getting-started" title="Permalink to this headline">¶</a></h2>
+<ol class="arabic simple">
+<li>To start creating and editing our Python script file, we&#8217;ll need to
+open a text editor.</li>
+</ol>
+</div>
+<div class="section" id="the-general-concept-of-a-py-script-file">
+<h2>The general concept of a <code class="docutils literal"><span class="pre">.py</span></code> script file<a class="headerlink" href="#the-general-concept-of-a-py-script-file" title="Permalink to this headline">¶</a></h2>
+<p>A Python script file is simply a list of commands that you might
+otherwise type into the IPython interpreter window. As such, we can
+quite easily create a basic script file and test things out.</p>
+<ol class="arabic">
+<li><p class="first">Start by copying and pasting the text below into your text editor
+window.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;weighs&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pounds&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Save this script file as <code class="docutils literal"><span class="pre">sampleinfo.py</span></code> in your home directory
+<code class="docutils literal"><span class="pre">/home/geo</span></code> by clicking on <strong>File -&gt; Save</strong> in the menu bar of the
+<strong>gedit</strong> window. Click on the <strong>Home</strong> icon on the top left of the
+<strong>Save As</strong> window that appears, and enter the file name as
+<code class="docutils literal"><span class="pre">sampleinfo.py</span></code>. Click the <code class="docutils literal"><span class="pre">Save</span></code> button on the lower right of
+the window to save the file.</p>
+</li>
+<li><p class="first">Return to your IPython interpreter window (or start a new one if you
+have closed it), change the directory in IPython to the home
+directory by typing <code class="docutils literal"><span class="pre">cd</span></code>, and run the script using the <code class="docutils literal"><span class="pre">%run</span></code>
+magic command in IPython. Before pressing <strong>Enter</strong> on the second
+line, <strong>what do you expect to see as output when the script runs</strong>?</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">cd</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="o">%</span><span class="n">run</span> <span class="n">sampleinfo</span><span class="o">.</span><span class="n">py</span>
+<span class="go">Sample DW-NP-48-16 weighs 6.89 pounds</span>
+</pre></div>
+</div>
+<p>No surprises here. The script simply executes the commands exactly as
+you would have if you had typed them in to the IPython interpreter.</p>
+</li>
+<li><p class="first">Now let&#8217;s make a small change to the script. Go back to <strong>gedit</strong> and
+edit the script so that it now reads</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Save your changes.</p>
+</li>
+<li><p class="first">Once again, go back to the IPython interpreter and use the <code class="docutils literal"><span class="pre">%run</span></code>
+magic command to run the modified script. Don&#8217;t worry, we&#8217;ll cover a
+much better way to edit and test scripts later in today&#8217;s lesson.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="o">%</span><span class="n">run</span> <span class="n">sampleinfo</span><span class="o">.</span><span class="n">py</span>
+<span class="go">Sample DW-NP-48-16 is a 6.89 pound chunk of Mica schist</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="writing-our-scripts-the-right-way">
+<h2>Writing our scripts the &#8220;right&#8221; way<a class="headerlink" href="#writing-our-scripts-the-right-way" title="Permalink to this headline">¶</a></h2>
+<p>The script above works, but one of the big advantages of using scripts
+is the ability to include comments that describe what the code does. As
+your programs get longer and more complicated, comments and other
+changes to how you write the code will help make sure you (and other
+users) can understand what the code does. Below are some suggestions to
+make sure your code is easy to understand.</p>
+<ol class="arabic">
+<li><p class="first"><strong>Add inline comments to the code to explain what different sections
+do</strong>. It may seem obvious how the code should work, but if you share
+it with another person perhaps they will not feel the same way. It is
+a very good idea to make the code as easy to read as possible for
+people.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)</span>
+<span class="c1"># Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi</span>
+<span class="c1"># Basic sample information</span>
+<span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
+<span class="c1"># Sample weight given in pounds (sorry, most of the world)</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+<span class="c1"># Print basic information about this sample to the screen</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here, we have provided a great deal more information about the data
+in this script by adding <em>inline comments</em>. Comments in Python are
+not executed by the computer, but provide useful information for
+people reading the script. Inline comments begin with a <code class="docutils literal"><span class="pre">#</span></code> (number
+sign or hash), and all characters that follow on that line will be
+ignored by Python. Adding comments to scripts is essential for
+scientists like ourselves to both help us remember how a script works
+and to make it easier to share with colleagues. It is best to get
+into the habit of adding comments as you write.</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="2">
+<li><p class="first"><strong>Use blank lines to visually divide your script</strong>. Perhaps it is
+obvious, but Python will ignore blank lines in a script. They don&#8217;t
+matter to Python, but they are very helpful to users.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)</span>
+<span class="c1"># Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi</span>
+
+<span class="c1"># Basic sample information</span>
+<span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
+
+<span class="c1"># Sample weight given in pounds (sorry, most of the world)</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+
+<span class="c1"># Print basic information about this sample to the screen</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Dividing even a short script into section using blank lines makes it
+much easier to read the code.</p>
+</li>
+</ol>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ol class="arabic" start="3">
+<li><p class="first"><strong>Add a block comment section at the start of the script to state its
+purpose, how it is run, who wrote it, and possibly some licencing
+information</strong>. In contrast to the inline comments above that describe
+the different sections of the code, a <em>block comment</em> at the top of
+the script is intended to help users run the code and be aware of its
+author (and licensing restrictions stated by the author). At the
+minimum, you should include what the script does, your name, and the
+date in the block comments at the start of script files. Let&#8217;s add
+some of this basic information.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;sampleinfo.py</span>
+
+<span class="sd">A simple Python script to print information for a rock sample on the screen.</span>
+
+<span class="sd">Usage: ./sampleinfo.py</span>
+
+<span class="sd">David Whipp - 12.9.2016</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)</span>
+<span class="c1"># Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi</span>
+
+<span class="c1"># Basic sample information</span>
+<span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
+
+<span class="c1"># Sample weight given in pounds (sorry, most of the world)</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+
+<span class="c1"># Print basic information about this sample to the screen</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here we have added the basic information to the top of our script
+file using <em>block comments</em>. Block comments start with <code class="docutils literal"><span class="pre">'''</span></code> and
+end with <code class="docutils literal"><span class="pre">'''</span></code>. Everything between the triple quotes will be
+ignored when the script is run, even if the text is spread over
+multiple lines. In our case, the script is simple, but many Python
+programs have optional values that can be used by the code when it is
+run, making the usage statement crucial. Another example to consider
+is using a formal software license in the code to state the
+conditions under which the code can be used or modified. There are
+many helpful web resources to <a class="reference external" href="https://tldrlegal.com/">teach you about software
+licenses</a> and <a class="reference external" href="http://choosealicense.com/">how to choose a
+license</a>. In most cases my preference
+is the <a class="reference external" href="https://opensource.org/licenses/MIT">MIT License</a>, which
+is simple and allows software use by anyone. An example is below.</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="sd">&#39;&#39;&#39;sampleinfo.py</span>
+
+<span class="sd">A simple Python script to print information for a rock sample on the screen.</span>
+
+<span class="sd">Usage: ./sampleinfo.py</span>
+
+<span class="sd">MIT License</span>
+
+<span class="sd">Copyright (c) 2016 David Whipp</span>
+
+<span class="sd">Permission is hereby granted, free of charge, to any person obtaining a copy</span>
+<span class="sd">of this software and associated documentation files (the &quot;Software&quot;), to deal</span>
+<span class="sd">in the Software without restriction, including without limitation the rights</span>
+<span class="sd">to use, copy, modify, merge, publish, distribute, sublicense, and/or sell</span>
+<span class="sd">copies of the Software, and to permit persons to whom the Software is</span>
+<span class="sd">furnished to do so, subject to the following conditions:</span>
+
+<span class="sd">The above copyright notice and this permission notice shall be included in all</span>
+<span class="sd">copies or substantial portions of the Software.</span>
+
+<span class="sd">THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR</span>
+<span class="sd">IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,</span>
+<span class="sd">FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE</span>
+<span class="sd">AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER</span>
+<span class="sd">LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,</span>
+<span class="sd">OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE</span>
+<span class="sd">SOFTWARE.</span>
+<span class="sd">&#39;&#39;&#39;</span>
+
+<span class="c1"># Information for sample 48 from the 2016 Nepal (NP) field excursion collected by Dave Whipp (DW)</span>
+<span class="c1"># Sample 48 was from the footwall of the MCT just north of where the Nyadi river joins the Marsyandi</span>
+
+<span class="c1"># Basic sample information</span>
+<span class="n">SampleID</span> <span class="o">=</span> <span class="s2">&quot;DW-NP-48-16&quot;</span>
+<span class="n">SampleRockType</span> <span class="o">=</span> <span class="s2">&quot;Mica schist&quot;</span>
+
+<span class="c1"># Sample weight given in pounds (sorry, most of the world)</span>
+<span class="n">SampleWeightLbs</span> <span class="o">=</span> <span class="mf">6.89</span>
+
+<span class="c1"># Print basic information about this sample to the screen</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">,</span> <span class="n">SampleID</span><span class="p">,</span> <span class="s2">&quot;is a&quot;</span><span class="p">,</span> <span class="n">SampleWeightLbs</span><span class="p">,</span> <span class="s2">&quot;pound chunk of&quot;</span><span class="p">,</span> <span class="n">SampleRockType</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In this case I have taken the license information directly from an
+<a class="reference external" href="http://choosealicense.com/licenses/mit/">online software license
+template</a>. Software
+licensing is an important consideration when posting your software in
+online repositories such as GitHub. It is one way to protect your
+intellectual property from being used in ways you do not wish.</p>
+</li>
+</ol>
+</div>
+<div class="section" id="page-summary">
+<h2>Page summary<a class="headerlink" href="#page-summary" title="Permalink to this headline">¶</a></h2>
+<p>An expectation in this course is that you stick to the general template described above when
+writing your code, which means including appropriate use of inline
+comments, blank lines, block comments, and starting with a shebang.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Day1-intro-to-GitHub.html" class="btn btn-neutral float-right" title="Version Control and GitHub" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day1-Strings-mini-exercise.html" class="btn btn-neutral" title="Task: Hello world!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, Digital Geography Lab / University of Helsinki.
+      Last updated on Mar 05, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'2017 Spring',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

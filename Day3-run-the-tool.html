@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Running the Python script from ArcGIS &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -32,9 +31,10 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="prev" title="Writing arcpy scripts" href="Day3-arcpy-script.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -113,14 +113,17 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Python script from ArcGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#how-to-proceed-from-here">How to proceed from here?</a></li>
+</ul>
+</li>
 </ul>
 
             
@@ -143,7 +146,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -151,9 +154,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Running the Python script from ArcGIS</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Day3-run-the-tool.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,17 +168,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="running-the-python-script-from-arcgis">
+<h1>Running the Python script from ArcGIS<a class="headerlink" href="#running-the-python-script-from-arcgis" title="Permalink to this headline">¶</a></h1>
+<p>Now that we have the interface and script ready for our tool, we can start using them from ArcGIS.</p>
+<p>Before we can run the tool, we need to specify <strong>which Python script will be run when the tool is executed</strong>. This can be done from the <code class="docutils literal"><span class="pre">Properties</span></code> of your Script tool under a <code class="docutils literal"><span class="pre">Source</span></code> -tab. Add the
+<code class="docutils literal"><span class="pre">PolyToRaster.py</span></code> -file that we just created as the source file for this tool.</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/arcgis-properties.png"><img alt="_images/arcgis-properties.png" src="_images/arcgis-properties.png" style="width: 317.3px; height: 301.15px;" /></a>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/arcgis-source.png"><img alt="_images/arcgis-source.png" src="_images/arcgis-source.png" style="width: 323.25px; height: 423.0px;" /></a>
+</div>
+<p>That&#8217;s it! Now you can test your tool by running it from ArcGIS!</p>
+<p>After running your tool, you should get rasters such as following from the tool:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-raster-result.png"><img alt="_images/arcgis-raster-result.png" src="_images/arcgis-raster-result.png" style="width: 555.0px; height: 375.75px;" /></a>
+</div>
+<div class="section" id="how-to-proceed-from-here">
+<h2>How to proceed from here?<a class="headerlink" href="#how-to-proceed-from-here" title="Permalink to this headline">¶</a></h2>
+<p>Okey, now you have seen a little bit how arcpy can be used to automatize a specific GIS process flow. Of course, our tutorial only covered a tiny fraction of all different functionalities that ArcGIS has to offer
+but the basic logic is more or less similar with different tools (except raster processing and map algebra &#8211;&gt; see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/map-algebra/a-quick-tour-of-using-map-algebra.htm">quick tour</a>).
+Thus, you can use similar programming approach for many other tools as well that ArcGIS provides.</p>
+<p><strong>I am interested in using arcpy in my work..How can I find information how to use those tools?</strong></p>
+<p>Basically how you can proceed from here is to read the <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy/what-is-arcpy-.htm">documentation of arcpy</a> to find out how your typical analysis steps and tools in ArcGIS
+can be called from Python using arcpy -module. One good way to find documentation about the tool that you are searching is to use e.g. Google or use the search functionality in ArcGIS documentation pages.</p>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="Day3-arcpy-script.html" class="btn btn-neutral" title="Writing arcpy scripts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

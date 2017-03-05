@@ -3,48 +3,116 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to FEC-2017's documentation!
-====================================
+Welcome to Automating GIS processes/ FEC 2017!
+================================================
+**6.-10.3.2017 at the Kumpula Campus**, University of Helsinki. Rooms A113-A114.
+
+.. figure:: img/GISflowchart.png
 
 
-Course content
+This course will introduce you the basics of programming and automatization of GIS-processes in the Python programming language.
+
+Materials have been tailored for the further education course *Paikkatiedon käyttö ja hyödyntäminen* F.E.C. organized by `HY+ <http://hyplus.helsinki.fi/>`_.
+
+The course consists of interactive lectures and exercises. All course material will be distributed via these pages. Materials are based on previous further education courses and two more extensive course packages: `Python for geo-people <https://github.com/Python-for-geo-people/Course-information>`_ and `Automating GIS-processes <https://automating-gis-processes.github.io/2016/>`_ developed at the `Department of Geosciences and Geography <http://www.helsinki.fi/geo/english/index.html>`_, University of Helsinki.
+
+
+Course schedule:
+-----------------
+
+The course is divided into three blocks. During the first days of the course,
+we will learn the basics of python. During the last days of the course we will apply the basic skills
+using the ArcPy-model for automating GIS-processes. Here is the preliminary schedule for the course
+(might be subject to changes depending on how fast we proceed as a group!)
+
++----------------+---------------------------------+--------------------+
+| Day            | Theme                           | Content            |
++================+=================================+====================+
+| **Monday**     | Basics of Python 1              | - Intro            |
+|                |                                 | - GitHub           |
+|                |                                 | - Spyder           |
+|                |                                 | - data types       |
+|                |                                 | - *Exercise 1*     |
++----------------+---------------------------------+--------------------+
+| **Tuesday**    | Basics of Python 2              | - revision of DAY1 |
+|                |                                 | - if-clause        |
+|                |                                 | - for-loops        |
+|                |                                 | - *Exercise 2*     |
++----------------+---------------------------------+--------------------+
+| **Wednesday**  | Basics of Python 2              | - Functions        |
+|                |                                 | - File I/O         |
+|                |                                 | - *Exercise 3*     |
+|                | Automating ArcGIS Processes     | - Modules          |
+|                |                                 | - ArcPy-module     |
++----------------+---------------------------------+--------------------+
+|                |                                 | - ModelBuilder     |
+| **Thursday**   | Automating ArcGIS Processes     | - ArcToolbox       |
+|                |                                 | - Arcpy-scripts    |
+|                |                                 | - *Final exercise* |
++----------------+---------------------------------+--------------------+
+| **Friday**     | Automating ArcGIS Processes     | - *Final exercise* |
+|                |                                 | - revision         |
+|                |                                 | - feedback         |
++----------------+---------------------------------+--------------------+
+
+|
+At the end of the course you should be able to generate, understand and use code for automating GIS-processes such as the one below.
+
+.. figure:: img/GISprocess.png
+
+|
+
+Course contents:
 ----------------
 
-**Monday: Introduction to Python programming**
-- Introductory lecture by Henrikki Tenkanen
-- Getting started:
-- `Spyder IDE <https://github.com/Python-for-geo-people/Lesson-4-Functions-Modules/blob/master/Lesson/spyder.md>`_
-- `GitHub-exercise <https://github.com/Python-for-geo-people/Exercise-1>`_
-- tuosta pois cloud computer -osio!
-- Introduction to python-programming: [Python-for-Geopeople, lesson 1: A taste of python](https://github.com/Python-for-geo-people/Lesson-1-Course-Environment/blob/master/Lesson/A-taste-of-Python.md)
+.. toctree::
+    :maxdepth: 2
+    :caption: Course information
 
-**Tuesday: Basics of Python II**
-- [data types, lists](https://github.com/Python-for-geo-people/Lesson-2-Data-types-Lists/blob/master/Lesson/python-basic-elements1.md)
-- string-variables
-- [for-loops](https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/for-loops.md)
-- [conditional statements](https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/conditional-statements.md)
-- [Exercise: For-loops and conditional statements](https://github.com/Python-for-geo-people/exercise-3)
-- functions
-
-**Wednesday: Modules, arcpy-module**
-- File I / O , Geopandas-example
-- Arcpy-intro
-
-**Thursday: Arcpy-exercise**
-
-**Friday: Arcpy-exercise continues**
-
-
-Contents:
 
 .. toctree::
-   :maxdepth: 2
+    :maxdepth: 2
+    :caption: Basics of Python 1
+
+    Day1-Intro
+    Day1-Getting-started-with-python
+    Day1-working-environment
+    Day1-Data-types
+    Day1-string-operations
+    Day1-Strings-mini-exercise
+    Day1-writing-scripts
+    Day1-intro-to-GitHub
+    Day1-create-GitHub-account
+    Day1-Exercise1
 
 
-Indices and tables
-==================
+.. toctree::
+    :maxdepth: 2
+    :caption: Basics of Python 2
 
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+    Day2-conditional-statements
+    Day2-for-loops
+    Day2-for-loops-mini-exercise
+    Day2-Exercise2
+    Day2-functions
+    Day2-modules
+    Day2-Exercise3-Functions
+    Day2-reading-files
+    Day3-useful-functions
+    Day2-mini-exercise-writingFiles
+
+
+.. toctree::
+    :maxdepth: 2
+    :caption: Automating ArcGIS-processes
+
+    Day3-arcpy-overview
+    Day3-ArcGIS-modelBuilder
+    Day3-arcpy
+    Day3-Exercise4-ArcPy
+    Day3-toolbox
+    Day3-arcpy-script
+    Day3-run-the-tool
+
+
 

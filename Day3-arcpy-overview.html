@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Automating ArcGIS-processes &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -32,9 +31,11 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="next" title="Model Builder tutorial" href="Day3-ArcGIS-modelBuilder.html"/>
+        <link rel="prev" title="Task: write results to text file" href="Day2-mini-exercise-writingFiles.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -113,8 +114,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Automating ArcGIS-processes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#case-processing-species-distribution-data">Case: Processing species distribution data</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
@@ -143,7 +148,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -151,9 +156,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Automating ArcGIS-processes</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Day3-arcpy-overview.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,17 +170,54 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="automating-arcgis-processes">
+<h1>Automating ArcGIS-processes<a class="headerlink" href="#automating-arcgis-processes" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="_images/arcpy-logo.png" src="_images/arcpy-logo.png" />
+</div>
+<p>In this section we will take a tour on <strong>how to use Python in ArcGIS</strong> using <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/analyze/arcpy/what-is-arcpy-.htm">arcpy</a> -module.
+For doing the ArcPy-exercises you need to work on a computer where <a class="reference external" href="http://desktop.arcgis.com/en/">ArcGIS</a> is installed. ArcGIS is not an open source or freely available
+software such as <a class="reference external" href="http://www.qgis.org/en/site/">Quantum GIS</a> or the other Python tools that we have been using. However, it is widely used software in many places (companies, public sector etc.)
+which is the reason why we give this introduction how you can automatize ArcGIS workflows using Python scripting and the ArcPy-module.</p>
+<div class="section" id="learning-objectives">
+<h2>Learning objectives<a class="headerlink" href="#learning-objectives" title="Permalink to this headline">¶</a></h2>
+<p>The aim is to learn the basics how the ArcGIS tools can be run using ArcPy-functions in Python, and how we can
+create a graphical user interface for your custom scripts in the ArcToolbox (.tbx -file).</p>
+<p>After completing the ArcPy-lesson and exercises you should be able to:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Create a simple user interface using ArcGIS ToolBox.</li>
+<li>Run ArcGIS-tools from Python using the ArcPy-module.</li>
+<li>Find and know how to read the ArcPy documentation online.</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="case-processing-species-distribution-data">
+<h2>Case: Processing species distribution data<a class="headerlink" href="#case-processing-species-distribution-data" title="Permalink to this headline">¶</a></h2>
+<p>Source data for the ArcPy-exercise has been downloaded from the <a class="reference external" href="http://www.iucnredlist.org/technical-documents/spatial-data">IUCN Red List of Threatened Species website</a>.
+We will be working with the species distribution data of different subspecies of Damselfish (<em>Pomacentridae</em>). In practice, we will incrementally create an ArcGIS Python tool that
+<strong>converts the individual Damselfish species distribution Polygons into raster layers</strong> (<code class="docutils literal"><span class="pre">.tif</span></code>). Such processing step has been included in the methodology for prioritizing global
+conservation areas based on the occurrence of endangered species (<a class="reference external" href="https://helda.helsinki.fi/bitstream/handle/10138/156062/PouzolsToivonenEtal_NonFinalProof_Nature_2014.pdf?sequence=1">Pouzols et al. 2014</a>).</p>
+<div class="figure" id="id1">
+<img alt="_images/damselfish-simple-map.PNG" src="_images/damselfish-simple-map.PNG" />
+<p class="caption"><span class="caption-text">Source data for this exercise: the Damselfish distribution shapefile</span></p>
+</div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Day3-ArcGIS-modelBuilder.html" class="btn btn-neutral float-right" title="Model Builder tutorial" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day2-mini-exercise-writingFiles.html" class="btn btn-neutral" title="Task: write results to text file" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>

@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Model Builder tutorial &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -32,9 +31,11 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="next" title="ArcPy-module" href="Day3-arcpy.html"/>
+        <link rel="prev" title="Automating ArcGIS-processes" href="Day3-arcpy-overview.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -113,9 +114,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
@@ -143,7 +144,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -151,9 +152,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Model Builder tutorial</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Day3-ArcGIS-modelBuilder.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,17 +166,38 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="model-builder-tutorial">
+<h1>Model Builder tutorial<a class="headerlink" href="#model-builder-tutorial" title="Permalink to this headline">¶</a></h1>
+<div class="figure">
+<img alt="_images/GISflowchart.png" src="_images/GISflowchart.png" />
+</div>
+<p>In this section, we assume that you are familiar with the most common geoprocessing tools in
+ArcGIS and how to use them via the ArcGIS model builder. In this tutorial, we will revise
+some of the basics of building a model and practice how to iterate data columns and
+data files within the model.</p>
+<p>The purpose of this exercise is to motivate you to start thinking about the different steps in the process,
+and to finally translate the whole process into a Python script.</p>
+<p><strong>[power point tutorial here]</strong></p>
+<div class="admonition hint">
+<p class="first admonition-title">Hint</p>
+<p class="last">Once you know how to use <a class="reference external" href="http://pro.arcgis.com/en/pro-app/help/analysis/geoprocessing/modelbuilder/what-is-modelbuilder-.htm">Model Builder</a>, it is possible to <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/10.3/analyze/modelbuilder/exporting-a-model-to-a-python-script.htm">export your model to a Python script</a>.
+In that way, you can start to understand how the tools that you use in your model can be called from Python using arcpy module.</p>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Day3-arcpy.html" class="btn btn-neutral float-right" title="ArcPy-module" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day3-arcpy-overview.html" class="btn btn-neutral" title="Automating ArcGIS-processes" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
