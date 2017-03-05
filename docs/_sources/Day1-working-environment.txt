@@ -33,8 +33,8 @@ Spyder IDE
 
 If you haven't done so already, open **Spyder** from All Programs > Anaconda3 > Spyder
 
-Also, for this demonstration we will be using the `Python script file
-``Spyder-demo-script.py`` <../src/Spyder-demo-script.py>`__ . Download the file from GitHub to your computer.
+Also, for this demonstration we will be using the Python script file
+`Spyder-demo-script.py <../src/Spyder-demo-script.py>`__ . Download the file from GitHub to your computer.
 
 
 An overview of the Spyder IDE
