@@ -16,6 +16,9 @@ scientific programming with Python, and later we will learn how to define our ow
 
 1. Open Spyder from Start> All Programs > Anaconda3 > Spyder
 
+*Note! For now, in the Kumpula GIS-labs, you have to start
+Spyder by navigating to the folder C:\HYapp\Anaconda3\Scripts and double clicking `spyder.exe`.*
+
 
 .. figure:: img/Spyder.png
    :alt: Spyder IDE
