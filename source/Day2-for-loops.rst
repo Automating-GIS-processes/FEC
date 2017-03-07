@@ -1,7 +1,7 @@
 for-loops
 =============
 
-This lesson is based on Dr. David Whipp's [material from the python-for-geo-people -course](https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/for-loops.md) and the `Software Carpentry
+This lesson is based on Dr. David Whipp's `material from the python-for-geo-people -course <https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/for-loops.md>`_ and the `Software Carpentry
 group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
@@ -48,16 +48,16 @@ Loops allow parts of code to be repeated over some number of times.
 
 2. We could do a much better job by using a ``for`` loop.
 
-   .. code:: python
+    .. code:: python
 
-       >>> word = 'rock'
-       >>> for char in word:
-       ...    print(char)
-       ...
-       r
-       o
-       c
-       k
+        >>> word = 'rock'
+        >>> for char in word:
+        ...    print(char)
+        ...
+        r
+        o
+        c
+        k
 
    Note here that the ``...`` is displayed in the IPython window when
    entering code in a loop and you do not need to type in the ``...``.
