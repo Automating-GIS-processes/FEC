@@ -83,8 +83,8 @@ into raster using the given parameters:
 
 
 
-Sending messages to the Script tool
------------------------------------
+Info messages
+-------------
 
 It is possible to "print" messages to the user-interface while the tool is running. The regular ``print()`` -function won't do in this case and
 we need to use ``AddMessage()`` -function (see `help <http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/addmessage.htm>`_) to send
