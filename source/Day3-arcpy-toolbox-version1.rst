@@ -1,9 +1,6 @@
 Species tool: Version 1 (toolbox)
 =======================
 
-Defining the toolbox functionality
-------------------------------------
-
 Now we have our custom Toolbox in ArcGIS but it cannot yet do anything. Let's first create a graphical user interface for our tool.
 
 Defining input/output files plus additional parameters for your own Python script can be done by creating a **Script** -tool (i.e. user interface) into your ArcGIS toolbox:
