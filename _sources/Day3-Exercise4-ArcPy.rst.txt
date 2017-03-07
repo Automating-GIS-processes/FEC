@@ -11,7 +11,7 @@ We will write the scripts together in the class, but if you wish you can also pr
 instructions in the upcoming sections. Feel free to document your codes into GitHub.
 
 
-Version 1:
+Species data tool: Version 1
 --------------------------------------
 
 Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
@@ -29,38 +29,18 @@ Toolbox executes a python script called ``Arcpy_1_SimplePoly2Raster.py`` that co
 - Print info for the user that tool has finished successfully using ``AddMessage`` function
 
 
-Version 2:
---------------------------------------
 
-Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
-Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
-Tool will print useful information for the user about the execution process. Toolbox executes a python script called *Arcpy_2_SpeciesPoly2Raster.py* that contains all the required functionality of the tool.
+Species data tool: Version 2
+---------------------------
 
+Create a ArcGIS toolbox that converts individual species in a Shapefile into Raster Datasets based on species information on attribute field `binomial`.
+Tool asks five parameters: **input shapefile**, **output folder**, **species_attribute**, **attribute_name_for_raster_value**, **raster_value**.
+Tool will print useful information for the user about the execution process.
+Toolbox executes a python script called *Arcpy_2_SpeciesPoly2Raster_Iterate.py* that contains all the required functionality of the tool.
 
 .. figure:: img/Arcpy_version2_interface.png
 
 **Required steps in the script-file for Version 2:**
-
-- Import the required module (arcpy)
-- Get parameters from the toolbox using ``GetParametersAsText`` function
-- Add a new field into the Shapefile with ``AddField_management`` function
-- Update the value for the attribute just created with ``CalculateField_management`` function
-- Convert input shapefile into a Raster Dataset using ``PolygonToRaster_conversion`` function
-- Print info for the user that tool has finished successfully using ``AddMessage`` function
-
-
-
-Version 3:
------------
-
-Create a ArcGIS toolbox that converts individual species in a Shapefile into Raster Datasets based on species information on attribute field ‘binomial’.
-Tool asks five parameters: **input shapefile**, **output folder**, **species_attribute**, **attribute_name_for_raster_value**, **raster_value**.
-Tool will print useful information for the user about the execution process.
-Toolbox executes a python script called *Arcpy_3_SpeciesPoly2Raster_Iterate.py* that contains all the required functionality of the tool.
-
-.. figure:: img/Arcpy_version3_interface.png
-
-**Required steps in the script-file for Version 3:**
 
 - Import the required module (arcpy)
 - Get parameters from the toolbox using ``GetParametersAsText`` function

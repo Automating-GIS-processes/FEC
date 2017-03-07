@@ -119,15 +119,14 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4: ArcGIS-tool for processing species data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#version-1">Version 1:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#version-2">Version 2:</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#version-3">Version 3:</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#species-data-tool-version-1">Species data tool: Version 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#species-data-tool-version-2">Species data tool: Version 2</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Arcpy script for version 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Version 3 script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
 </ul>
 
             
@@ -182,8 +181,8 @@
 </ul>
 <p>We will write the scripts together in the class, but if you wish you can also proceed at your own pace by following the
 instructions in the upcoming sections. Feel free to document your codes into GitHub.</p>
-<div class="section" id="version-1">
-<h2>Version 1:<a class="headerlink" href="#version-1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="species-data-tool-version-1">
+<h2>Species data tool: Version 1<a class="headerlink" href="#species-data-tool-version-1" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
 Toolbox asks three parameters from the user: <strong>input shapefile</strong>, <strong>output rasterdataset</strong>, and <strong>value field</strong> (raster_value).
 Toolbox executes a python script called <code class="docutils literal"><span class="pre">Arcpy_1_SimplePoly2Raster.py</span></code> that contains all the required functionalities of the tool.</p>
@@ -198,34 +197,16 @@ Toolbox executes a python script called <code class="docutils literal"><span cla
 <li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
 </ul>
 </div>
-<div class="section" id="version-2">
-<h2>Version 2:<a class="headerlink" href="#version-2" title="Permalink to this headline">¶</a></h2>
-<p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset based on values on attribute field that will be created during the execution.
-Tool asks four parameters: input shapefile, output raster Dataset, attribute_name, and presence value.
-Tool will print useful information for the user about the execution process. Toolbox executes a python script called <em>Arcpy_2_SpeciesPoly2Raster.py</em> that contains all the required functionality of the tool.</p>
+<div class="section" id="species-data-tool-version-2">
+<h2>Species data tool: Version 2<a class="headerlink" href="#species-data-tool-version-2" title="Permalink to this headline">¶</a></h2>
+<p>Create a ArcGIS toolbox that converts individual species in a Shapefile into Raster Datasets based on species information on attribute field <cite>binomial</cite>.
+Tool asks five parameters: <strong>input shapefile</strong>, <strong>output folder</strong>, <strong>species_attribute</strong>, <strong>attribute_name_for_raster_value</strong>, <strong>raster_value</strong>.
+Tool will print useful information for the user about the execution process.
+Toolbox executes a python script called <em>Arcpy_2_SpeciesPoly2Raster_Iterate.py</em> that contains all the required functionality of the tool.</p>
 <div class="figure">
 <img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
 </div>
 <p><strong>Required steps in the script-file for Version 2:</strong></p>
-<ul class="simple">
-<li>Import the required module (arcpy)</li>
-<li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>
-<li>Add a new field into the Shapefile with <code class="docutils literal"><span class="pre">AddField_management</span></code> function</li>
-<li>Update the value for the attribute just created with <code class="docutils literal"><span class="pre">CalculateField_management</span></code> function</li>
-<li>Convert input shapefile into a Raster Dataset using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion</span></code> function</li>
-<li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
-</ul>
-</div>
-<div class="section" id="version-3">
-<h2>Version 3:<a class="headerlink" href="#version-3" title="Permalink to this headline">¶</a></h2>
-<p>Create a ArcGIS toolbox that converts individual species in a Shapefile into Raster Datasets based on species information on attribute field ‘binomial’.
-Tool asks five parameters: <strong>input shapefile</strong>, <strong>output folder</strong>, <strong>species_attribute</strong>, <strong>attribute_name_for_raster_value</strong>, <strong>raster_value</strong>.
-Tool will print useful information for the user about the execution process.
-Toolbox executes a python script called <em>Arcpy_3_SpeciesPoly2Raster_Iterate.py</em> that contains all the required functionality of the tool.</p>
-<div class="figure">
-<img alt="_images/Arcpy_version3_interface.png" src="_images/Arcpy_version3_interface.png" />
-</div>
-<p><strong>Required steps in the script-file for Version 3:</strong></p>
 <ul class="simple">
 <li>Import the required module (arcpy)</li>
 <li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>

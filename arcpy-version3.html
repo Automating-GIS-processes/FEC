@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Version 3 script &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Species tool: Version 2 &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -121,8 +121,8 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Arcpy script for version 1</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Version 3 script</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Species tool: Version 2</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#toolbox">Toolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#adding-a-new-field-into-attribute-table">Adding a new field into attribute table</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#updating-column-with-field-calculator">Updating column with Field Calculator</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#iterating-over-values-in-attribute-table">Iterating over values in attribute table</a></li>
@@ -161,7 +161,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Version 3 script</li>
+    <li>Species tool: Version 2</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -175,12 +175,25 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="version-3-script">
-<h1>Version 3 script<a class="headerlink" href="#version-3-script" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="getting-parameters-from-the-toolbox">
-<h2>Getting parameters from the toolbox<a class="headerlink" href="#getting-parameters-from-the-toolbox" title="Permalink to this headline">¶</a></h2>
-<p>Before we can do anything with our tool and our nice interface for it, we need to get those parameters into our script. This can be done by using arcpy&#8217;s function called <code class="docutils literal"><span class="pre">.GetParameterAsText()</span></code> where the index
-value of the parameter is passed to the function (where number 0 is the first parameter). ArcGIS has a good documentation that should be used for searching the information about how different functions are used.</p>
+  <div class="section" id="species-tool-version-2">
+<h1>Species tool: Version 2<a class="headerlink" href="#species-tool-version-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="toolbox">
+<h2>Toolbox<a class="headerlink" href="#toolbox" title="Permalink to this headline">¶</a></h2>
+<p>For the more advanced version of our tool, we will create a new toolbox-interface:</p>
+<div class="figure">
+<img alt="_images/Arcpy_version3_interface.png" src="_images/Arcpy_version3_interface.png" />
+</div>
+<p>In the <code class="docutils literal"><span class="pre">Parameters</span></code> -tab, add the following parameters:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-parameter-tab-upper.png"><img alt="_images/arcgis-parameter-tab-upper.png" src="_images/arcgis-parameter-tab-upper.png" style="width: 345.6px; height: 140.4px;" /></a>
+</div>
+<div class="admonition-task admonition">
+<p class="first admonition-title">Task</p>
+<p class="last">Determine the <code class="docutils literal"><span class="pre">Filter</span></code> parameter for <code class="docutils literal"><span class="pre">Presence</span> <span class="pre">value</span></code> as a range of values from 1-5.</p>
+</div>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-parameter-tab-lower.png"><img alt="_images/arcgis-parameter-tab-lower.png" src="_images/arcgis-parameter-tab-lower.png" style="width: 306.0px; height: 157.5px;" /></a>
+</div>
 <p>Let&#8217;s import those five parameters from the graphical interface into our Python script using <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/getparameterastext.htm">GetParameterAsText()</a> -function:</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 1. Get parameters from the toolbox using &#39;GetParametersAsText&#39; method</span>
 <span class="c1">#----------------------------------------------------------------------</span>
