@@ -1,4 +1,4 @@
-Species tool: Version 1
+Species tool: Version 1 (toolbox)
 =======================
 
 Defining the toolbox functionality
