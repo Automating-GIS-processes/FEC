@@ -117,9 +117,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Writing arcpy scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 </ul>
 
@@ -352,13 +352,13 @@ using the ArcPy-model for automating GIS-processes. Here is the preliminary sche
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Day3-useful-functions.html#preparations">Preparations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Day3-useful-functions.html#download-example-dataset">Download example dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-useful-functions.html#os-module">os-module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-useful-functions.html#glob">glob</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-reading-files.html">Reading and writing text files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Day3-reading-files.html#preparations">Preparations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Day3-reading-files.html#download-example-dataset">Download example dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-reading-files.html#reading-text-files">Reading text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-reading-files.html#writing-text-files">Writing text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-reading-files.html#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
@@ -383,7 +383,7 @@ using the ArcPy-model for automating GIS-processes. Here is the preliminary sche
 <li class="toctree-l2"><a class="reference internal" href="Day3-arcpy.html#using-arcpy">Using arcpy</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Day3-Exercise4-ArcPy.html#version-1">Version 1:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-Exercise4-ArcPy.html#version-2">Version 2:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-Exercise4-ArcPy.html#version-3">Version 3:</a></li>
@@ -392,19 +392,12 @@ using the ArcPy-model for automating GIS-processes. Here is the preliminary sche
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Day3-toolbox.html#creating-an-arcgis-toolbox-for-python-scripts">Creating an ArcGIS Toolbox for Python scripts</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Day3-toolbox.html#opening-the-toolbox-in-arcgis">Opening the toolbox in ArcGIS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-toolbox.html#defining-the-toolbox-functionalities">Defining the toolbox functionalities</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#importing-arcpy">Importing arcpy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#adding-a-new-field-into-attribute-table">Adding a new field into attribute table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#updating-column-with-field-calculator">Updating column with Field Calculator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#iterating-over-values-in-attribute-table">Iterating over values in attribute table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#selecting-data">Selecting data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#convert-polygons-to-raster">Convert Polygons to raster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#sending-messages-to-the-script-tool">Sending messages to the Script tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script.html#the-full-script">The full script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Writing arcpy scripts</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script-version1.html#importing-arcpy">Importing arcpy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script-version1.html#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Day3-arcpy-script-version1.html#sending-messages-to-the-script-tool">Sending messages to the Script tool</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a><ul>

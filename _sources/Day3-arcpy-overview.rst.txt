@@ -42,16 +42,18 @@ Download source data for the exercise
 Download the source data for the arcpy-exercise `from this link <https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip>`_
 
 .. figure:: img/Datazipdownload.png
+    :scale: 30 %
 
 The zip-file contains a shapefile `DAMSELFISH_distributions.shp` and related files.
 Extract the zip file (right click and select "Extract All") to your local folder:
 
 .. figure:: img/DamselfishFiles.png
+    :scale: 30 %
 
 
 .. figure:: img/damselfish-simple-map.PNG
 
-    Source data for this exercise: the Damselfish distribution shapefile
+    Source data for this exercise: the Damselfish distribution shapefile visualized based on the attribute "binomial".
 
 
 

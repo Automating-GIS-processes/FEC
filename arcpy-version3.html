@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Writing arcpy scripts &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Getting parameters from the toolbox &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -33,9 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="next" title="Running the Python script from ArcGIS" href="Day3-run-the-tool.html"/>
-        <link rel="prev" title="ArcGIS Toolbox" href="Day3-toolbox.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -114,24 +112,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing arcpy scripts</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#importing-arcpy">Importing arcpy</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-a-new-field-into-attribute-table">Adding a new field into attribute table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#updating-column-with-field-calculator">Updating column with Field Calculator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#iterating-over-values-in-attribute-table">Iterating over values in attribute table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#selecting-data">Selecting data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#convert-polygons-to-raster">Convert Polygons to raster</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sending-messages-to-the-script-tool">Sending messages to the Script tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#the-full-script">The full script</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Writing arcpy scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 </ul>
 
@@ -163,11 +150,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Writing arcpy scripts</li>
+    <li>Getting parameters from the toolbox</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day3-arcpy-script.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/arcpy-version3.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -177,40 +164,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="writing-arcpy-scripts">
-<h1>Writing arcpy scripts<a class="headerlink" href="#writing-arcpy-scripts" title="Permalink to this headline">¶</a></h1>
-<p>At this point we have created a nice interface for our Python tool in ArcGIS:</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/arcgis-my-script.png"><img alt="_images/arcgis-my-script.png" src="_images/arcgis-my-script.png" style="width: 732.0px; height: 358.40000000000003px;" /></a>
-</div>
-<p>Now we need to write the functionality for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
-Let&#8217;s see how this can be done.</p>
-<p>First, we need start the ArcGIS IDLE (if it is not open already) from <strong>All Programs</strong> &#8211;&gt; <strong>ArcGIS</strong>:</p>
-<div class="figure">
-<img alt="_images/arcgis-idle-location.png" src="_images/arcgis-idle-location.png" />
-</div>
-<p>Create a new script called <code class="docutils literal"><span class="pre">PolyToRaster.py</span></code> in IDLE (<strong>File</strong> &#8211;&gt; <strong>New File</strong>) and save it to your computer:</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/arcgis-idle-new.png"><img alt="_images/arcgis-idle-new.png" src="_images/arcgis-idle-new.png" style="width: 430.0px; height: 222.0px;" /></a>
-</div>
-<p>Let&#8217;s start writing the functionalities of our tool to the script that we just created.</p>
-<div class="section" id="importing-arcpy">
-<h2>Importing arcpy<a class="headerlink" href="#importing-arcpy" title="Permalink to this headline">¶</a></h2>
-<p>First thing to do is to import the arcpy module:</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Import arcpy module so we can use ArcGIS geoprocessing tools</span>
-<span class="kn">import</span> <span class="nn">arcpy</span>
-<span class="kn">import</span> <span class="nn">os</span>
-</pre></div>
-</div>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p>Notice that arcpy can only be imported with Python interpreter that comes with ArcGIS. If you try to import it e.g. in Spyder, you will receive an error <code class="docutils literal"><span class="pre">ImportError:</span> <span class="pre">No</span> <span class="pre">module</span> <span class="pre">named</span> <span class="pre">'arcpy'</span></code>.</p>
-<p class="last">Well...actually there is a way to <a class="reference external" href="http://gis.stackexchange.com/questions/86850/making-separate-python-installation-that-can-call-arcpy">import arcpy from other places</a> as well and also <a class="reference external" href="http://gis.stackexchange.com/questions/176879/importing-arcpy-in-spyder">import it into Spyder</a> but we will not
-cover this during our course.</p>
-</div>
-</div>
-<div class="section" id="getting-parameters-from-the-toolbox">
-<h2>Getting parameters from the toolbox<a class="headerlink" href="#getting-parameters-from-the-toolbox" title="Permalink to this headline">¶</a></h2>
+  <div class="section" id="getting-parameters-from-the-toolbox">
+<h1>Getting parameters from the toolbox<a class="headerlink" href="#getting-parameters-from-the-toolbox" title="Permalink to this headline">¶</a></h1>
 <p>Before we can do anything with our tool and our nice interface for it, we need to get those parameters into our script. This can be done by using arcpy&#8217;s function called <code class="docutils literal"><span class="pre">.GetParameterAsText()</span></code> where the index
 value of the parameter is passed to the function (where number 0 is the first parameter). ArcGIS has a good documentation that should be used for searching the information about how different functions are used.</p>
 <p>Let&#8217;s import those five parameters from the graphical interface into our Python script using <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/getparameterastext.htm">GetParameterAsText()</a> -function:</p>
@@ -228,7 +183,7 @@ value of the parameter is passed to the function (where number 0 is the first pa
 </div>
 </div>
 <div class="section" id="adding-a-new-field-into-attribute-table">
-<h2>Adding a new field into attribute table<a class="headerlink" href="#adding-a-new-field-into-attribute-table" title="Permalink to this headline">¶</a></h2>
+<h1>Adding a new field into attribute table<a class="headerlink" href="#adding-a-new-field-into-attribute-table" title="Permalink to this headline">¶</a></h1>
 <p>Next, we need to add a new field that is called in a way that the user wants it. The field name is stored in the <code class="docutils literal"><span class="pre">attribute_name</span></code> variable. Adding new column can be done by using a function called <code class="docutils literal"><span class="pre">AddField_management()</span></code>
 (<a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/add-field.htm">see help</a>).</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 2. Add a new field into the input shapefile with &#39;AddField_management&#39; method</span>
@@ -240,7 +195,7 @@ value of the parameter is passed to the function (where number 0 is the first pa
 </div>
 </div>
 <div class="section" id="updating-column-with-field-calculator">
-<h2>Updating column with Field Calculator<a class="headerlink" href="#updating-column-with-field-calculator" title="Permalink to this headline">¶</a></h2>
+<h1>Updating column with Field Calculator<a class="headerlink" href="#updating-column-with-field-calculator" title="Permalink to this headline">¶</a></h1>
 <p>Let&#8217;s update the newly created column with the <code class="docutils literal"><span class="pre">Presence</span> <span class="pre">value</span></code> that was asked from the user and will be assigned to the raster cells. We can do calculations in attribute table with <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/calculate-field.htm">CalculateField_management()</a> -function. Let&#8217;s update the column with value that is stored in <code class="docutils literal"><span class="pre">presence_value</span></code> variable.</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 3. Update the presence value for our newly created attribute with &#39;CalculateField_management&#39; method</span>
 <span class="c1">#-----------------------------------------------------------------------------------------------------</span>
@@ -251,7 +206,7 @@ value of the parameter is passed to the function (where number 0 is the first pa
 </div>
 </div>
 <div class="section" id="iterating-over-values-in-attribute-table">
-<h2>Iterating over values in attribute table<a class="headerlink" href="#iterating-over-values-in-attribute-table" title="Permalink to this headline">¶</a></h2>
+<h1>Iterating over values in attribute table<a class="headerlink" href="#iterating-over-values-in-attribute-table" title="Permalink to this headline">¶</a></h1>
 <p>As we wanted to save individual species into separate raster files, we need to determine the unique species in our attribute table. In Pandas / Geopandas there is a nice function called <code class="docutils literal"><span class="pre">.unique()</span></code>
 for this purpose but unfortunately arcpy does not have such a function that would work with Shapefiles. Hence, we need to create the &#8220;unique&#8221; -function ourselves.</p>
 <p>Let&#8217;s create a function that iterates over the values in a column and returns a list of unique values that are present in that column. We can iterate over the rows in attribute table by using
@@ -295,7 +250,7 @@ for this purpose but unfortunately arcpy does not have such a function that woul
 </div>
 </div>
 <div class="section" id="selecting-data">
-<h2>Selecting data<a class="headerlink" href="#selecting-data" title="Permalink to this headline">¶</a></h2>
+<h1>Selecting data<a class="headerlink" href="#selecting-data" title="Permalink to this headline">¶</a></h1>
 <p>Now that we have a list of unique species values we can iterate over that list and select all rows that correspond to a selected species and then rasterize those rows (polygons).</p>
 <p>Before we can do selections in arcpy, we need to &#8220;prepare&#8221; the selection by creating a temporary feature layer (enables to make selections) using <code class="docutils literal"><span class="pre">MakeFeatureLayer_management()</span></code> -function
 (see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/tools/data-management-toolbox/make-feature-layer.htm">help</a>):</p>
@@ -336,7 +291,7 @@ in ArcGIS, and save those selections into separate Shapefiles using <code class=
 </div>
 </div>
 <div class="section" id="convert-polygons-to-raster">
-<h2>Convert Polygons to raster<a class="headerlink" href="#convert-polygons-to-raster" title="Permalink to this headline">¶</a></h2>
+<h1>Convert Polygons to raster<a class="headerlink" href="#convert-polygons-to-raster" title="Permalink to this headline">¶</a></h1>
 <p>Now we are saving the species into separate Shapefiles which we can convert to rasters using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion()</span></code> -function (see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/tools/conversion-toolbox/polygon-to-raster.htm">help</a>).
 Let&#8217;s also send information to the user about the process with <code class="docutils literal"><span class="pre">AddMessage()</span></code> -function (see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/addmessage.htm">help</a>). Let&#8217;s add the following lines in the same loop that we started previously:</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 6.2):</span>
@@ -354,19 +309,8 @@ Let&#8217;s also send information to the user about the process with <code class
 </pre></div>
 </div>
 </div>
-<div class="section" id="sending-messages-to-the-script-tool">
-<h2>Sending messages to the Script tool<a class="headerlink" href="#sending-messages-to-the-script-tool" title="Permalink to this headline">¶</a></h2>
-<p>It is possible to &#8220;print&#8221; stuff to the user from arcpy scripts as well.  We can use <code class="docutils literal"><span class="pre">AddMessage()</span></code> -function (see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/addmessage.htm">help</a>) to send
-any kind of messages to the user who uses the Python tool that we have created and use from ArcGIS Toolbox.</p>
-<p>Let&#8217;s add a final message for the user that the process was successful.</p>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># 7. Print that the process was finished successfully</span>
-<span class="n">info</span> <span class="o">=</span> <span class="s2">&quot;Process was a great success! Wuhuu!&quot;</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
 <div class="section" id="the-full-script">
-<h2>The full script<a class="headerlink" href="#the-full-script" title="Permalink to this headline">¶</a></h2>
+<h1>The full script<a class="headerlink" href="#the-full-script" title="Permalink to this headline">¶</a></h1>
 <p>Here is the full script that we prepared previously:</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Import arcpy module so we can use ArcGIS geoprocessing tools</span>
 <span class="kn">import</span> <span class="nn">arcpy</span>
@@ -448,21 +392,11 @@ any kind of messages to the user who uses the Python tool that we have created a
 </div>
 <p>Now, we have a script that we can use from our Toolbox in ArcGIS! Let&#8217;s next see how it can be used.</p>
 </div>
-</div>
 
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="Day3-run-the-tool.html" class="btn btn-neutral float-right" title="Running the Python script from ArcGIS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Day3-toolbox.html" class="btn btn-neutral" title="ArcGIS Toolbox" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>

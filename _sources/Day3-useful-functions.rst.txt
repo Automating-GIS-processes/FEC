@@ -1,13 +1,16 @@
 Useful functions related to filepaths
 ======================================
 
-Preparations
--------------
+Download example dataset
+-------------------------
 
-If you haven't done so already, download the example dataset ``5972xxx.zip`` for this section from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
+Download the example dataset ``5972xxx.zip`` for this section from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
 The zip-file contains a folder with a subset of data from the `Travel Time Matrix dataset <http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/>`_.
 
-Unzip the folder to your local working directory.
+Unzip the folder to your local working directory. You should see the following files:
+
+.. figure:: img/Travel_times_to_xxxxx.png
+    :scale: 30 %
 
 
 os-module

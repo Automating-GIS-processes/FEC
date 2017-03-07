@@ -111,7 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and writing text files</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-example-dataset">Download example dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reading-text-files">Reading text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#writing-text-files">Writing text files</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#listing-all-files-in-a-directory">Listing all files in a directory</a></li>
@@ -126,9 +126,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Final Exercise: ArcPy-script for processing species data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script.html">Writing arcpy scripts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Writing arcpy scripts</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 </ul>
 
@@ -178,14 +178,11 @@
 <h1>Reading and writing text files<a class="headerlink" href="#reading-and-writing-text-files" title="Permalink to this headline">¶</a></h1>
 <p>Reading and writing text files within a Python code can be very handy for example when you want to document a process,
 or to automatically print out simple information and results (for example statistics) when running a bigger process.</p>
-<div class="section" id="preparations">
-<h2>Preparations<a class="headerlink" href="#preparations" title="Permalink to this headline">¶</a></h2>
-<p>Download the example dataset <code class="docutils literal"><span class="pre">5972xxx.zip</span></code> for this section from <a class="reference external" href="https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip">this link</a>.
+<div class="section" id="download-example-dataset">
+<h2>Download example dataset<a class="headerlink" href="#download-example-dataset" title="Permalink to this headline">¶</a></h2>
+<p>If you haven&#8217;t done so already, download the example dataset <code class="docutils literal"><span class="pre">5972xxx.zip</span></code> from <a class="reference external" href="https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip">this link</a>.
 The zip-file contains a folder with a subset of data from the <a class="reference external" href="http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/">Travel Time Matrix dataset</a>.</p>
-<p>Unzip the folder to your local working directory. You should see the following files:</p>
-<div class="figure">
-<a class="reference internal image-reference" href="_images/Travel_times_to_xxxxx.png"><img alt="_images/Travel_times_to_xxxxx.png" src="_images/Travel_times_to_xxxxx.png" style="width: 84.89999999999999px; height: 102.3px;" /></a>
-</div>
+<p>Unzip the folder to your local working directory.</p>
 </div>
 <div class="section" id="reading-text-files">
 <h2>Reading text files<a class="headerlink" href="#reading-text-files" title="Permalink to this headline">¶</a></h2>

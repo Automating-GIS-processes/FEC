@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Arcpy-tool Version 1 &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -32,7 +31,7 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
 
@@ -143,7 +142,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -151,9 +150,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Arcpy-tool Version 1</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Day3-arcpy-toolbox-version1.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -163,11 +164,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="arcpy-tool-version-1">
+<h1>Arcpy-tool Version 1<a class="headerlink" href="#arcpy-tool-version-1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="defining-the-toolbox-functionality">
+<h2>Defining the toolbox functionality<a class="headerlink" href="#defining-the-toolbox-functionality" title="Permalink to this headline">¶</a></h2>
+<p>Now we have our custom Toolbox in ArcGIS but it cannot yet do anything. Let&#8217;s first create a graphical user interface for our tool.</p>
+<p>Defining input/output files plus additional parameters for your own Python script can be done by creating a <strong>Script</strong> -tool (i.e. user interface) into your ArcGIS toolbox:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-script-tool.png"><img alt="_images/arcgis-script-tool.png" src="_images/arcgis-script-tool.png" style="width: 225.5px; height: 192.0px;" /></a>
+</div>
+<p>It opens a dialog where you should write some generic description of your tool such as the name of the tool and description for it (do like below):</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-script-description.png"><img alt="_images/arcgis-script-description.png" src="_images/arcgis-script-description.png" style="width: 394.5px; height: 515.25px;" /></a>
+</div>
+<p>Click Next, and ignore the Script File -field for now (click Next again).</p>
+<p>Now we can add parameters to our tool which are then asked from the user when the tool is used. Parameters can be defined from the properties of your Script tool:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-properties.png"><img alt="_images/arcgis-properties.png" src="_images/arcgis-properties.png" style="width: 250.5px; height: 237.75px;" /></a>
+</div>
+<p>From the <code class="docutils literal"><span class="pre">Parameters</span></code> -tab we can add the required parameters to our tool.</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-parameter-tab-simple.png"><img alt="_images/arcgis-parameter-tab-simple.png" src="_images/arcgis-parameter-tab-simple.png" style="width: 432.75px; height: 521.25px;" /></a>
+</div>
+<p>We can name the paramater as we like in <code class="docutils literal"><span class="pre">Display</span> <span class="pre">name</span></code> column. The <code class="docutils literal"><span class="pre">Data</span> <span class="pre">type</span></code> column determines what kind of input the user can
+pass to that specific parameter. It can be for example <strong>Shapefile</strong>, <strong>Folder</strong>, <strong>Field</strong>, <strong>Integer</strong>, or a <strong>Raster</strong> (see the full list by clicking a row at Data Type column).</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-parameter-tab-upper-version1.png"><img alt="_images/arcgis-parameter-tab-upper-version1.png" src="_images/arcgis-parameter-tab-upper-version1.png" style="width: 407.20000000000005px; height: 220.0px;" /></a>
+</div>
+<p>From the lower part of the dialog we can adjust the properties of individual parameter (selected in Parameters list, above) that we have added to our tool. We can for example determine the
+<code class="docutils literal"><span class="pre">Direction</span></code> of the parameter (Input or output), determine with <code class="docutils literal"><span class="pre">`Filter</span></code> what kind of values are valid for the parameter (e.g. list of values or range), or specify a <code class="docutils literal"><span class="pre">Default</span></code> value for a parameter:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/arcgis-parameter-tab-lower.png"><img alt="_images/arcgis-parameter-tab-lower.png" src="_images/arcgis-parameter-tab-lower.png" style="width: 306.0px; height: 157.5px;" /></a>
+</div>
+<p>Finally, you should end up having a nice interface for your tool that looks something similar as this:</p>
+<div class="figure">
+<a class="reference internal image-reference" href="_images/Arcpy_version1_interface.png"><img alt="_images/Arcpy_version1_interface.png" src="_images/Arcpy_version1_interface.png" style="width: 408.75px; height: 296.25px;" /></a>
+</div>
+<p>Next, we need to write the Python script that we run with this tool interface!</p>
+</div>
 </div>
 
 

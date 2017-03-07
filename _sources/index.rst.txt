@@ -112,7 +112,7 @@ Course contents:
     Day3-arcpy
     Day3-Exercise4-ArcPy
     Day3-toolbox
-    Day3-arcpy-script
+    Day3-arcpy-script-version1
     Day3-run-the-tool
 
 
