@@ -51,7 +51,7 @@ Loops allow parts of code to be repeated over some number of times.
     .. code:: python
 
         >>> word = 'rock'
-        >>> for char in word:
+        >>>  for char in word:
         ...    print(char)
         ...
         r
