@@ -1,5 +1,5 @@
-Exercise 4: ArcGIS-tool for processing species data
-===================================================
+Exercise 4: Species data to raster
+===================================
 
 Download data
 --------------
@@ -11,7 +11,7 @@ If you haven't yet done so, download the source data for the arcpy-exercise
 GitHub-repo
 -----------
 
-If you wish, you can document your work into GitHub:`FEC2017-Exercise4-arcpy <https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6>`_
+If you wish, you can document your work into GitHub: `FEC2017-Exercise4-arcpy <https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6>`_
 
 Overview
 ---------
@@ -68,3 +68,6 @@ Toolbox executes a python script called *Arcpy_2_SpeciesPoly2Raster_Iterate.py* 
 - Select individual species from the Shapefile using ``SelectLayerByAttribute_management`` function
 - Convert individual species in the Shapefile into Raster Datasets using ``PolygonToRaster_conversion`` function
 - Print info for the user that tool has finished successfully using ``AddMessage`` function
+
+
+We will start with the simple version 1 in order to illustrate the basic elements of an arcpy-script and how it interacts with a toolbox.

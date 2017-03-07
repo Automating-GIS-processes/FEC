@@ -1,5 +1,5 @@
-Arcpy script for version 1
-==========================
+Species tool: Version 1 (script)
+===============================
 
 At this point we have created a nice interface for our Python tool in ArcGIS:
 

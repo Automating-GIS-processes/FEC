@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Exercise 4: ArcGIS-tool for processing species data &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Exercise 4: Species data to raster &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -118,7 +118,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4: ArcGIS-tool for processing species data</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4: Species data to raster</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#download-data">Download data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#github-repo">GitHub-repo</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
@@ -127,8 +127,8 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-toolbox-version1.html">Species tool: Version 1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Arcpy script for version 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-toolbox-version1.html">Species tool: Version 1 (toolbox)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Species tool: Version 1 (script)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
 </ul>
@@ -161,7 +161,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Exercise 4: ArcGIS-tool for processing species data</li>
+    <li>Exercise 4: Species data to raster</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -175,8 +175,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="exercise-4-arcgis-tool-for-processing-species-data">
-<h1>Exercise 4: ArcGIS-tool for processing species data<a class="headerlink" href="#exercise-4-arcgis-tool-for-processing-species-data" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="exercise-4-species-data-to-raster">
+<h1>Exercise 4: Species data to raster<a class="headerlink" href="#exercise-4-species-data-to-raster" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="download-data">
 <h2>Download data<a class="headerlink" href="#download-data" title="Permalink to this headline">¶</a></h2>
 <p>If you haven&#8217;t yet done so, download the source data for the arcpy-exercise
@@ -184,7 +184,7 @@
 </div>
 <div class="section" id="github-repo">
 <h2>GitHub-repo<a class="headerlink" href="#github-repo" title="Permalink to this headline">¶</a></h2>
-<p>If you wish, you can document your work into GitHub:<a class="reference external" href="https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6">FEC2017-Exercise4-arcpy</a></p>
+<p>If you wish, you can document your work into GitHub: <a class="reference external" href="https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6">FEC2017-Exercise4-arcpy</a></p>
 </div>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
@@ -235,6 +235,7 @@ Toolbox executes a python script called <em>Arcpy_2_SpeciesPoly2Raster_Iterate.p
 <li>Convert individual species in the Shapefile into Raster Datasets using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion</span></code> function</li>
 <li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
 </ul>
+<p>We will start with the simple version 1 in order to illustrate the basic elements of an arcpy-script and how it interacts with a toolbox.</p>
 </div>
 </div>
 
