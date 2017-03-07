@@ -118,7 +118,7 @@ What should I *not* do?
 
 Here are a few things to avoid.
 
-1. **Don't use ``from X import *``**. This may be easier to understand
+1. Don't use ``from X import *``. This may be easier to understand
    by way of an example, but assuming ``X`` above is a Python module,
    ``from X import *`` will import all of the functions in module ``X``.
    Though you might think this is helpful, it is much better to simply
