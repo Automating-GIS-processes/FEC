@@ -63,10 +63,13 @@ The previous command will print out:
         c
         k
 
-   Note here that the ``...`` is displayed in the IPython window when
-   entering code in a loop and you do not need to type in the ``...``.
-   Not only is this shorter, but it is also more flexible. Try out a
-   different word such as ``granite``. Still works, right?
+Note here that the ``...`` is displayed in the IPython window when
+entering code in a loop and you do not need to type in the ``...``.
+Not only is this shorter, but it is also more flexible. Try out a
+different word such as ``granite``. Still works, right?
+
+|
+
 3. ``for`` loops in Python have the general form below.
 
    .. code:: python
