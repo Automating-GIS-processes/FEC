@@ -1,7 +1,7 @@
 Task: write results to text file
 =================================
 
-In Exercise 3 on functions you were asked to define a function `circleArea()`which takes in one parameter `radius`
+In Exercise 3 on functions you were asked to define a function ``circleArea()`` which takes in one parameter ``radius``
 and returns the Area of a circle with the given radius. Using the function, update the following code so that
 you store the output into a text file `Circle_areas.txt` on your computer:
 

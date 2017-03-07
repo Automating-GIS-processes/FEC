@@ -39,18 +39,19 @@ using the ArcPy-model for automating GIS-processes. Here is the preliminary sche
 |                |                                 | - for-loops        |
 |                |                                 | - *Exercise 2*     |
 +----------------+---------------------------------+--------------------+
-| **Wednesday**  | Basics of Python 2              | - Functions        |
+| **Wednesday**  | Basics of Python 2              | - revision of DAY2 |
+|                |                                 | - Functions        |
+|                |                                 | - Modules          |
 |                |                                 | - File I/O         |
 |                |                                 | - *Exercise 3*     |
-|                | Automating ArcGIS Processes     | - Modules          |
-|                |                                 | - ArcPy-module     |
-+----------------+---------------------------------+--------------------+
+|                | Automating ArcGIS Processes     | - ArcPy-module     |
 |                |                                 | - ModelBuilder     |
++----------------+---------------------------------+--------------------+
 | **Thursday**   | Automating ArcGIS Processes     | - ArcToolbox       |
 |                |                                 | - Arcpy-scripts    |
-|                |                                 | - *Final exercise* |
+|                |                                 | - *Arcpy exercise* |
 +----------------+---------------------------------+--------------------+
-| **Friday**     | Automating ArcGIS Processes     | - *Final exercise* |
+| **Friday**     | Automating ArcGIS Processes     | - *Arcpy exercise* |
 |                |                                 | - revision         |
 |                |                                 | - feedback         |
 +----------------+---------------------------------+--------------------+

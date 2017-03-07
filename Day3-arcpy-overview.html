@@ -118,6 +118,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Automating ArcGIS-processes</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#case-processing-species-distribution-data">Case: Processing species distribution data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#download-source-data-for-the-exercise">Download source data for the exercise</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
@@ -194,10 +195,22 @@ create a graphical user interface for your custom scripts in the ArcToolbox (.tb
 </div>
 <div class="section" id="case-processing-species-distribution-data">
 <h2>Case: Processing species distribution data<a class="headerlink" href="#case-processing-species-distribution-data" title="Permalink to this headline">¶</a></h2>
-<p>Source data for the ArcPy-exercise has been downloaded from the <a class="reference external" href="http://www.iucnredlist.org/technical-documents/spatial-data">IUCN Red List of Threatened Species website</a>.
+<p>The source data has been downloaded from the <a class="reference external" href="http://www.iucnredlist.org/technical-documents/spatial-data">IUCN Red List of Threatened Species website</a>.
 We will be working with the species distribution data of different subspecies of Damselfish (<em>Pomacentridae</em>). In practice, we will incrementally create an ArcGIS Python tool that
 <strong>converts the individual Damselfish species distribution Polygons into raster layers</strong> (<code class="docutils literal"><span class="pre">.tif</span></code>). Such processing step has been included in the methodology for prioritizing global
 conservation areas based on the occurrence of endangered species (<a class="reference external" href="https://helda.helsinki.fi/bitstream/handle/10138/156062/PouzolsToivonenEtal_NonFinalProof_Nature_2014.pdf?sequence=1">Pouzols et al. 2014</a>).</p>
+</div>
+<div class="section" id="download-source-data-for-the-exercise">
+<h2>Download source data for the exercise<a class="headerlink" href="#download-source-data-for-the-exercise" title="Permalink to this headline">¶</a></h2>
+<p>Download the source data for the arcpy-exercise <a class="reference external" href="https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip">from this link</a></p>
+<div class="figure">
+<img alt="_images/Datazipdownload.png" src="_images/Datazipdownload.png" />
+</div>
+<p>The zip-file contains a shapefile <cite>DAMSELFISH_distributions.shp</cite> and related files.
+Extract the zip file (right click and select &#8220;Extract All&#8221;) to your local folder:</p>
+<div class="figure">
+<img alt="_images/DamselfishFiles.png" src="_images/DamselfishFiles.png" />
+</div>
 <div class="figure" id="id1">
 <img alt="_images/damselfish-simple-map.PNG" src="_images/damselfish-simple-map.PNG" />
 <p class="caption"><span class="caption-text">Source data for this exercise: the Damselfish distribution shapefile</span></p>

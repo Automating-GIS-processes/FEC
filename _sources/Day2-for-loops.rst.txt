@@ -6,7 +6,7 @@ group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
 
-Exampes from the class
+Examples from the class
 -----------------------
 
 Often we need to repeat a task, such as greeting people:

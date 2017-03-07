@@ -1,6 +1,12 @@
 Reading and writing text files
 ==============================
 
+Preparations
+-------------
+
+Download the example dataset for this section from `this link <https://github.com/Automating-GIS-processes/FEC/blob/master/data/5972xxx.zip>`_.
+The zip-file contains a folder with data from the Travel Time Matrix dataset.
+
 Reading and writing text files within a Python code can be very handy for example when you want to document a process,
 or to automatically print out simple information and results (for example statistics) when running a bigger process.
 
