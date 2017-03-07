@@ -170,7 +170,7 @@
 <h1>Useful functions related to filepaths<a class="headerlink" href="#useful-functions-related-to-filepaths" title="Permalink to this headline">¶</a></h1>
 <p>When dealing with file paths in Python there are several useful
 functions available in a sub-module called
-<strong>`os.path &lt;https://docs.python.org/3/library/os.path.html&gt;`__</strong>.</p>
+<a class="reference external" href="https://docs.python.org/3/library/os.path.html">os.path</a>.</p>
 <p>For instance when creating output filepaths it is common that you have a
 common folder where all the output files will be created. In such cases,
 you need to combine the path to the folder and the output filename for
@@ -180,7 +180,11 @@ operation.</p>
 <li>It is possible to parse the filename of a file (without folder
 information):</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">python</span>&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">import</span> <span class="pre">os</span>&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">filename</span> <span class="pre">=</span> <span class="pre">os.path.basename(&quot;/home/geo/data/test.txt&quot;)</span>&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">print(filename)</span>&#160; <span class="pre">test.txt</span></code></p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">basename</span><span class="p">(</span><span class="s2">&quot;C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS</span><span class="se">\t</span><span class="s2">est.txt&quot;</span><span class="p">)</span> <span class="c1"># change filepath to your own folder!</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+</pre></div>
+</div>
 <ol class="arabic simple" start="2">
 <li>One typical example that you might need to do sometime is to copy a
 part of file into a new file in another folder. Let&#8217;s create a new
@@ -189,21 +193,32 @@ instance using specific command called <code class="docutils literal"><span clas
 it does not exist already (we can take advantage of
 <code class="docutils literal"><span class="pre">os.path.exists()</span></code> -function):</li>
 </ol>
-<p>```python &gt;&gt;&gt; import os &gt;&gt;&gt; result_dir = &#8220;/home/geo/Results&#8221;</p>
-<p># Check if folder does NOT exist &gt;&gt;&gt; if not os.path.exists(result_dir):
-# If folder didn&#8217;t exist create one os.makedirs(result_dir) ```</p>
-<p>Now we have a new folder called Results in our home folder:</p>
-<div class="figure" id="id1">
-<img alt="New folder created" src="../img/result-folder.PNG" />
-<p class="caption"><span class="caption-text">New folder created</span></p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
+<span class="n">result_dir</span> <span class="o">=</span> <span class="s2">&quot;C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS\Exercise1&quot;</span>
+
+<span class="c1"># Check if folder does NOT exist</span>
+<span class="n">f</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">exists</span><span class="p">(</span><span class="n">result_dir</span><span class="p">):</span>
+
+<span class="c1"># If folder didn&#39;t exist create one</span>
+<span class="n">os</span><span class="o">.</span><span class="n">makedirs</span><span class="p">(</span><span class="n">result_dir</span><span class="p">)</span>
+</pre></div>
 </div>
+<p>Now we have a new folder in the specified location</p>
 <ol class="arabic simple" start="3">
 <li>Now we can combine the filename (test.txt) and our new folder using
 <code class="docutils literal"><span class="pre">os.path.join()</span></code> -function:</li>
 </ol>
-<p><code class="docutils literal"><span class="pre">python</span>&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">new_output_file</span> <span class="pre">=</span> <span class="pre">os.path.join(result_dir,</span> <span class="pre">filename)</span>&#160; <span class="pre">&gt;&gt;&gt;</span> <span class="pre">print(new_output_file)</span>&#160; <span class="pre">/home/geo/Results/test.txt</span></code></p>
-<blockquote>
-<div>Copying selected lines of (multiple) files into a new location</div></blockquote>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span>  <span class="c1"># Filename:</span>
+  <span class="n">filename</span> <span class="o">=</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
+
+  <span class="c1">#Create a filepath for the new file:</span>
+
+  <span class="n">output_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span>
+
+<span class="n">Copying</span> <span class="n">selected</span> <span class="n">lines</span> <span class="n">of</span> <span class="p">(</span><span class="n">multiple</span><span class="p">)</span> <span class="n">files</span> <span class="n">into</span> <span class="n">a</span> <span class="n">new</span> <span class="n">location</span>
+</pre></div>
+</div>
 <hr class="docutils" />
 <ol class="arabic simple">
 <li>Let&#8217;s take our previous exercise (reading multiple files) as a
@@ -214,14 +229,6 @@ into our new Results folder. We will use <code class="docutils literal"><span cl
 <code class="docutils literal"><span class="pre">os.path.join()</span></code> -function to create the new output filepaths that
 will be saved into the new Results folder:</li>
 </ol>
-<p>```python &gt;&gt;&gt; import glob # List inflammation data files from the
-source directory &gt;&gt;&gt; source_dir = &#8220;/home/geo/data&#8221; &gt;&gt;&gt;
-inflammation_paths = glob.glob(source_dir + &#8220;/inflammation*.csv&#8221;)</p>
-<p># As a reminder our result directory &gt;&gt;&gt; result_dir =
-&#8220;/home/geo/Results&#8221;</p>
-<p># Iterate over the files &gt;&gt;&gt; for fp in inflammation_paths: # Parse the
-filename of the input file and print it as information for the user
-filename = os.path.basename(fp) print(filename)</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Open the source file in read mode</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">fp</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
     <span class="c1"># Parse the output file name, combine the result_dir folder-path and the filename of the input file</span>
@@ -236,16 +243,6 @@ filename = os.path.basename(fp) print(filename)</p>
        <span class="c1"># Write it to the output file</span>
        <span class="n">w</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">first_line</span><span class="p">)</span>
 </pre></div>
-</div>
-<p>Now we have copied the inflammation files in our Results -folder:</p>
-<div class="figure" id="id2">
-<img alt="Results" src="../img/copy-files-1-line.PNG" />
-<p class="caption"><span class="caption-text">Results</span></p>
-</div>
-<p>And each of those files have the first line as content:</p>
-<div class="figure" id="id3">
-<img alt="Results" src="../img/copy-files-1-line-content.PNG" />
-<p class="caption"><span class="caption-text">Results</span></p>
 </div>
 <p><strong>Footnotes</strong></p>
 <ul class="simple">

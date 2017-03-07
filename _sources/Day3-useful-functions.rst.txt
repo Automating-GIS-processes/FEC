@@ -3,7 +3,7 @@ Useful functions related to filepaths
 
 When dealing with file paths in Python there are several useful
 functions available in a sub-module called
-**`os.path <https://docs.python.org/3/library/os.path.html>`__**.
+`os.path <https://docs.python.org/3/library/os.path.html>`_.
 
 For instance when creating output filepaths it is common that you have a
 common folder where all the output files will be created. In such cases,
@@ -14,7 +14,11 @@ operation.
 1. It is possible to parse the filename of a file (without folder
    information):
 
-``python  >>> import os  >>> filename = os.path.basename("/home/geo/data/test.txt")  >>> print(filename)  test.txt``
+.. code:: python
+
+   import os
+   filename = os.path.basename("C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS\test.txt") # change filepath to your own folder!
+   print(filename)
 
 2. One typical example that you might need to do sometime is to copy a
    part of file into a new file in another folder. Let's create a new
@@ -23,22 +27,31 @@ operation.
    it does not exist already (we can take advantage of
    ``os.path.exists()`` -function):
 
-\`\`\`python >>> import os >>> result\_dir = "/home/geo/Results"
+.. code:: python
 
-# Check if folder does NOT exist >>> if not os.path.exists(result\_dir):
-# If folder didn't exist create one os.makedirs(result\_dir) \`\`\`
+   import os
+   result_dir = "C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS\Exercise1"
 
-Now we have a new folder called Results in our home folder:
+   # Check if folder does NOT exist
+   f not os.path.exists(result_dir):
 
-.. figure:: ../img/result-folder.PNG
-   :alt: New folder created
+   # If folder didn't exist create one
+   os.makedirs(result_dir)
 
-   New folder created
+Now we have a new folder in the specified location
 
 3. Now we can combine the filename (test.txt) and our new folder using
    ``os.path.join()`` -function:
 
-``python  >>> new_output_file = os.path.join(result_dir, filename)  >>> print(new_output_file)  /home/geo/Results/test.txt``
+.. code:: python
+
+   # Filename:
+   filename = newfile.txt
+
+   #Create a filepath for the new file:
+
+   output_file_path = os.path.join(result_dir, filename)
+   print(output_file_path)
 
  Copying selected lines of (multiple) files into a new location
 ===============================================================
@@ -51,16 +64,22 @@ Now we have a new folder called Results in our home folder:
    ``os.path.join()`` -function to create the new output filepaths that
    will be saved into the new Results folder:
 
-\`\`\`python >>> import glob # List inflammation data files from the
-source directory >>> source\_dir = "/home/geo/data" >>>
-inflammation\_paths = glob.glob(source\_dir + "/inflammation\*.csv")
+.. code:: python
+   import glob
 
-# As a reminder our result directory >>> result\_dir =
-"/home/geo/Results"
+   # List inflammation data files from the source directory
+   source_dir = "/home/geo/data"
+   inflammation_paths = glob.glob(source_dir + "/inflammation\*.csv")
 
-# Iterate over the files >>> for fp in inflammation\_paths: # Parse the
-filename of the input file and print it as information for the user
-filename = os.path.basename(fp) print(filename)
+   # As a reminder our result directory
+   result_dir = "/home/geo/Results"
+
+   # Iterate over the files
+   for fp in inflammation_paths:
+
+      # Parse the filename of the input file and print it as information for the user
+      filename = os.path.basename(fp)
+      print(filename)
 
 .. code:: python
 
@@ -78,21 +97,6 @@ filename = os.path.basename(fp) print(filename)
                 # Write it to the output file
                 w.write(first_line)
 
-
-
-Now we have copied the inflammation files in our Results -folder:
-
-.. figure:: ../img/copy-files-1-line.PNG
-   :alt: Results
-
-   Results
-
-And each of those files have the first line as content:
-
-.. figure:: ../img/copy-files-1-line-content.PNG
-   :alt: Results
-
-   Results
 
 **Footnotes**
 
