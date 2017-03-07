@@ -23,6 +23,7 @@ After running your tool, you should get a raster that looks something like this:
 
 
 However, this output is not yet as desired, because information about overlapping species ranges has been lost.
-In tool versions 2 and 3, we will learn how to split the shapefile into multiple files based on the species attribute ``binomial`` (one file for each subspecies).
+In the more advanced version of our tool, we will learn how to split the shapefile into multiple files based on
+the species attribute ``binomial`` (one file for each subspecies).
 
 

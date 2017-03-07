@@ -1,12 +1,27 @@
 
-Version 3 script
-==================
+Species tool: Version 2
+========================
 
-Getting parameters from the toolbox
------------------------------------
+Toolbox
+-------
 
-Before we can do anything with our tool and our nice interface for it, we need to get those parameters into our script. This can be done by using arcpy's function called ``.GetParameterAsText()`` where the index
-value of the parameter is passed to the function (where number 0 is the first parameter). ArcGIS has a good documentation that should be used for searching the information about how different functions are used.
+For the more advanced version of our tool, we will create a new toolbox-interface:
+
+.. figure:: img/Arcpy_version3_interface.png
+
+In the ``Parameters`` -tab, add the following parameters:
+
+.. figure:: img/arcgis-parameter-tab-upper.png
+    :scale: 90 %
+
+
+.. admonition:: Task
+
+    Determine the ``Filter`` parameter for ``Presence value`` as a range of values from 1-5.
+
+.. figure:: img/arcgis-parameter-tab-lower.png
+    :scale: 90 %
+
 
 Let's import those five parameters from the graphical interface into our Python script using `GetParameterAsText() <http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/getparameterastext.htm>`_ -function:
 
