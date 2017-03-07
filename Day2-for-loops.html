@@ -213,30 +213,26 @@ in. Second, it won&#8217;t work if the word is not 4 characters long.</p>
 </li>
 <li><p class="first">We could do a much better job by using a <code class="docutils literal"><span class="pre">for</span></code> loop.</p>
 <blockquote>
-<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;rock&#39;</span>
-<span class="go">&gt;&gt;&gt;</span>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">word</span> <span class="o">=</span> <span class="s1">&#39;rock&#39;</span>
+<span class="k">for</span> <span class="n">char</span> <span class="ow">in</span> <span class="n">word</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">char</span><span class="p">)</span>
 </pre></div>
 </div>
 </div></blockquote>
 </li>
 </ol>
-<blockquote>
-<div><dl class="docutils">
-<dt>for char in word:</dt>
-<dd><blockquote class="first">
-<div>...    print(char)
-...
-r
-o
-c
-k</div></blockquote>
-<p class="last">Note here that the <code class="docutils literal"><span class="pre">...</span></code> is displayed in the IPython window when
-entering code in a loop and you do not need to type in the <code class="docutils literal"><span class="pre">...</span></code>.
+<p>The previous command will print out:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span>     r
+     o
+     c
+     k
+
+Note here that the ``...`` is displayed in the IPython window when
+entering code in a loop and you do not need to type in the ``...``.
 Not only is this shorter, but it is also more flexible. Try out a
-different word such as <code class="docutils literal"><span class="pre">granite</span></code>. Still works, right?</p>
-</dd>
-</dl>
-</div></blockquote>
+different word such as ``granite``. Still works, right?
+</pre></div>
+</div>
 <ol class="arabic" start="3">
 <li><p class="first"><code class="docutils literal"><span class="pre">for</span></code> loops in Python have the general form below.</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">variable</span> <span class="ow">in</span> <span class="n">collection</span><span class="p">:</span>
