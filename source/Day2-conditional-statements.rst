@@ -129,7 +129,7 @@ Note that the elif-statement is tested only if the previous if- or elif-statemen
 
             #In case population was more than 200, and building distance less than 200
             else:
-	            print("Urban area")
+                print("Urban area")
 
 
 

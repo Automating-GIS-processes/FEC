@@ -38,9 +38,9 @@ We can also add a counter of how many people we have greeted
     greeting_cnt = 0
 
     for name in namelist:
-        print("Tervehdys", name)
+        print("Tervetuloa", name)
         Tervehdys_cnt += 1
-        print("I have greeted: " + str(Tervehdys_cnt) + "/" + str(len(nimilista)) + "people")
+        print("I have greeted: " + str(greeting_cnt) + "/" + str(len(nimilista)) + "people")
 
 
 Basics of ``for`` loops
