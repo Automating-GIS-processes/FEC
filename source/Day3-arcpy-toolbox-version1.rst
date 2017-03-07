@@ -1,5 +1,5 @@
-Arcpy-tool Version 1
-====================
+Species tool: Version 1
+=======================
 
 Defining the toolbox functionality
 ------------------------------------
