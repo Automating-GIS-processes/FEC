@@ -1,21 +1,36 @@
 Reading and writing text files
 ==============================
 
+Reading and writing text files within a Python code can be very handy for example when you want to document a process,
+or to automatically print out simple information and results (for example statistics) when running a bigger process.
+
+
 Preparations
 -------------
 
-Download the example dataset for this section from `this link <https://github.com/Automating-GIS-processes/FEC/blob/master/data/5972xxx.zip>`_.
-The zip-file contains a folder with data from the Travel Time Matrix dataset.
+Download the example dataset ``5972xxx.zip`` for this section from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
+The zip-file contains a folder with a subset of data from the `Travel Time Matrix dataset <http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/>`_.
 
-Reading and writing text files within a Python code can be very handy for example when you want to document a process,
-or to automatically print out simple information and results (for example statistics) when running a bigger process.
+Unzip the folder to your local working directory. You should see the following files:
+
+.. figure:: img/Travel_times_to_xxxxx.png
+
 
 Reading text files
 --------------------
 
 .. code:: python
 
-    fp= ""
+    import os
+
+    # Set path to the folder: (replace with your own filepath!):
+    folder = r"C:\HY-Data\username\AutoGIS\Data\5972xxx"
+
+    # Set name of the file
+    filename = "travel_times_to_ 5972100.txt"
+
+    # Generate full filepath by combining the folder and filename
+    fp = os.path.join(folder, filename)
 
     # Read all contents of the file:
     with open(fp, "r") as infile:
@@ -27,9 +42,12 @@ Writing text files
 
 .. code:: python
 
-    out_file = 'test.txt'
+    # name for the output file
+    out_filename = 'test.txt'
 
+    # Open the file in write-mode (if the file does not exit it is generated to the working directory!):
     with open(out_file, 'w') as w:
+
         # Write a line of text into that file
         my_line = "This is my first line of text written in Python!"
         w.write(my_line)
@@ -52,7 +70,7 @@ and directories whose names match a given pattern (for example all files startin
     import glob
 
     #Read file paths for all files in the folder to a list:
-    DataPathList = glob.glob('/data/5972xxx/*'))
+    DataPathList = glob.glob('.../data/5972xxx/*'))
 
     len(DataPathList)   #number of items in the list
     print(DataPathList) # print all file paths
@@ -84,15 +102,21 @@ to read the first line of each file and add it to a list called
 
 .. code:: python
 
-     filepaths = glob.glob('/data/5972xxx/travel_times_to_ 59721*.txt') #modify the filepath if needed!
+     #Set folder:
+     folder = r"C:\HY-Data\username\AutoGIS\Data\5972xxx"
 
-     headers = [] # empty list for collecting the headers
+     # Get filepaths for all files which end with ".txt" and start with "travel_times_to_ 59721":
+     filepaths = glob.glob(os.path.join(folder, 'travel_times_to_ 59721*.txt')
+
+
+     # Create an empty list for collecting the headers
+     headers = []
 
      # iterate for each file path in the list
-     for fp in filepaths:
+    for fp in filepaths:
 
         #Open the file in read mode
-       with open(fp, 'r') as f:
+        with open(fp, 'r') as f:
            # Read the first line of the file
            first_line = f.readline()
            # Append the first line into the headers-list
@@ -100,6 +124,8 @@ to read the first line of each file and add it to a list called
 
     #After going trough all the files, print the list of headers
     print(headers)
+
+    # you should observe that the file headers (first row of data) is identical in each file in the folder.
 
 Working with delimited text files
 -----------------------------------
