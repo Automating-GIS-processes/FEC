@@ -95,12 +95,12 @@ Course contents:
     Day2-for-loops
     Day2-for-loops-mini-exercise
     Day2-Exercise2
-    Day2-functions
-    Day2-modules
-    Day2-Exercise3-Functions
-    Day2-reading-files
+    Day3-functions
+    Day3-modules
+    Day3-Exercise3-Functions
     Day3-useful-functions
-    Day2-mini-exercise-writingFiles
+    Day3-reading-files
+    Day3-mini-exercise-writingFiles
 
 
 .. toctree::

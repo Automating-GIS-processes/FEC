@@ -34,8 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="next" title="Useful functions related to filepaths" href="Day3-useful-functions.html"/>
-        <link rel="prev" title="Exercise 3: Functions" href="Day2-Exercise3-Functions.html"/> 
+        <link rel="next" title="Task: write results to text file" href="Day3-mini-exercise-writingFiles.html"/>
+        <link rel="prev" title="Useful functions related to filepaths" href="Day3-useful-functions.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -106,9 +106,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-functions.html">Functions</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-functions.html">Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-modules.html">Loading and using Python modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-Exercise3-Functions.html">Exercise 3: Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Reading and writing text files</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#preparations">Preparations</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reading-text-files">Reading text files</a></li>
@@ -118,8 +119,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#working-with-delimited-text-files">Working with delimited text files</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-useful-functions.html">Useful functions related to filepaths</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
 <ul>
@@ -164,7 +164,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day2-reading-files.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day3-reading-files.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,7 +184,7 @@ or to automatically print out simple information and results (for example statis
 The zip-file contains a folder with a subset of data from the <a class="reference external" href="http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/">Travel Time Matrix dataset</a>.</p>
 <p>Unzip the folder to your local working directory. You should see the following files:</p>
 <div class="figure">
-<img alt="_images/Travel_times_to_xxxxx.png" src="_images/Travel_times_to_xxxxx.png" />
+<a class="reference internal image-reference" href="_images/Travel_times_to_xxxxx.png"><img alt="_images/Travel_times_to_xxxxx.png" src="_images/Travel_times_to_xxxxx.png" style="width: 84.89999999999999px; height: 102.3px;" /></a>
 </div>
 </div>
 <div class="section" id="reading-text-files">
@@ -228,7 +228,7 @@ using a specific module called <a class="reference external" href="https://docs.
 <p>The glob library contains a function, also called glob, that finds files
 and directories whose names match a given pattern (for example all files starting with the letter A).</p>
 <ol class="arabic simple">
-<li>We can use the glob-module to get the names of all files in a given directory (<code class="docutils literal"><span class="pre">C:/.../data/5972xxx/</span></code>):</li>
+<li>We can use the glob-module to get the names of all files in a given folder:</li>
 </ol>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
 
@@ -295,7 +295,7 @@ a record of data (for example a country) and the attributes for each row are sep
 with a specific character (for example a comma <code class="docutils literal"><span class="pre">,</span></code>). First row of data often contains the column names for the array.</p>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">When working with Comma-Separated Values file (<em>csv), **pay attention to your language and region-settings!*</em> (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
+<p class="last">When working with Comma-Separated Values file (csv-files), <strong>pay attention to your language and region-settings!</strong> (In Windows: Control panel &gt; Region and language &gt; Additional Settings)
 There you can determine the decimal separator as <code class="docutils literal"><span class="pre">.</span></code> (recommended) or <code class="docutils literal"><span class="pre">,</span></code> and the list separator as <code class="docutils literal"><span class="pre">;</span></code> or <code class="docutils literal"><span class="pre">,</span></code>.</p>
 </div>
 <p>Python has powerful modules for handling tabular data (both spatial and non-spatial), however, during this short course we will only dive deeper in the functionality of the ArcPy-module in the context of geospatial data.
@@ -314,10 +314,10 @@ You can find more information about essential modules for handling tabular data 
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day3-useful-functions.html" class="btn btn-neutral float-right" title="Useful functions related to filepaths" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Day3-mini-exercise-writingFiles.html" class="btn btn-neutral float-right" title="Task: write results to text file" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Day2-Exercise3-Functions.html" class="btn btn-neutral" title="Exercise 3: Functions" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Day3-useful-functions.html" class="btn btn-neutral" title="Useful functions related to filepaths" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
