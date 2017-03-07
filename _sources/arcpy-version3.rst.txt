@@ -1,5 +1,6 @@
 
-
+Version 3 script
+==================
 
 Getting parameters from the toolbox
 -----------------------------------
@@ -254,5 +255,5 @@ Here is the full script that we prepared previously:
     arcpy.AddMessage(info)
 
 
-Now, we have a script that we can use from our Toolbox in ArcGIS! Let's next see how it can be used.
+
 

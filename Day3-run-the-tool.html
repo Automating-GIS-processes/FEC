@@ -34,7 +34,8 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="prev" title="Writing arcpy scripts" href="Day3-arcpy-script-version1.html"/> 
+        <link rel="next" title="Version 3 script" href="arcpy-version3.html"/>
+        <link rel="prev" title="Arcpy script for version 1" href="Day3-arcpy-script-version1.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -119,11 +120,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Writing arcpy scripts</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Python script from ArcGIS</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#how-to-proceed-from-here">How to proceed from here?</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Arcpy script for version 1</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Python script from ArcGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Version 3 script</a></li>
 </ul>
 
             
@@ -180,19 +179,12 @@
 <a class="reference internal image-reference" href="_images/arcgis-source.png"><img alt="_images/arcgis-source.png" src="_images/arcgis-source.png" style="width: 323.25px; height: 423.0px;" /></a>
 </div>
 <p>That&#8217;s it! Now you can test your tool by running it from ArcGIS!</p>
-<p>After running your tool, you should get rasters such as following from the tool:</p>
+<p>After running your tool, you should get a raster that looks something like this:</p>
 <div class="figure">
 <a class="reference internal image-reference" href="_images/arcgis-raster-result.png"><img alt="_images/arcgis-raster-result.png" src="_images/arcgis-raster-result.png" style="width: 555.0px; height: 375.75px;" /></a>
 </div>
-<div class="section" id="how-to-proceed-from-here">
-<h2>How to proceed from here?<a class="headerlink" href="#how-to-proceed-from-here" title="Permalink to this headline">¶</a></h2>
-<p>Okey, now you have seen a little bit how arcpy can be used to automatize a specific GIS process flow. Of course, our tutorial only covered a tiny fraction of all different functionalities that ArcGIS has to offer
-but the basic logic is more or less similar with different tools (except raster processing and map algebra &#8211;&gt; see <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/map-algebra/a-quick-tour-of-using-map-algebra.htm">quick tour</a>).
-Thus, you can use similar programming approach for many other tools as well that ArcGIS provides.</p>
-<p><strong>I am interested in using arcpy in my work..How can I find information how to use those tools?</strong></p>
-<p>Basically how you can proceed from here is to read the <a class="reference external" href="http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy/what-is-arcpy-.htm">documentation of arcpy</a> to find out how your typical analysis steps and tools in ArcGIS
-can be called from Python using arcpy -module. One good way to find documentation about the tool that you are searching is to use e.g. Google or use the search functionality in ArcGIS documentation pages.</p>
-</div>
+<p>However, this output is not yet as desired, because information about overlapping species ranges has been lost.
+In tool versions 2 and 3, we will learn how to split the shapefile into multiple files based on the species attribute <code class="docutils literal"><span class="pre">binomial</span></code> (one file for each subspecies).</p>
 </div>
 
 
@@ -202,8 +194,10 @@ can be called from Python using arcpy -module. One good way to find documentatio
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
+        <a href="arcpy-version3.html" class="btn btn-neutral float-right" title="Version 3 script" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-        <a href="Day3-arcpy-script-version1.html" class="btn btn-neutral" title="Writing arcpy scripts" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+        <a href="Day3-arcpy-script-version1.html" class="btn btn-neutral" title="Arcpy script for version 1" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

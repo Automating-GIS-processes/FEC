@@ -26,7 +26,7 @@ Toolbox executes a python script called ``Arcpy_1_SimplePoly2Raster.py`` that co
 - Import the required module (arcpy)
 - Get parameters from the toolbox using ``GetParametersAsText`` function
 - Convert input shapefile into a Raster Dataset using `PolygonToRaster_conversion <http://pro.arcgis.com/en/pro-app/tool-reference/conversion/polygon-to-raster.htm>`_ -function
-
+- Print info for the user that tool has finished successfully using ``AddMessage`` function
 
 
 Version 2:

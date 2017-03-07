@@ -16,24 +16,13 @@ Before we can run the tool, we need to specify **which Python script will be run
 
 That's it! Now you can test your tool by running it from ArcGIS!
 
-After running your tool, you should get rasters such as following from the tool:
+After running your tool, you should get a raster that looks something like this:
 
 .. figure:: img/arcgis-raster-result.png
     :scale: 75 %
 
-How to proceed from here?
--------------------------
 
-Okey, now you have seen a little bit how arcpy can be used to automatize a specific GIS process flow. Of course, our tutorial only covered a tiny fraction of all different functionalities that ArcGIS has to offer
-but the basic logic is more or less similar with different tools (except raster processing and map algebra --> see `quick tour <http://desktop.arcgis.com/en/arcmap/latest/extensions/spatial-analyst/map-algebra/a-quick-tour-of-using-map-algebra.htm>`_).
-Thus, you can use similar programming approach for many other tools as well that ArcGIS provides.
-
-**I am interested in using arcpy in my work..How can I find information how to use those tools?**
-
-Basically how you can proceed from here is to read the `documentation of arcpy <http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy/what-is-arcpy-.htm>`_ to find out how your typical analysis steps and tools in ArcGIS
-can be called from Python using arcpy -module. One good way to find documentation about the tool that you are searching is to use e.g. Google or use the search functionality in ArcGIS documentation pages.
+However, this output is not yet as desired, because information about overlapping species ranges has been lost.
+In tool versions 2 and 3, we will learn how to split the shapefile into multiple files based on the species attribute ``binomial`` (one file for each subspecies).
 
 
-.. todo::
-
-    Add example of raster processing and map algebra with arcpy.

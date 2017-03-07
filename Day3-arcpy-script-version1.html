@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Writing arcpy scripts &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Arcpy script for version 1 &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -120,13 +120,14 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise4-ArcPy.html">Exercise 4: ArcGIS-tool for processing species data</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-toolbox.html">ArcGIS Toolbox</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Writing arcpy scripts</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Arcpy script for version 1</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#importing-arcpy">Importing arcpy</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#getting-parameters-from-the-toolbox">Getting parameters from the toolbox</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#sending-messages-to-the-script-tool">Sending messages to the Script tool</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Version 3 script</a></li>
 </ul>
 
             
@@ -157,7 +158,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Writing arcpy scripts</li>
+    <li>Arcpy script for version 1</li>
       <li class="wy-breadcrumbs-aside">
         
           
@@ -171,8 +172,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="writing-arcpy-scripts">
-<h1>Writing arcpy scripts<a class="headerlink" href="#writing-arcpy-scripts" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="arcpy-script-for-version-1">
+<h1>Arcpy script for version 1<a class="headerlink" href="#arcpy-script-for-version-1" title="Permalink to this headline">¶</a></h1>
 <p>At this point we have created a nice interface for our Python tool in ArcGIS:</p>
 <div class="figure">
 <a class="reference internal image-reference" href="_images/Arcpy_version1_interface.png"><img alt="_images/Arcpy_version1_interface.png" src="_images/Arcpy_version1_interface.png" style="width: 218.0px; height: 158.0px;" /></a>
@@ -246,8 +247,8 @@ we need to use <code class="docutils literal"><span class="pre">AddMessage()</sp
 any kind of messages to the user-interface of our tool.</p>
 <p>Let&#8217;s add a message at the end of our script:</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#Print that the process was finished successfully</span>
-<span class="n">message_text</span> <span class="o">=</span> <span class="s2">&quot;Process was a great success! </span><span class="se">\n</span><span class="s2"> Output generated: &quot;</span> <span class="o">+</span> <span class="n">output_raster</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">info</span><span class="p">)</span>
+<span class="n">message_text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Process was a great success! </span><span class="se">\n</span><span class="s2">Output generated: &quot;</span> <span class="o">+</span> <span class="n">output_raster</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
+<span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">message_text</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Save the full script as <code class="docutils literal"><span class="pre">Arcpy_1_SimplePoly2Raster.py</span></code>.
