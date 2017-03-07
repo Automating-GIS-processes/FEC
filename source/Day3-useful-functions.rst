@@ -1,6 +1,18 @@
 Useful functions related to filepaths
 ======================================
 
+Preparations
+-------------
+
+If you haven't done so already, download the example dataset ``5972xxx.zip`` for this section from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
+The zip-file contains a folder with a subset of data from the `Travel Time Matrix dataset <http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/>`_.
+
+Unzip the folder to your local working directory.
+
+
+os-module
+---------
+
 When dealing with file paths in Python there are several useful
 functions available in a sub-module called
 `os.path <https://docs.python.org/3/library/os.path.html>`_.
@@ -17,7 +29,9 @@ operation.
 .. code:: python
 
    import os
-   filename = os.path.basename("C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS\test.txt") # change filepath to your own folder!
+
+   # Extract filename from full path (change filepath to your own folder!)
+   filename = os.path.basename("C:\HY-Data\username\AutoGIS\Data\5972xxx\travel_times_to_ 5972103.txt")
    print(filename)
 
 2. One typical example that you might need to do sometime is to copy a
@@ -30,7 +44,7 @@ operation.
 .. code:: python
 
    import os
-   result_dir = "C:\HY-Data\VUOKKHEI\documents\CODES\AutoGIS\Exercise1"
+   result_dir = r"C:\HY-Data\username\AutoGIS\Results"
 
    # Check if folder does NOT exist
    f not os.path.exists(result_dir):
@@ -40,67 +54,22 @@ operation.
 
 Now we have a new folder in the specified location
 
-3. Now we can combine the filename (test.txt) and our new folder using
+3. Now we can combine the filename  and our new folder using
    ``os.path.join()`` -function:
 
 .. code:: python
 
    # Filename:
-   filename = newfile.txt
+   filename = "newfile.txt"
 
    #Create a filepath for the new file:
-
    output_file_path = os.path.join(result_dir, filename)
    print(output_file_path)
 
-Copying selected lines of (multiple) files into a new location
----------------------------------------------------------------
 
-1. Let's take our previous exercise (reading multiple files) as a
-   starting point and copy the first line of each inflammation csv-file
-   and save them into new files using the same filenames but located
-   into our new Results folder. We will use ``os.path.basename()``
-   -function to find out the filename of the input files and
-   ``os.path.join()`` -function to create the new output filepaths that
-   will be saved into the new Results folder:
+.. note::
 
-.. code:: python
-   import glob
-
-   # List inflammation data files from the source directory
-   source_dir = "/home/geo/data"
-   inflammation_paths = glob.glob(source_dir + "/inflammation\*.csv")
-
-   # As a reminder our result directory
-   result_dir = "/home/geo/Results"
-
-   # Iterate over the files
-   for fp in inflammation_paths:
-
-      # Parse the filename of the input file and print it as information for the user
-      filename = os.path.basename(fp)
-      print(filename)
-
-.. code:: python
-
-         # Open the source file in read mode
-         with open(fp, 'r') as f:
-             # Parse the output file name, combine the result_dir folder-path and the filename of the input file
-             output_fp = os.path.join(result_dir, filename)
-
-             # Open and create the output file in write mode
-             with open(output_fp, 'w') as w:
-
-                # Read the first line of the source file
-                first_line = f.readline()
-
-                # Write it to the output file
-                w.write(first_line)
-
-
-**Footnotes**
-
--  [0]: When reading / writing in Python, it is best to use the ``with``
+   When reading / writing in Python, it is best to use the ``with``
    -statement as it takes care of closing your file after you have
    read/written something into your file. *Closing* the file takes care
    of saving the data into that file. If the file is not closed after
@@ -108,5 +77,21 @@ Copying selected lines of (multiple) files into a new location
    file. It is similar idea than when thinking of writing something into
    a Word template document but without saving it anywhere. You can find
    more info about how to write data without ``with`` -statement, and
-   how to close files from
-   **`here <https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files>`__**.
+   how to close files from `here <https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files>`__.
+
+
+glob
+----
+
+.. code:: python
+
+   import glob
+
+   # List all files in the folder
+   file_list = glob.glob("C:\\HY-Data\\VUOKKHEI\\documents\\AUTOGIS\\*")
+
+   for file in file_list:
+       print(file)
+
+
+more examples of how to combine the os-module in the next section.

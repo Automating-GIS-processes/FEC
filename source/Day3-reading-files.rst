@@ -14,6 +14,7 @@ The zip-file contains a folder with a subset of data from the `Travel Time Matri
 Unzip the folder to your local working directory. You should see the following files:
 
 .. figure:: img/Travel_times_to_xxxxx.png
+    :scale: 30 %
 
 
 Reading text files
@@ -63,7 +64,7 @@ using a specific module called `glob <https://docs.python.org/3/library/glob.htm
 The glob library contains a function, also called glob, that finds files
 and directories whose names match a given pattern (for example all files starting with the letter A).
 
-1. We can use the glob-module to get the names of all files in a given directory (``C:/.../data/5972xxx/``):
+1. We can use the glob-module to get the names of all files in a given folder:
 
 .. code:: python
 
@@ -136,7 +137,7 @@ with a specific character (for example a comma ``,``). First row of data often c
 
 .. note::
 
-    When working with Comma-Separated Values file (*csv), **pay attention to your language and region-settings!** (In Windows: Control panel > Region and language > Additional Settings)
+    When working with Comma-Separated Values file (csv-files), **pay attention to your language and region-settings!** (In Windows: Control panel > Region and language > Additional Settings)
     There you can determine the decimal separator as ``.`` (recommended) or ``,`` and the list separator as ``;`` or ``,``.
 
 
