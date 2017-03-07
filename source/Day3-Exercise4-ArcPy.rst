@@ -1,11 +1,28 @@
 Exercise 4: ArcGIS-tool for processing species data
 ===================================================
 
-As an output of this exercise we will create three  ArcPy-scripts:
+Download data
+--------------
+
+If you haven't yet done so, download the source data for the arcpy-exercise
+`from this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/DAMSELFISH.zip>`_
+
+
+GitHub-repo
+-----------
+
+If you wish, you can document your work into GitHub:`FEC2017-Exercise4-arcpy <https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6>`_
+
+Overview
+---------
+
+The goal of this exercise is to develop a tool for separating the source data (one shapefile containing species distributions of several different subspecies)
+into separate rasters for each species.
+
+As an output of this exercise we will create two ArcPy-scripts:
 
 - **Version 1:** Arcpy_1_SimplePoly2Raster.py
-- **Version 2:** Arcpy_2_SpeciesPoly2Raster.py
-- **Version 3:** Arcpy_3_SpeciesPoly2Raster_Iterate.py
+- **Version 2:** Arcpy_2_SpeciesPoly2Raster_Iterate.py
 
 We will write the scripts together in the class, but if you wish you can also proceed at your own pace by following the
 instructions in the upcoming sections. Feel free to document your codes into GitHub.
@@ -38,7 +55,7 @@ Tool asks five parameters: **input shapefile**, **output folder**, **species_att
 Tool will print useful information for the user about the execution process.
 Toolbox executes a python script called *Arcpy_2_SpeciesPoly2Raster_Iterate.py* that contains all the required functionality of the tool.
 
-.. figure:: img/Arcpy_version2_interface.png
+.. figure:: img/Arcpy_version3_interface.png
 
 **Required steps in the script-file for Version 2:**
 
