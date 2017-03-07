@@ -119,6 +119,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 4: ArcGIS-tool for processing species data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#download-data">Download data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#github-repo">GitHub-repo</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#species-data-tool-version-1">Species data tool: Version 1</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#species-data-tool-version-2">Species data tool: Version 2</a></li>
 </ul>
@@ -173,14 +176,27 @@
             
   <div class="section" id="exercise-4-arcgis-tool-for-processing-species-data">
 <h1>Exercise 4: ArcGIS-tool for processing species data<a class="headerlink" href="#exercise-4-arcgis-tool-for-processing-species-data" title="Permalink to this headline">¶</a></h1>
-<p>As an output of this exercise we will create three  ArcPy-scripts:</p>
+<div class="section" id="download-data">
+<h2>Download data<a class="headerlink" href="#download-data" title="Permalink to this headline">¶</a></h2>
+<p>If you haven&#8217;t yet done so, download the source data for the arcpy-exercise
+<a class="reference external" href="https://github.com/Automating-GIS-processes/FEC/raw/master/data/DAMSELFISH.zip">from this link</a></p>
+</div>
+<div class="section" id="github-repo">
+<h2>GitHub-repo<a class="headerlink" href="#github-repo" title="Permalink to this headline">¶</a></h2>
+<p>If you wish, you can document your work into GitHub:<a class="reference external" href="https://classroom.github.com/assignment-invitations/fb2e4efbfb71aebeff6f87662771bec6">FEC2017-Exercise4-arcpy</a></p>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>The goal of this exercise is to develop a tool for separating the source data (one shapefile containing species distributions of several different subspecies)
+into separate rasters for each species.</p>
+<p>As an output of this exercise we will create two ArcPy-scripts:</p>
 <ul class="simple">
 <li><strong>Version 1:</strong> Arcpy_1_SimplePoly2Raster.py</li>
-<li><strong>Version 2:</strong> Arcpy_2_SpeciesPoly2Raster.py</li>
-<li><strong>Version 3:</strong> Arcpy_3_SpeciesPoly2Raster_Iterate.py</li>
+<li><strong>Version 2:</strong> Arcpy_2_SpeciesPoly2Raster_Iterate.py</li>
 </ul>
 <p>We will write the scripts together in the class, but if you wish you can also proceed at your own pace by following the
 instructions in the upcoming sections. Feel free to document your codes into GitHub.</p>
+</div>
 <div class="section" id="species-data-tool-version-1">
 <h2>Species data tool: Version 1<a class="headerlink" href="#species-data-tool-version-1" title="Permalink to this headline">¶</a></h2>
 <p>Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
@@ -204,7 +220,7 @@ Tool asks five parameters: <strong>input shapefile</strong>, <strong>output fold
 Tool will print useful information for the user about the execution process.
 Toolbox executes a python script called <em>Arcpy_2_SpeciesPoly2Raster_Iterate.py</em> that contains all the required functionality of the tool.</p>
 <div class="figure">
-<img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
+<img alt="_images/Arcpy_version3_interface.png" src="_images/Arcpy_version3_interface.png" />
 </div>
 <p><strong>Required steps in the script-file for Version 2:</strong></p>
 <ul class="simple">
