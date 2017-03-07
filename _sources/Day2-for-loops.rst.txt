@@ -5,6 +5,44 @@ This lesson is based on Dr. David Whipp's `material from the python-for-geo-peop
 group's <http://software-carpentry.org/>`__ lessons on `Programming with
 Python <http://swcarpentry.github.io/python-novice-inflammation/>`__.
 
+
+Exampes from the class
+-----------------------
+
+Often we need to repeat a task, such as greeting people:
+
+.. code:: python
+
+    # Print greetings line-by line
+    print("Tervetuloa Iida")
+    print("Tervetuloa Elina")
+    print("Tervetuloa Virpi")
+    print("Tervetuloa Linda")
+
+The general pattern in the above commands contains three main elements; the print-command, the greeting, and the name of the person.
+If we list the names we want to greet, we could say that, "for each name in the list, print out a greeting:"
+
+.. code:: python
+
+    #Names in a list
+    namelist = ["Iida", "Elina", "Virpi", "Linda"]
+
+    # For each name in the list print greetings:
+    for name in namelist:
+        print("Tervetuloa", name)
+
+We can also add a counter of how many people we have greeted
+
+.. code:: python
+
+    greeting_cnt = 0
+
+    for name in namelist:
+        print("Tervehdys", name)
+        Tervehdys_cnt += 1
+        print("I have greeted: " + str(Tervehdys_cnt) + "/" + str(len(nimilista)) + "people")
+
+
 Basics of ``for`` loops
 -----------------------
 

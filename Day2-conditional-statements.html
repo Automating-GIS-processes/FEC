@@ -105,6 +105,7 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Conditional statements</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#sources">Sources</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#basics-of-conditional-statements">Basics of conditional statements</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#example-with-urban-area-classifications">Example with Urban area classifications:</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#string-comparisons">String comparisons</a></li>
 </ul>
 </li>
@@ -263,6 +264,54 @@ operators is given in the table below.</p>
 </tbody>
 </table>
 </li>
+</ol>
+</div>
+<div class="section" id="example-with-urban-area-classifications">
+<h2>Example with Urban area classifications:<a class="headerlink" href="#example-with-urban-area-classifications" title="Permalink to this headline">¶</a></h2>
+<p>Note that the elif-statement is tested only if the previous if- or elif-statement was not true.</p>
+<blockquote>
+<div><div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">This code will find out if the user lives in a sparsely populated area or an urban area</span>
+<span class="sd">according to the definition of urban areas in Finland: https://en.wikipedia.org/wiki/Urban_areas_in_Finland</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="c1"># As population size as input from user</span>
+<span class="n">population</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the population of the area (number of people)?: &quot;</span><span class="p">)</span>
+
+<span class="c1">#Convert user input as integer:</span>
+<span class="n">population</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">population</span><span class="p">)</span>
+
+<span class="c1"># If population is zero or negative</span>
+<span class="k">if</span> <span class="n">population</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Ghost town!&quot;</span><span class="p">)</span>
+
+<span class="c1"># If population equals one</span>
+<span class="k">elif</span> <span class="n">population</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Living alone!&quot;</span><span class="p">)</span>
+
+<span class="c1"># If population is less than 200</span>
+<span class="k">elif</span> <span class="n">population</span> <span class="o">&lt;</span> <span class="mi">200</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sparsely populated area&quot;</span><span class="p">)</span>
+
+<span class="c1"># If population is more than 200</span>
+<span class="k">elif</span> <span class="n">population</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
+
+    <span class="c1"># Ask the user for maximum distance between buildings</span>
+    <span class="n">building_dist</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;What is the maximum distance between buildings in the area (m)?: &quot;</span><span class="p">)</span>
+    <span class="c1">#Convert user input as integer:</span>
+    <span class="n">building_dist</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">building_dist</span><span class="p">)</span>
+
+    <span class="c1">#If building distance is greater than 200</span>
+    <span class="k">if</span> <span class="n">building_dist</span> <span class="o">&gt;=</span> <span class="mi">200</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Sparsely populated area&quot;</span><span class="p">)</span>
+
+    <span class="c1">#In case population was more than 200, and building distance less than 200</span>
+    <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Urban area&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div></blockquote>
+<ol class="arabic" start="4">
 <li><p class="first">We can also use <code class="docutils literal"><span class="pre">and</span></code> and <code class="docutils literal"><span class="pre">or</span></code> to have multiple conditions.</p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">if</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span> <span class="ow">and</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">):</span>
 <span class="gp">... </span>    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Both parts are true&#39;</span><span class="p">)</span>

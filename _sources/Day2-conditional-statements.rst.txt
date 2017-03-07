@@ -84,6 +84,56 @@ certain conditions.
    | ``!=``     | Not equal to               |
    +------------+----------------------------+
 
+
+Example with Urban area classifications:
+----------------------------------------
+
+Note that the elif-statement is tested only if the previous if- or elif-statement was not true.
+
+    .. code:: python
+
+        """
+        This code will find out if the user lives in a sparsely populated area or an urban area
+        according to the definition of urban areas in Finland: https://en.wikipedia.org/wiki/Urban_areas_in_Finland
+        """
+
+        # As population size as input from user
+        population = input("What is the population of the area (number of people)?: ")
+
+        #Convert user input as integer:
+        population = int(population)
+
+        # If population is zero or negative
+        if population <= 0:
+	        print("Ghost town!")
+
+        # If population equals one
+        elif population == 1:
+	        print("Living alone!")
+
+        # If population is less than 200
+        elif population < 200:
+            print("Sparsely populated area")
+
+        # If population is more than 200
+        elif population > 200:
+
+            # Ask the user for maximum distance between buildings
+            building_dist = input("What is the maximum distance between buildings in the area (m)?: ")
+            #Convert user input as integer:
+            building_dist = int(building_dist)
+
+            #If building distance is greater than 200
+            if building_dist >= 200:
+                print("Sparsely populated area")
+
+            #In case population was more than 200, and building distance less than 200
+            else:
+	            print("Urban area")
+
+
+
+
 4. We can also use ``and`` and ``or`` to have multiple conditions.
 
    .. code:: python
@@ -100,6 +150,7 @@ certain conditions.
        At least one test is true
 
    This can be quite handy.
+
 
 
 String comparisons

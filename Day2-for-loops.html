@@ -104,6 +104,7 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">for-loops</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#exampes-from-the-class">Exampes from the class</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#basics-of-for-loops">Basics of <code class="docutils literal"><span class="pre">for</span></code> loops</a></li>
 </ul>
 </li>
@@ -174,6 +175,36 @@
 <p>This lesson is based on Dr. David Whipp&#8217;s <a class="reference external" href="https://github.com/Python-for-geo-people/Lesson-3-Loops-Conditional-Statements/blob/master/Lesson/for-loops.md">material from the python-for-geo-people -course</a> and the <a class="reference external" href="http://software-carpentry.org/">Software Carpentry
 group&#8217;s</a> lessons on <a class="reference external" href="http://swcarpentry.github.io/python-novice-inflammation/">Programming with
 Python</a>.</p>
+<div class="section" id="exampes-from-the-class">
+<h2>Exampes from the class<a class="headerlink" href="#exampes-from-the-class" title="Permalink to this headline">¶</a></h2>
+<p>Often we need to repeat a task, such as greeting people:</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Print greetings line-by line</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervetuloa Iida&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervetuloa Elina&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervetuloa Virpi&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervetuloa Linda&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The general pattern in the above commands contains three main elements; the print-command, the greeting, and the name of the person.
+If we list the names we want to greet, we could say that, &#8220;for each name in the list, print out a greeting:&#8221;</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#Names in a list</span>
+<span class="n">namelist</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Iida&quot;</span><span class="p">,</span> <span class="s2">&quot;Elina&quot;</span><span class="p">,</span> <span class="s2">&quot;Virpi&quot;</span><span class="p">,</span> <span class="s2">&quot;Linda&quot;</span><span class="p">]</span>
+
+<span class="c1"># For each name in the list print greetings:</span>
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">namelist</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervetuloa&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>We can also add a counter of how many people we have greeted</p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="n">greeting_cnt</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="k">for</span> <span class="n">name</span> <span class="ow">in</span> <span class="n">namelist</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Tervehdys&quot;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+    <span class="n">Tervehdys_cnt</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;I have greeted: &quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="n">Tervehdys_cnt</span><span class="p">)</span> <span class="o">+</span> <span class="s2">&quot;/&quot;</span> <span class="o">+</span> <span class="nb">str</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">nimilista</span><span class="p">))</span> <span class="o">+</span> <span class="s2">&quot;people&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
 <div class="section" id="basics-of-for-loops">
 <h2>Basics of <code class="docutils literal"><span class="pre">for</span></code> loops<a class="headerlink" href="#basics-of-for-loops" title="Permalink to this headline">¶</a></h2>
 <p>Loops allow parts of code to be repeated over some number of times.</p>
