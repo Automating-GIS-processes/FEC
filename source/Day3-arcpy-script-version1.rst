@@ -1,5 +1,5 @@
-Writing arcpy scripts
-=====================
+Arcpy script for version 1
+==========================
 
 At this point we have created a nice interface for our Python tool in ArcGIS:
 
@@ -95,8 +95,8 @@ Let's add a message at the end of our script:
 .. code:: python
 
     #Print that the process was finished successfully
-    message_text = "Process was a great success! \n Output generated: " + output_raster
-    arcpy.AddMessage(info)
+    message_text = "\n\nProcess was a great success! \nOutput generated: " + output_raster + "\n\n"
+    arcpy.AddMessage(message_text)
 
 
 

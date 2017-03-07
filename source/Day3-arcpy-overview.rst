@@ -39,7 +39,7 @@ conservation areas based on the occurrence of endangered species (`Pouzols et al
 Download source data for the exercise
 --------------------------------------
 
-Download the source data for the arcpy-exercise `from this link <https://github.com/Automating-GIS-processes/Lesson-2-Geo-DataFrames/raw/master/data/Data.zip>`_
+Download the source data for the arcpy-exercise `from this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/DAMSELFISH.zip>`_
 
 .. figure:: img/Datazipdownload.png
     :scale: 30 %
