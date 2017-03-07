@@ -40,6 +40,11 @@ From the lower part of the dialog we can adjust the properties of individual par
 .. figure:: img/arcgis-parameter-tab-lower.png
     :scale: 90 %
 
+You need to do these modifications in the lower pane:
+
+- for ``Output Raster dataset`` set ``Direction`` as ``Output``
+- for ``Value field``, set ``Obtained from`` as ``Input_Shapefile``
+
 Finally, you should end up having a nice interface for your tool that looks something similar as this:
 
 .. figure:: img/Arcpy_version1_interface.png

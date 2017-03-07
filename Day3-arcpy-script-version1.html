@@ -175,15 +175,15 @@
 <h1>Writing arcpy scripts<a class="headerlink" href="#writing-arcpy-scripts" title="Permalink to this headline">¶</a></h1>
 <p>At this point we have created a nice interface for our Python tool in ArcGIS:</p>
 <div class="figure">
-<a class="reference internal image-reference" href="_images/arcgis-my-script.png"><img alt="_images/arcgis-my-script.png" src="_images/arcgis-my-script.png" style="width: 732.0px; height: 358.40000000000003px;" /></a>
+<a class="reference internal image-reference" href="_images/Arcpy_version1_interface.png"><img alt="_images/Arcpy_version1_interface.png" src="_images/Arcpy_version1_interface.png" style="width: 218.0px; height: 158.0px;" /></a>
 </div>
-<p>Now we need to write the functionality for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
-Let&#8217;s see how this can be done.</p>
+<p>Next we need to write the functionality for our tool. The first version of our tool will simply convert Shapefiles into raster using the polygon to raster conversion -tool
+and print out a customized message for the user.</p>
 <p>First, we need start the ArcGIS IDLE (if it is not open already) from <strong>All Programs</strong> &#8211;&gt; <strong>ArcGIS</strong>:</p>
 <div class="figure">
 <img alt="_images/arcgis-idle-location.png" src="_images/arcgis-idle-location.png" />
 </div>
-<p>Create a new script called <code class="docutils literal"><span class="pre">PolyToRaster.py</span></code> in IDLE (<strong>File</strong> &#8211;&gt; <strong>New File</strong>) and save it to your computer:</p>
+<p>Create a new script called <code class="docutils literal"><span class="pre">Arcpy_1_SimplePoly2Raster.py</span></code> in IDLE (<strong>File</strong> &#8211;&gt; <strong>New File</strong>) and save it to your computer:</p>
 <div class="figure">
 <a class="reference internal image-reference" href="_images/arcgis-idle-new.png"><img alt="_images/arcgis-idle-new.png" src="_images/arcgis-idle-new.png" style="width: 430.0px; height: 222.0px;" /></a>
 </div>

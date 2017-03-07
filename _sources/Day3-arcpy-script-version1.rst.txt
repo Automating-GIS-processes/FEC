@@ -3,17 +3,17 @@ Writing arcpy scripts
 
 At this point we have created a nice interface for our Python tool in ArcGIS:
 
-.. figure:: img/arcgis-my-script.png
-    :scale: 80 %
+.. figure:: img/Arcpy_version1_interface.png
+    :scale: 40 %
 
-Now we need to write the functionality for our tool. The aim of our tool is to convert Shapefiles into rasters and give the raster a value that the user specifies in the user interface.
-Let's see how this can be done.
+Next we need to write the functionality for our tool. The first version of our tool will simply convert Shapefiles into raster using the polygon to raster conversion -tool
+and print out a customized message for the user.
 
 First, we need start the ArcGIS IDLE (if it is not open already) from **All Programs** --> **ArcGIS**:
 
 .. figure:: img/arcgis-idle-location.png
 
-Create a new script called ``PolyToRaster.py`` in IDLE (**File** --> **New File**) and save it to your computer:
+Create a new script called ``Arcpy_1_SimplePoly2Raster.py`` in IDLE (**File** --> **New File**) and save it to your computer:
 
 .. figure:: img/arcgis-idle-new.png
     :scale: 40 %
