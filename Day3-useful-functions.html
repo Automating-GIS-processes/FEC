@@ -110,7 +110,10 @@
 <li class="toctree-l1"><a class="reference internal" href="Day2-modules.html">Loading and using Python modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-Exercise3-Functions.html">Exercise 3: Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-reading-files.html">Reading and writing text files</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Useful functions related to filepaths</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Useful functions related to filepaths</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#copying-selected-lines-of-multiple-files-into-a-new-location">Copying selected lines of (multiple) files into a new location</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-mini-exercise-writingFiles.html">Task: write results to text file</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
@@ -208,18 +211,17 @@ it does not exist already (we can take advantage of
 <li>Now we can combine the filename (test.txt) and our new folder using
 <code class="docutils literal"><span class="pre">os.path.join()</span></code> -function:</li>
 </ol>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span>  <span class="c1"># Filename:</span>
-  <span class="n">filename</span> <span class="o">=</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Filename:</span>
+<span class="n">filename</span> <span class="o">=</span> <span class="n">newfile</span><span class="o">.</span><span class="n">txt</span>
 
-  <span class="c1">#Create a filepath for the new file:</span>
+<span class="c1">#Create a filepath for the new file:</span>
 
-  <span class="n">output_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
-  <span class="nb">print</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span>
-
-<span class="n">Copying</span> <span class="n">selected</span> <span class="n">lines</span> <span class="n">of</span> <span class="p">(</span><span class="n">multiple</span><span class="p">)</span> <span class="n">files</span> <span class="n">into</span> <span class="n">a</span> <span class="n">new</span> <span class="n">location</span>
+<span class="n">output_file_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">result_dir</span><span class="p">,</span> <span class="n">filename</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">output_file_path</span><span class="p">)</span>
 </pre></div>
 </div>
-<hr class="docutils" />
+<div class="section" id="copying-selected-lines-of-multiple-files-into-a-new-location">
+<h2>Copying selected lines of (multiple) files into a new location<a class="headerlink" href="#copying-selected-lines-of-multiple-files-into-a-new-location" title="Permalink to this headline">¶</a></h2>
 <ol class="arabic simple">
 <li>Let&#8217;s take our previous exercise (reading multiple files) as a
 starting point and copy the first line of each inflammation csv-file
@@ -257,6 +259,7 @@ more info about how to write data without <code class="docutils literal"><span c
 how to close files from
 <strong>`here &lt;https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files&gt;`__</strong>.</li>
 </ul>
+</div>
 </div>
 
 

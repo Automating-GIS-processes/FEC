@@ -53,8 +53,8 @@ Now we have a new folder in the specified location
    output_file_path = os.path.join(result_dir, filename)
    print(output_file_path)
 
- Copying selected lines of (multiple) files into a new location
-===============================================================
+Copying selected lines of (multiple) files into a new location
+---------------------------------------------------------------
 
 1. Let's take our previous exercise (reading multiple files) as a
    starting point and copy the first line of each inflammation csv-file
