@@ -50,10 +50,14 @@ Loops allow parts of code to be repeated over some number of times.
 
     .. code:: python
 
-        >>> word = 'rock'
-        >>>  for char in word:
-        ...    print(char)
-        ...
+        word = 'rock'
+        for char in word:
+            print(char)
+
+The previous command will print out:
+
+.. code:: python
+
         r
         o
         c
