@@ -11,7 +11,12 @@ The purpose of this exercise is to motivate you to start thinking about the diff
 and to finally translate the whole process into a Python script.
 
 
-**[power point tutorial here]**
+`Model Builder Tutorial PDF <https://github.com/Automating-GIS-processes/FEC/raw/master/data/Model%20Builder%20Tutorial.pdf>`_
+
+
+Source data for the Model Builder -exercise can be downloaded `from this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/DAMSELFISH.zip>`_
+
+
 
 .. hint::
 
