@@ -1,5 +1,5 @@
-Final Exercise: ArcPy-script for processing species data
-=====================================================
+Exercise 4: ArcGIS-tool for processing species data
+===================================================
 
 As an output of this exercise we will create three  ArcPy-scripts:
 
@@ -16,7 +16,7 @@ Version 1:
 
 Create a ArcGIS toolbox that converts a Shapefile into a Raster Dataset.
 Toolbox asks three parameters from the user: **input shapefile**, **output rasterdataset**, and **value field** (raster_value).
-Toolbox executes a python script called ‘Arcpy_1_SimplePoly2Raster.py` that contains all the required functionalities of the tool.
+Toolbox executes a python script called ``Arcpy_1_SimplePoly2Raster.py`` that contains all the required functionalities of the tool.
 
 .. figure:: img/Arcpy_version1_interface.png
 

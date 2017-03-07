@@ -5,16 +5,13 @@ Reading and writing text files within a Python code can be very handy for exampl
 or to automatically print out simple information and results (for example statistics) when running a bigger process.
 
 
-Preparations
--------------
+Download example dataset
+------------------------
 
-Download the example dataset ``5972xxx.zip`` for this section from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
+If you haven't done so already, download the example dataset ``5972xxx.zip`` from `this link <https://github.com/Automating-GIS-processes/FEC/raw/master/data/5972xxx.zip>`_.
 The zip-file contains a folder with a subset of data from the `Travel Time Matrix dataset <http://blogs.helsinki.fi/accessibility/data/metropaccess-travel-time-matrix/>`_.
 
-Unzip the folder to your local working directory. You should see the following files:
-
-.. figure:: img/Travel_times_to_xxxxx.png
-    :scale: 30 %
+Unzip the folder to your local working directory.
 
 
 Reading text files
