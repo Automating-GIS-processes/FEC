@@ -101,6 +101,7 @@ Course contents:
     Day3-useful-functions
     Day3-reading-files
     Day3-mini-exercise-writingFiles
+    Pandas_intro
 
 
 .. toctree::
