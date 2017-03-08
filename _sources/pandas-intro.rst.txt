@@ -4,7 +4,7 @@ Pandas-module
 Materials
 --------------
 
-- `Overview of Pandas and Geopandas in the full version of the AutoGIS-course https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html`_
+- `Overview of Pandas and Geopandas in the full version of the AutoGIS-course <https://automating-gis-processes.github.io/2016/Lesson2-overview-pandas-geopandas.html>`_
 
 - `Pandas documentation and tutorials <http://pandas.pydata.org/pandas-docs/stable/tutorials.html>`_
 
