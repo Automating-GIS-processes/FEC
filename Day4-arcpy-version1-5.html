@@ -1,6 +1,5 @@
 
 
-
 <!DOCTYPE html>
 <!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
@@ -9,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Index &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Species tool: Version 1.5 &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -32,9 +31,11 @@
 
   
         <link rel="index" title="Index"
-              href="#"/>
+              href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
+        <link rel="next" title="Species tool: Version 2" href="arcpy-version3.html"/>
+        <link rel="prev" title="Running the Python script from ArcGIS" href="Day3-run-the-tool.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -114,7 +115,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pandas-intro.html">Pandas-module</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
@@ -123,7 +124,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-toolbox-version1.html">Species tool: Version 1 (toolbox)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Species tool: Version 1 (script)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day4-arcpy-version1-5.html">Species tool: Version 1.5</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Species tool: Version 1.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
 </ul>
 
@@ -147,7 +148,7 @@
         <div class="rst-content">
           
 
-
+ 
 
 
 
@@ -155,9 +156,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li></li>
+    <li>Species tool: Version 1.5</li>
       <li class="wy-breadcrumbs-aside">
         
+          
+            <a href="_sources/Day4-arcpy-version1-5.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -167,17 +170,39 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
+  <div class="section" id="species-tool-version-1-5">
+<h1>Species tool: Version 1.5<a class="headerlink" href="#species-tool-version-1-5" title="Permalink to this headline">¶</a></h1>
+<p>Before adding all the required functionality to our species converter tool, let&#8217;s make an intermediate
+version to make it easier to follow the process.</p>
+<p>This <strong>Version 1.5.</strong> should execute the following processing steps:</p>
+<ul class="simple">
+<li>Import the required module (arcpy)</li>
+<li>Get parameters from the toolbox using <code class="docutils literal"><span class="pre">GetParametersAsText</span></code> function</li>
+<li>Add a new field into the Shapefile with <code class="docutils literal"><span class="pre">AddField_management</span></code> function</li>
+<li>Update the value for the attribute just created with <code class="docutils literal"><span class="pre">CalculateField_management</span></code> function</li>
+<li>Convert input shapefile into a Raster Dataset using <code class="docutils literal"><span class="pre">PolygonToRaster_conversion</span></code> function</li>
+<li>Print info for the user that tool has finished successfully using <code class="docutils literal"><span class="pre">AddMessage</span></code> function</li>
+</ul>
+<p><strong>The interface</strong></p>
+<div class="figure">
+<img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
+</div>
+<p><strong>The code</strong></p>
 </div>
 
 
            </div>
           </div>
           <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="arcpy-version3.html" class="btn btn-neutral float-right" title="Species tool: Version 2" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Day3-run-the-tool.html" class="btn btn-neutral" title="Running the Python script from ArcGIS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
   
 
   <hr/>
