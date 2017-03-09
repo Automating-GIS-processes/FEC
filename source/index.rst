@@ -116,6 +116,7 @@ Course contents:
     Day3-arcpy-toolbox-version1
     Day3-arcpy-script-version1
     Day3-run-the-tool
+    Day4-arcpy-version1-5
     arcpy-version3
 
 
