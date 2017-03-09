@@ -19,6 +19,8 @@ This **Version 1.5.** should execute the following processing steps:
 .. figure:: img/Arcpy_version2_interface.png
 
 **The code**
+Original plan:
+----------------
 
 .. code:: python
 
@@ -65,3 +67,81 @@ This **Version 1.5.** should execute the following processing steps:
 
     my_message = "Tool finished successfully! Rock on!"
     arcpy.AddMessage(my_message)
+
+
+The code below was created during the lesson on 9.3.2016 (we added the cell size parameter to our tool):
+
+Code from the class for version 1.5:
+---------------------
+
+.. code:: python
+
+    #---------------------------------------------------------------------
+    # Arcpy_1_SimplePoly2Raster.py
+    # This script takes a shapefile as an input and converts it to raster.
+    #
+    # Arcpy script
+    # Usage: ArcToolbox [name]
+    #----------------------------------------------------------------------
+
+    # Import needed modules
+    import arcpy
+
+
+    # Enable Arcpy to overwrite existing files
+    arcpy.env.overwriteOutput = True
+
+    #---------------------------------------------------------------------------------------------
+    # 1. Get parameters from the toolbox using 'GetParametersAsText' method
+    #   --> check ArcGIS help for info how to use methods
+    #   Method info: http://pro.arcgis.com/en/pro-app/arcpy/functions/getparameterastext.htm
+    #---------------------------------------------------------------------------------------------
+
+
+    input_shp = arcpy.GetParameterAsText(0)
+    output_raster = arcpy.GetParameterAsText(1)
+    cell_size = arcpy.GetParameter(2)
+    attribute_name = arcpy.GetParameterAsText(3)
+    presence_value = arcpy.GetParameterAsText(4)
+
+    """
+    input_shp = r"C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\TEMP\DAMSELFISH_test_data.shp"
+    output_raster = r"C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\Results\damselfish_test3.tif"
+    value_attribute = "binomial"
+    cell_size = 0.79
+    attribute_name = "NewFIELD"
+    """
+
+
+    #---------------------------------------------------------------------------
+    # 2. Add new field into the shapefile using AddField_management -function
+    # Syntax: AddField_management (in_table, field_name, field_type, {field_precision}, {field_scale}, {field_length}, {field_alias}, {field_is_nullable}, {field_is_required}, {field_domain})
+    #------------------------------------------------------------------------
+    arcpy.AddField_management(in_table=input_shp, field_name=attribute_name, field_type="SHORT")
+
+    #-----------------------------------------------------------------------------------
+    # 3. CALCULATE VALUE FOR THE NEW FIELD
+    # SYNTAX: CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
+    #-------------------------------------------------------------------------------------------------
+    arcpy.CalculateField_management(in_table=input_shp, field=attribute_name, expression=presence_value)
+
+    #--------------------------------------------------------------------------------------------
+    # 4. Convert input Shapefile into a Raster Dataset using 'PolygonToRaster_conversion' method
+    # Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//001200000030000000
+    #
+    # Syntax: PolygonToRaster_conversion (in_features, value_field, out_rasterdataset, {cell_assignment}, {priority_field}, {cellsize})
+    #--------------------------------------------------------------------------------------------
+    arcpy.PolygonToRaster_conversion(in_features=input_shp, value_field=attribute_name, out_rasterdataset=output_raster, cellsize=cell_size)
+
+
+    #arcpy.PolygonToRaster_conversion(input_shp, value_attribute, output_raster, "", "", cell_size)
+
+    # 3. ADD INFO MESSAGE
+
+    message_text = "\n\nProcess was a great success! \nOutput generated: " + output_raster + "\n\n"
+
+    #ADD INFO TO TOOLBOX PROCESSING WINDOW
+    arcpy.AddMessage(message_text)
+
+    #PRINT INFO TO PYTHON CONSOLE
+    print(message_text)
