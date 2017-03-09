@@ -33,9 +33,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="next" title="Species tool: Version 2" href="arcpy-version3.html"/>
-        <link rel="prev" title="Running the Python script from ArcGIS" href="Day3-run-the-tool.html"/> 
+    <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -115,7 +113,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pandas-intro.html">Pandas-module</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
@@ -124,7 +122,6 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-toolbox-version1.html">Species tool: Version 1 (toolbox)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Species tool: Version 1 (script)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Species tool: Version 1.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
 </ul>
 
@@ -160,7 +157,7 @@
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day4-arcpy-version1-5.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day4-version1-5.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -188,21 +185,57 @@ version to make it easier to follow the process.</p>
 <img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
 </div>
 <p><strong>The code</strong></p>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Import arcpy module so we can use ArcGIS geoprocessing tools</span>
+<span class="kn">import</span> <span class="nn">arcpy</span>
+
+<span class="sd">&quot;&quot;&quot; This script adds a field into the input shapefile and updates the value</span>
+<span class="sd">    of that field based (range: 1-5) and finally rasterizes the shapefile &quot;&quot;&quot;</span>
+
+<span class="c1"># 1. Get parameters from the toolbox using &#39;GetParametersAsText&#39; method</span>
+<span class="c1">#----------------------------------------------------------------------</span>
+<span class="c1"># --&gt; check ArcGIS help for info how to use methods</span>
+<span class="c1"># Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//018v00000047000000</span>
+
+<span class="n">input_species_shp</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">output_path</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">attribute_name</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">presence_value</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+
+
+<span class="c1"># 2. Add a new field into the input shapefile with &#39;AddField_management&#39; method</span>
+<span class="c1">#------------------------------------------------------------------------------</span>
+<span class="c1"># Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//001700000047000000</span>
+
+<span class="n">arcpy</span><span class="o">.</span><span class="n">AddField_management</span><span class="p">(</span><span class="n">in_table</span><span class="o">=</span><span class="n">input_species_shp</span><span class="p">,</span> <span class="n">field_name</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">field_type</span><span class="o">=</span><span class="s2">&quot;SHORT&quot;</span><span class="p">)</span> <span class="c1"># Other possible parameters can be left as default</span>
+
+
+<span class="c1"># 3. Update the presence value for our newly created attribute with &#39;CalculateField_management&#39; method</span>
+<span class="c1">#-----------------------------------------------------------------------------------------------------</span>
+<span class="c1"># Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//00170000004m000000</span>
+
+<span class="n">arcpy</span><span class="o">.</span><span class="n">CalculateField_management</span><span class="p">(</span><span class="n">in_table</span><span class="o">=</span><span class="n">input_species_shp</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="n">presence_value</span><span class="p">)</span>
+
+
+<span class="c1"># 4. Convert polygon to raster using &#39;PolygonToRaster_conversion&#39; method</span>
+<span class="c1">#-----------------------------------------------------------------------</span>
+<span class="c1"># Method info: http://help.arcgis.com/en/arcgisdesktop/10.0/help/index.html#//001200000030000000</span>
+<span class="n">arcpy</span><span class="o">.</span><span class="n">PolygonToRaster_conversion</span><span class="p">(</span><span class="n">in_features</span><span class="o">=</span><span class="n">input_species_shp</span><span class="p">,</span> <span class="n">value_field</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">out_rasterdataset</span><span class="o">=</span><span class="n">output_path</span><span class="p">)</span>
+
+
+<span class="c1"># 5. Print info for the user that tool has finished succesfully using &#39;AddMessage&#39; method</span>
+<span class="c1">#----------------------------------------------------------------------------------------</span>
+<span class="c1"># Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//018v00000007000000</span>
+
+<span class="n">my_message</span> <span class="o">=</span> <span class="s2">&quot;Tool finished successfully! Rock on!&quot;</span>
+<span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">my_message</span><span class="p">)</span>
+</pre></div>
+</div>
 </div>
 
 
            </div>
           </div>
           <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="arcpy-version3.html" class="btn btn-neutral float-right" title="Species tool: Version 2" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="Day3-run-the-tool.html" class="btn btn-neutral" title="Running the Python script from ArcGIS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
-    </div>
   
 
   <hr/>
