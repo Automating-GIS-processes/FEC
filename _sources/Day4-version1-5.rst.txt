@@ -77,7 +77,7 @@ The toolbox and corresponding code below was created during the lesson on 9.3.20
 
 .. figure:: img/ValueListArcToolbox.png
 
-.. code:: python
+
 
     #---------------------------------------------------------------------
     # Arcpy_1_SimplePoly2Raster.py

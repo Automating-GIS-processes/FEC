@@ -239,79 +239,62 @@ version to make it easier to follow the process.</p>
 <div class="figure">
 <img alt="_images/Version_1_5_modified.png" src="_images/Version_1_5_modified.png" />
 </div>
-<div class="figure">
+<div class="figure" id="id1">
 <img alt="_images/ValueListArcToolbox.png" src="_images/ValueListArcToolbox.png" />
+<p class="caption"><span class="caption-text">#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+# Arcpy_1_SimplePoly2Raster.py
+# This script takes a shapefile as an input and converts it to raster.
+#
+# Arcpy script
+# Usage: ArcToolbox [name]
+#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-</span></p>
+<div class="legend">
+<p># Import needed modules
+import arcpy</p>
+<p># Enable Arcpy to overwrite existing files
+arcpy.env.overwriteOutput = True</p>
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+# 1. Get parameters from the toolbox using &#8216;GetParametersAsText&#8217; method
+#   &#8211;&gt; check ArcGIS help for info how to use methods
+#   Method info: <a class="reference external" href="http://pro.arcgis.com/en/pro-app/arcpy/functions/getparameterastext.htm">http://pro.arcgis.com/en/pro-app/arcpy/functions/getparameterastext.htm</a>
+#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;</p>
+<p>input_shp = arcpy.GetParameterAsText(0)
+output_raster = arcpy.GetParameterAsText(1)
+cell_size = arcpy.GetParameter(2)
+attribute_name = arcpy.GetParameterAsText(3)
+presence_value = arcpy.GetParameterAsText(4)</p>
+<p>&#8220;&#8221;&#8221;
+input_shp = r&#8221;C:HY-DatavuokkheidocumentsAUTOGISDAMSELFISHTEMPDAMSELFISH_test_data.shp&#8221;
+output_raster = r&#8221;C:HY-DatavuokkheidocumentsAUTOGISDAMSELFISHResultsdamselfish_test3.tif&#8221;
+value_attribute = &#8220;binomial&#8221;
+cell_size = 0.79
+attribute_name = &#8220;NewFIELD&#8221;
+&#8220;&#8221;&#8220;</p>
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+# 2. Add new field into the shapefile using AddField_management -function
+# Syntax: AddField_management (in_table, field_name, field_type, {field_precision}, {field_scale}, {field_length}, {field_alias}, {field_is_nullable}, {field_is_required}, {field_domain})
+#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;
+arcpy.AddField_management(in_table=input_shp, field_name=attribute_name, field_type=&#8221;SHORT&#8221;)</p>
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+# 3. CALCULATE VALUE FOR THE NEW FIELD
+# SYNTAX: CalculateField_management (in_table, field, expression, {expression_type}, {code_block})
+#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;-
+arcpy.CalculateField_management(in_table=input_shp, field=attribute_name, expression=presence_value)</p>
+<p>#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+# 4. Convert input Shapefile into a Raster Dataset using &#8216;PolygonToRaster_conversion&#8217; method
+# Method info: <a class="reference external" href="http://resources.arcgis.com/en/help/main/10.2/index.html#//001200000030000000">http://resources.arcgis.com/en/help/main/10.2/index.html#//001200000030000000</a>
+#
+# Syntax: PolygonToRaster_conversion (in_features, value_field, out_rasterdataset, {cell_assignment}, {priority_field}, {cellsize})
+#&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;
+arcpy.PolygonToRaster_conversion(in_features=input_shp, value_field=attribute_name, out_rasterdataset=output_raster, cellsize=cell_size)</p>
+<p>#arcpy.PolygonToRaster_conversion(input_shp, value_attribute, output_raster, &#8220;&#8221;, &#8220;&#8221;, cell_size)</p>
+<p># 3. ADD INFO MESSAGE</p>
+<p>message_text = &#8220;nnProcess was a great success! nOutput generated: &#8221; + output_raster + &#8220;nn&#8221;</p>
+<p>#ADD INFO TO TOOLBOX PROCESSING WINDOW
+arcpy.AddMessage(message_text)</p>
+<p>#PRINT INFO TO PYTHON CONSOLE
+print(message_text)</p>
 </div>
-<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#---------------------------------------------------------------------</span>
-<span class="c1"># Arcpy_1_SimplePoly2Raster.py</span>
-<span class="c1"># This script takes a shapefile as an input and converts it to raster.</span>
-<span class="c1">#</span>
-<span class="c1"># Arcpy script</span>
-<span class="c1"># Usage: ArcToolbox [name]</span>
-<span class="c1">#----------------------------------------------------------------------</span>
-
-<span class="c1"># Import needed modules</span>
-<span class="kn">import</span> <span class="nn">arcpy</span>
-
-
-<span class="c1"># Enable Arcpy to overwrite existing files</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">overwriteOutput</span> <span class="o">=</span> <span class="kc">True</span>
-
-<span class="c1">#---------------------------------------------------------------------------------------------</span>
-<span class="c1"># 1. Get parameters from the toolbox using &#39;GetParametersAsText&#39; method</span>
-<span class="c1">#   --&gt; check ArcGIS help for info how to use methods</span>
-<span class="c1">#   Method info: http://pro.arcgis.com/en/pro-app/arcpy/functions/getparameterastext.htm</span>
-<span class="c1">#---------------------------------------------------------------------------------------------</span>
-
-
-<span class="n">input_shp</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
-<span class="n">output_raster</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">cell_size</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameter</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">attribute_name</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">presence_value</span> <span class="o">=</span> <span class="n">arcpy</span><span class="o">.</span><span class="n">GetParameterAsText</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
-
-<span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">input_shp = r&quot;C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\TEMP\DAMSELFISH_test_data.shp&quot;</span>
-<span class="sd">output_raster = r&quot;C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\Results\damselfish_test3.tif&quot;</span>
-<span class="sd">value_attribute = &quot;binomial&quot;</span>
-<span class="sd">cell_size = 0.79</span>
-<span class="sd">attribute_name = &quot;NewFIELD&quot;</span>
-<span class="sd">&quot;&quot;&quot;</span>
-
-
-<span class="c1">#---------------------------------------------------------------------------</span>
-<span class="c1"># 2. Add new field into the shapefile using AddField_management -function</span>
-<span class="c1"># Syntax: AddField_management (in_table, field_name, field_type, {field_precision}, {field_scale}, {field_length}, {field_alias}, {field_is_nullable}, {field_is_required}, {field_domain})</span>
-<span class="c1">#------------------------------------------------------------------------</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">AddField_management</span><span class="p">(</span><span class="n">in_table</span><span class="o">=</span><span class="n">input_shp</span><span class="p">,</span> <span class="n">field_name</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">field_type</span><span class="o">=</span><span class="s2">&quot;SHORT&quot;</span><span class="p">)</span>
-
-<span class="c1">#-----------------------------------------------------------------------------------</span>
-<span class="c1"># 3. CALCULATE VALUE FOR THE NEW FIELD</span>
-<span class="c1"># SYNTAX: CalculateField_management (in_table, field, expression, {expression_type}, {code_block})</span>
-<span class="c1">#-------------------------------------------------------------------------------------------------</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">CalculateField_management</span><span class="p">(</span><span class="n">in_table</span><span class="o">=</span><span class="n">input_shp</span><span class="p">,</span> <span class="n">field</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">expression</span><span class="o">=</span><span class="n">presence_value</span><span class="p">)</span>
-
-<span class="c1">#--------------------------------------------------------------------------------------------</span>
-<span class="c1"># 4. Convert input Shapefile into a Raster Dataset using &#39;PolygonToRaster_conversion&#39; method</span>
-<span class="c1"># Method info: http://resources.arcgis.com/en/help/main/10.2/index.html#//001200000030000000</span>
-<span class="c1">#</span>
-<span class="c1"># Syntax: PolygonToRaster_conversion (in_features, value_field, out_rasterdataset, {cell_assignment}, {priority_field}, {cellsize})</span>
-<span class="c1">#--------------------------------------------------------------------------------------------</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">PolygonToRaster_conversion</span><span class="p">(</span><span class="n">in_features</span><span class="o">=</span><span class="n">input_shp</span><span class="p">,</span> <span class="n">value_field</span><span class="o">=</span><span class="n">attribute_name</span><span class="p">,</span> <span class="n">out_rasterdataset</span><span class="o">=</span><span class="n">output_raster</span><span class="p">,</span> <span class="n">cellsize</span><span class="o">=</span><span class="n">cell_size</span><span class="p">)</span>
-
-
-<span class="c1">#arcpy.PolygonToRaster_conversion(input_shp, value_attribute, output_raster, &quot;&quot;, &quot;&quot;, cell_size)</span>
-
-<span class="c1"># 3. ADD INFO MESSAGE</span>
-
-<span class="n">message_text</span> <span class="o">=</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">Process was a great success! </span><span class="se">\n</span><span class="s2">Output generated: &quot;</span> <span class="o">+</span> <span class="n">output_raster</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n\n</span><span class="s2">&quot;</span>
-
-<span class="c1">#ADD INFO TO TOOLBOX PROCESSING WINDOW</span>
-<span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">message_text</span><span class="p">)</span>
-
-<span class="c1">#PRINT INFO TO PYTHON CONSOLE</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">message_text</span><span class="p">)</span>
-</pre></div>
 </div>
 </div>
 
