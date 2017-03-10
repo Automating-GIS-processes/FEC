@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Exercise 2: For-loops and conditional statements &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
+  <title>Running the Complete tool &mdash; GeoPython -AutoGIS/FEC 2017 Spring documentation</title>
   
 
   
@@ -34,8 +34,7 @@
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
     <link rel="top" title="GeoPython -AutoGIS/FEC 2017 Spring documentation" href="index.html"/>
-        <link rel="next" title="Functions" href="Day3-functions.html"/>
-        <link rel="prev" title="Task: generate numbers" href="Day2-for-loops-mini-exercise.html"/> 
+        <link rel="prev" title="Species tool: Version 2" href="arcpy-version3.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -101,11 +100,11 @@
 <li class="toctree-l1"><a class="reference internal" href="Day1-Exercise1.html">Exercise 1: Lists</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Basics of Python 2</span></p>
-<ul class="current">
+<ul>
 <li class="toctree-l1"><a class="reference internal" href="Day2-conditional-statements.html">Conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops.html">for-loops</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day2-for-loops-mini-exercise.html">Task: generate numbers</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Exercise 2: For-loops and conditional statements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day2-Exercise2.html">Exercise 2: For-loops and conditional statements</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-functions.html">Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-modules.html">Loading and using Python modules</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-Exercise3-Functions.html">Exercise 3: Functions</a></li>
@@ -115,7 +114,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pandas-intro.html">Pandas-module</a></li>
 </ul>
 <p class="caption"><span class="caption-text">Automating ArcGIS-processes</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-overview.html">Automating ArcGIS-processes</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy.html">ArcPy-module</a></li>
@@ -126,7 +125,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day4-version1-5.html">Species tool: Version 1.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Day5-finalSteps.html">Running the Complete tool</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Running the Complete tool</a></li>
 </ul>
 
             
@@ -157,11 +156,11 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-    <li>Exercise 2: For-loops and conditional statements</li>
+    <li>Running the Complete tool</li>
       <li class="wy-breadcrumbs-aside">
         
           
-            <a href="_sources/Day2-Exercise2.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Day5-finalSteps.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -171,12 +170,44 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="exercise-2-for-loops-and-conditional-statements">
-<h1>Exercise 2: For-loops and conditional statements<a class="headerlink" href="#exercise-2-for-loops-and-conditional-statements" title="Permalink to this headline">¶</a></h1>
-<p>Next, let&#8217;s practice how to use for-loops and conditional statements in slightly more demanding (but useful!) tasks.
-The exercise consists of three problems. After you have solved the given problems, remember to upload your scripts to GitHub!</p>
-<p>Note that <strong>Problem 3</strong> (the flag-exercise) is an extra task, don&#8217;t worry if you can&#8217;t get it done straight away.</p>
-<p>Go to <a class="reference external" href="https://classroom.github.com/assignment-invitations/7dd90a8b0e0d4387f59c25c8e6df073c">Exercise 2 in GitHub</a> to get started!</p>
+  <div class="section" id="running-the-complete-tool">
+<h1>Running the Complete tool<a class="headerlink" href="#running-the-complete-tool" title="Permalink to this headline">¶</a></h1>
+<p>Now that we have the interface and script ready for the extended version of our tool.</p>
+<p>Before we can run the tool, remember <strong>which Python script will be run when the tool is executed</strong> from the <code class="docutils literal"><span class="pre">Properties</span></code> of your Script tool under a <code class="docutils literal"><span class="pre">Source</span></code> -tab. Add the
+<code class="docutils literal"><span class="pre">Arcpy_X_SimplePoly2Raster.py</span></code> -file that we just created as the source file for this tool.</p>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/arcgis-properties.png"><img alt="_images/arcgis-properties.png" src="_images/arcgis-properties.png" style="width: 317.3px; height: 301.15px;" /></a>
+</div>
+<div class="figure align-left">
+<a class="reference internal image-reference" href="_images/arcgis-source.png"><img alt="_images/arcgis-source.png" src="_images/arcgis-source.png" style="width: 323.25px; height: 423.0px;" /></a>
+</div>
+<p>Run the tool (via ArcMap!) and inspect the results in the output folder you specified.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">You can also run the code in the Python IDLE by pressing <strong>Run</strong> &gt; <strong>Run Module</strong> (or F5).
+However, you first need to replace the <code class="docutils literal"><span class="pre">GetPaarametersAsText()</span></code> so that the value is defined in the code. See code below.</p>
+</div>
+<div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#---------------------------------------------</span>
+<span class="c1"># If you wish to run the code in python Shell:</span>
+<span class="c1">#--------------------------------------------</span>
+
+<span class="c1"># you can comment out the link to the user interface</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">input_shp = arcpy.GetParameterAsText(0)</span>
+<span class="sd">output_raster = arcpy.GetParameterAsText(1)</span>
+<span class="sd">cell_size = arcpy.GetParameter(2)</span>
+<span class="sd">attribute_name = arcpy.GetParameterAsText(3)</span>
+<span class="sd">presence_value = arcpy.GetParameterAsText(4)</span>
+<span class="sd">&quot;&quot;&quot;</span>
+<span class="c1"># And define parameters locally within your code</span>
+<span class="n">input_shp</span> <span class="o">=</span> <span class="s2">r&quot;C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\TEMP\DAMSELFISH.shp&quot;</span>
+<span class="n">output_raster</span> <span class="o">=</span> <span class="s2">r&quot;C:\HY-Data\vuokkhei\documents\AUTOGIS\DAMSELFISH\Results\damselfish.tif&quot;</span>
+<span class="n">value_attribute</span> <span class="o">=</span> <span class="s2">&quot;binomial&quot;</span>
+<span class="n">cell_size</span> <span class="o">=</span> <span class="mf">0.79</span>
+<span class="n">attribute_name</span> <span class="o">=</span> <span class="s2">&quot;NewFIELD&quot;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+</pre></div>
+</div>
 </div>
 
 
@@ -186,10 +217,8 @@ The exercise consists of three problems. After you have solved the given problem
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Day3-functions.html" class="btn btn-neutral float-right" title="Functions" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="Day2-for-loops-mini-exercise.html" class="btn btn-neutral" title="Task: generate numbers" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="arcpy-version3.html" class="btn btn-neutral" title="Species tool: Version 2" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

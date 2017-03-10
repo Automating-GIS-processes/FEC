@@ -57,5 +57,27 @@ Extract the zip file (right click and select "Extract All") to your local folder
 
 
 
+Familiarize yourself with the data
+----------------------------------
+
+- What attributes can you find in the attribute table?
+- What is the spatial extent of the data?
+- What is the coordinate reference system?
+
+*You will notice that the CRS of the shapefile is WGS84 and the unit of this reference system are in degrees (not in meters!). This is important to know when rasterizing the dataset.*
+*The following conversion table will help you to adjust the output resolution of the rasterization process*
+
++---------------------------+---------------------------------+
+| arc degrees (in decimals) | kilometers (at equator)         |
++===========================+=================================+
+|         0.79968           |          100                    |
++---------------------------+---------------------------------+
+|          0.4              |          20                     |
++---------------------------+---------------------------------+
+|          0.1              |          10                     |
++---------------------------+---------------------------------+
+|         0.00833           |          1                      |
++---------------------------+---------------------------------+
+
 
 

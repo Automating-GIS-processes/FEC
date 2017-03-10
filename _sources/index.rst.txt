@@ -118,6 +118,7 @@ Course contents:
     Day3-run-the-tool
     Day4-version1-5
     arcpy-version3
+    Day5-finalSteps
 
 
 

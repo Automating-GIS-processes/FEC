@@ -120,6 +120,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#learning-objectives">Learning objectives</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#case-processing-species-distribution-data">Case: Processing species distribution data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#download-source-data-for-the-exercise">Download source data for the exercise</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#familiarize-yourself-with-the-data">Familiarize yourself with the data</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-ArcGIS-modelBuilder.html">Model Builder tutorial</a></li>
@@ -131,6 +132,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day4-version1-5.html">Species tool: Version 1.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day5-finalSteps.html">Running the Complete tool</a></li>
 </ul>
 
             
@@ -220,6 +222,41 @@ Extract the zip file (right click and select &#8220;Extract All&#8221;) to your 
 <p class="caption"><span class="caption-text">Source data for this exercise: the Damselfish distribution shapefile visualized based on the attribute &#8220;binomial&#8221;.</span></p>
 </div>
 </div>
+<div class="section" id="familiarize-yourself-with-the-data">
+<h2>Familiarize yourself with the data<a class="headerlink" href="#familiarize-yourself-with-the-data" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>What attributes can you find in the attribute table?</li>
+<li>What is the spatial extent of the data?</li>
+<li>What is the coordinate reference system?</li>
+</ul>
+<p><em>You will notice that the CRS of the shapefile is WGS84 and the unit of this reference system are in degrees (not in meters!). This is important to know when rasterizing the dataset.</em>
+<em>The following conversion table will help you to adjust the output resolution of the rasterization process</em></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">arc degrees (in decimals)</th>
+<th class="head">kilometers (at equator)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0.79968</td>
+<td>100</td>
+</tr>
+<tr class="row-odd"><td>0.4</td>
+<td>20</td>
+</tr>
+<tr class="row-even"><td>0.1</td>
+<td>10</td>
+</tr>
+<tr class="row-odd"><td>0.00833</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 
 
@@ -242,7 +279,7 @@ Extract the zip file (right click and select &#8220;Extract All&#8221;) to your 
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Digital Geography Lab / University of Helsinki.
-      Last updated on Mar 09, 2017.
+      Last updated on Mar 10, 2017.
 
     </p>
   </div>

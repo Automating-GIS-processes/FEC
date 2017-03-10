@@ -124,11 +124,9 @@
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-toolbox-version1.html">Species tool: Version 1 (toolbox)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-arcpy-script-version1.html">Species tool: Version 1 (script)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Day3-run-the-tool.html">Running the Python script from ArcGIS</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Species tool: Version 1.5</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#code-from-the-class-for-version-1-5">Code from the class for version 1.5:</a></li>
-</ul>
-</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Species tool: Version 1.5</a></li>
 <li class="toctree-l1"><a class="reference internal" href="arcpy-version3.html">Species tool: Version 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Day5-finalSteps.html">Running the Complete tool</a></li>
 </ul>
 
             
@@ -190,9 +188,7 @@ version to make it easier to follow the process.</p>
 <div class="figure">
 <img alt="_images/Arcpy_version2_interface.png" src="_images/Arcpy_version2_interface.png" />
 </div>
-<p><strong>The code</strong>
-Original plan:
-&#8212;&#8212;&#8212;&#8212;&#8212;-</p>
+<p><strong>The code (Original plan):</strong></p>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1"># Import arcpy module so we can use ArcGIS geoprocessing tools</span>
 <span class="kn">import</span> <span class="nn">arcpy</span>
 
@@ -238,9 +234,14 @@ Original plan:
 <span class="n">arcpy</span><span class="o">.</span><span class="n">AddMessage</span><span class="p">(</span><span class="n">my_message</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The code below was created during the lesson on 9.3.2016 (we added the cell size parameter to our tool):</p>
-<div class="section" id="code-from-the-class-for-version-1-5">
-<h2>Code from the class for version 1.5:<a class="headerlink" href="#code-from-the-class-for-version-1-5" title="Permalink to this headline">¶</a></h2>
+<p><strong>The code (Created during class on thursday 9.3.):</strong></p>
+<p>The toolbox and corresponding code below was created during the lesson on 9.3.2016 (we added the cell size parameter to our tool):</p>
+<div class="figure">
+<img alt="_images/Version_1_5_modified.png" src="_images/Version_1_5_modified.png" />
+</div>
+<div class="figure">
+<img alt="_images/ValueListArcToolbox.png" src="_images/ValueListArcToolbox.png" />
+</div>
 <div class="code python highlight-default"><div class="highlight"><pre><span></span><span class="c1">#---------------------------------------------------------------------</span>
 <span class="c1"># Arcpy_1_SimplePoly2Raster.py</span>
 <span class="c1"># This script takes a shapefile as an input and converts it to raster.</span>
@@ -313,7 +314,6 @@ Original plan:
 </pre></div>
 </div>
 </div>
-</div>
 
 
            </div>
@@ -335,7 +335,7 @@ Original plan:
   <div role="contentinfo">
     <p>
         &copy; Copyright 2017, Digital Geography Lab / University of Helsinki.
-      Last updated on Mar 09, 2017.
+      Last updated on Mar 10, 2017.
 
     </p>
   </div>
