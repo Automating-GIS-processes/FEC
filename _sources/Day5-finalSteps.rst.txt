@@ -20,7 +20,7 @@ Run the tool (via ArcMap!) and inspect the results in the output folder you spec
 .. note::
 
     You can also run the code in the Python IDLE by pressing **Run** > **Run Module** (or F5).
-    However, you first need to replace the ``GetPaarametersAsText()`` so that the value is defined in the code. See code below.
+    However, you first need to replace the ``GetParametersAsText()`` so that the value is defined in the code. See code below.
 
 
 .. code:: python
