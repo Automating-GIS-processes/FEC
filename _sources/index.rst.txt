@@ -119,6 +119,7 @@ Course contents:
     Day4-version1-5
     arcpy-version3
     Day5-finalSteps
+    Day-5-finalRemarks
 
 
 
