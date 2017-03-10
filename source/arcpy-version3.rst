@@ -22,6 +22,12 @@ In the ``Parameters`` -tab, add the following parameters:
 .. figure:: img/arcgis-parameter-tab-lower.png
     :scale: 90 %
 
+.. note::
+
+    The ``Direction`` of the output folder needs to be ``Input`` (the user needs to specify the location of an existing folder)
+
+.. figure:: img/FinalTool_folder.png
+
 
 Let's import those five parameters from the graphical interface into our Python script using `GetParameterAsText() <http://desktop.arcgis.com/en/arcmap/latest/analyze/arcpy-functions/getparameterastext.htm>`_ -function:
 
