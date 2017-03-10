@@ -18,9 +18,8 @@ This **Version 1.5.** should execute the following processing steps:
 
 .. figure:: img/Arcpy_version2_interface.png
 
-**The code**
-Original plan:
-----------------
+**The code (Original plan):**
+
 
 .. code:: python
 
@@ -69,10 +68,14 @@ Original plan:
     arcpy.AddMessage(my_message)
 
 
-The code below was created during the lesson on 9.3.2016 (we added the cell size parameter to our tool):
 
-Code from the class for version 1.5:
----------------------
+**The code (Created during class on thursday 9.3.):**
+
+The toolbox and corresponding code below was created during the lesson on 9.3.2016 (we added the cell size parameter to our tool):
+
+.. figure:: img/Version_1_5_modified.png
+
+.. figure:: img/ValueListArcToolbox.png
 
 .. code:: python
 
